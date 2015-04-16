@@ -1,0 +1,50 @@
+printf-args.o: printf-args.c ../src/config.h printf-args.h \
+ /home/aav/arm-2013.05_linux/bin/../lib/gcc/arm-none-linux-gnueabi/4.7.3/include/stddef.h \
+ wchar.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/features.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/stdc-predef.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/predefs.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sys/cdefs.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/wordsize.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/gnu/stubs.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/gnu/stubs-soft.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/wchar.h \
+ stdio.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/stdio.h \
+ /home/aav/arm-2013.05_linux/bin/../lib/gcc/arm-none-linux-gnueabi/4.7.3/include/stdarg.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/wchar.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/xlocale.h
+
+../src/config.h:
+
+printf-args.h:
+
+/home/aav/arm-2013.05_linux/bin/../lib/gcc/arm-none-linux-gnueabi/4.7.3/include/stddef.h:
+
+wchar.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/features.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/stdc-predef.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/predefs.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sys/cdefs.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/wordsize.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/gnu/stubs.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/gnu/stubs-soft.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/wchar.h:
+
+stdio.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/stdio.h:
+
+/home/aav/arm-2013.05_linux/bin/../lib/gcc/arm-none-linux-gnueabi/4.7.3/include/stdarg.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/wchar.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/xlocale.h:

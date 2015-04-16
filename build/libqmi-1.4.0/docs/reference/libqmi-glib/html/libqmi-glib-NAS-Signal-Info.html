@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>NAS Signal Info</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libqmi-glib Reference Manual">
+<link rel="up" href="ch03.html#idm258757748752" title="NAS Indications">
+<link rel="prev" href="libqmi-glib-NAS-System-Info.html" title="NAS System Info">
+<link rel="next" href="ch03s02.html" title="NAS Requests">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libqmi-glib-NAS-System-Info.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch03.html#idm258757748752"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libqmi-glib Reference Manual</th>
+<td><a accesskey="n" href="ch03s02.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libqmi-glib-NAS-Signal-Info.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libqmi-glib-NAS-Signal-Info.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#libqmi-glib-NAS-Signal-Info.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libqmi-glib-NAS-Signal-Info"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libqmi-glib-NAS-Signal-Info.top_of_page"></a>NAS Signal Info</span></h2>
+<p>NAS Signal Info</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libqmi-glib-NAS-Signal-Info.synopsis"></a><h2>Synopsis</h2>
+<a name="QmiIndicationNasSignalInfoOutput"></a><pre class="synopsis">                    <a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput-struct" title="QmiIndicationNasSignalInfoOutput">QmiIndicationNasSignalInfoOutput</a>;
+
+<a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="returnvalue">QmiIndicationNasSignalInfoOutput</span></a> * <a class="link" href="libqmi-glib-NAS-Signal-Info.html#qmi-indication-nas-signal-info-output-ref" title="qmi_indication_nas_signal_info_output_ref ()">qmi_indication_nas_signal_info_output_ref</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="libqmi-glib-NAS-Signal-Info.html#qmi-indication-nas-signal-info-output-unref" title="qmi_indication_nas_signal_info_output_unref ()">qmi_indication_nas_signal_info_output_unref</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-NAS-Signal-Info.html#qmi-indication-nas-signal-info-output-get-tdma-signal-strength" title="qmi_indication_nas_signal_info_output_get_tdma_signal_strength ()">qmi_indication_nas_signal_info_output_get_tdma_signal_strength</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> *tdma_signal_strength</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-NAS-Signal-Info.html#qmi-indication-nas-signal-info-output-get-lte-signal-strength" title="qmi_indication_nas_signal_info_output_get_lte_signal_strength ()">qmi_indication_nas_signal_info_output_get_lte_signal_strength</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> *lte_signal_strength_rssi</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> *lte_signal_strength_rsrq</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a> *lte_signal_strength_rsrp</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a> *lte_signal_strength_snr</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-NAS-Signal-Info.html#qmi-indication-nas-signal-info-output-get-wcdma-signal-strength" title="qmi_indication_nas_signal_info_output_get_wcdma_signal_strength ()">qmi_indication_nas_signal_info_output_get_wcdma_signal_strength</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> *wcdma_signal_strength_rssi</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a> *wcdma_signal_strength_ecio</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-NAS-Signal-Info.html#qmi-indication-nas-signal-info-output-get-gsm-signal-strength" title="qmi_indication_nas_signal_info_output_get_gsm_signal_strength ()">qmi_indication_nas_signal_info_output_get_gsm_signal_strength</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> *gsm_signal_strength</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-NAS-Signal-Info.html#qmi-indication-nas-signal-info-output-get-hdr-signal-strength" title="qmi_indication_nas_signal_info_output_get_hdr_signal_strength ()">qmi_indication_nas_signal_info_output_get_hdr_signal_strength</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> *hdr_signal_strength_rssi</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a> *hdr_signal_strength_ecio</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-NAS-enumerations-and-flags.html#QmiNasEvdoSinrLevel"><span class="type">QmiNasEvdoSinrLevel</span></a> *hdr_signal_strength_sinr</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint32"><span class="type">gint32</span></a> *hdr_signal_strength_io</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-NAS-Signal-Info.html#qmi-indication-nas-signal-info-output-get-cdma-signal-strength" title="qmi_indication_nas_signal_info_output_get_cdma_signal_strength ()">qmi_indication_nas_signal_info_output_get_cdma_signal_strength</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> *cdma_signal_strength_rssi</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a> *cdma_signal_strength_ecio</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-NAS-Signal-Info.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GBoxed
+   +----QmiIndicationNasSignalInfoOutput
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-NAS-Signal-Info.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-NAS-Signal-Info.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="QmiIndicationNasSignalInfoOutput-struct"></a><h3>QmiIndicationNasSignalInfoOutput</h3>
+<pre class="programlisting">typedef struct _QmiIndicationNasSignalInfoOutput QmiIndicationNasSignalInfoOutput;</pre>
+<p>
+The <a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> structure contains private data and should only be accessed
+using the provided API.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-nas-signal-info-output-ref"></a><h3>qmi_indication_nas_signal_info_output_ref ()</h3>
+<pre class="programlisting"><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="returnvalue">QmiIndicationNasSignalInfoOutput</span></a> * qmi_indication_nas_signal_info_output_ref
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>);</pre>
+<p>
+Atomically increments the reference count of <em class="parameter"><code>self</code></em> by one.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the new reference to <em class="parameter"><code>self</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-nas-signal-info-output-unref"></a><h3>qmi_indication_nas_signal_info_output_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                qmi_indication_nas_signal_info_output_unref
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>);</pre>
+<p>
+Atomically decrements the reference count of <em class="parameter"><code>self</code></em> by one.
+If the reference count drops to 0, <em class="parameter"><code>self</code></em> is completely disposed.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a>.</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-nas-signal-info-output-get-tdma-signal-strength"></a><h3>qmi_indication_nas_signal_info_output_get_tdma_signal_strength ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_nas_signal_info_output_get_tdma_signal_strength
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> *tdma_signal_strength</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'TDMA Signal Strength' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>tdma_signal_strength</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-nas-signal-info-output-get-lte-signal-strength"></a><h3>qmi_indication_nas_signal_info_output_get_lte_signal_strength ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_nas_signal_info_output_get_lte_signal_strength
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> *lte_signal_strength_rssi</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> *lte_signal_strength_rsrq</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a> *lte_signal_strength_rsrp</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a> *lte_signal_strength_snr</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'LTE Signal Strength' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>lte_signal_strength_rssi</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>lte_signal_strength_rsrq</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>lte_signal_strength_rsrp</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>lte_signal_strength_snr</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-nas-signal-info-output-get-wcdma-signal-strength"></a><h3>qmi_indication_nas_signal_info_output_get_wcdma_signal_strength ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_nas_signal_info_output_get_wcdma_signal_strength
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> *wcdma_signal_strength_rssi</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a> *wcdma_signal_strength_ecio</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'WCDMA Signal Strength' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>wcdma_signal_strength_rssi</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>wcdma_signal_strength_ecio</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-nas-signal-info-output-get-gsm-signal-strength"></a><h3>qmi_indication_nas_signal_info_output_get_gsm_signal_strength ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_nas_signal_info_output_get_gsm_signal_strength
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> *gsm_signal_strength</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'GSM Signal Strength' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>gsm_signal_strength</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-nas-signal-info-output-get-hdr-signal-strength"></a><h3>qmi_indication_nas_signal_info_output_get_hdr_signal_strength ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_nas_signal_info_output_get_hdr_signal_strength
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> *hdr_signal_strength_rssi</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a> *hdr_signal_strength_ecio</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-NAS-enumerations-and-flags.html#QmiNasEvdoSinrLevel"><span class="type">QmiNasEvdoSinrLevel</span></a> *hdr_signal_strength_sinr</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint32"><span class="type">gint32</span></a> *hdr_signal_strength_io</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'HDR Signal Strength' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>hdr_signal_strength_rssi</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>hdr_signal_strength_ecio</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>hdr_signal_strength_sinr</code></em> :</span></p></td>
+<td>a placeholder for the output <a class="link" href="libqmi-glib-NAS-enumerations-and-flags.html#QmiNasEvdoSinrLevel"><span class="type">QmiNasEvdoSinrLevel</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>hdr_signal_strength_io</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint32"><span class="type">gint32</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-nas-signal-info-output-get-cdma-signal-strength"></a><h3>qmi_indication_nas_signal_info_output_get_cdma_signal_strength ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_nas_signal_info_output_get_cdma_signal_strength
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> *cdma_signal_strength_rssi</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a> *cdma_signal_strength_ecio</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'CDMA Signal Strength' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-NAS-Signal-Info.html#QmiIndicationNasSignalInfoOutput"><span class="type">QmiIndicationNasSignalInfoOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>cdma_signal_strength_rssi</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>cdma_signal_strength_ecio</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>

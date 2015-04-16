@@ -1,0 +1,231 @@
+spawn-pipe.o: spawn-pipe.c ../src/config.h spawn-pipe.h stdlib.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/stdlib.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/features.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/stdc-predef.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/predefs.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sys/cdefs.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/wordsize.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/gnu/stubs.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/gnu/stubs-soft.h \
+ /home/aav/arm-2013.05_linux/bin/../lib/gcc/arm-none-linux-gnueabi/4.7.3/include/stddef.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/waitflags.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/waitstatus.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/endian.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/endian.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/byteswap.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/types.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/typesizes.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/byteswap-16.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/xlocale.h \
+ sys/types.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sys/types.h \
+ time.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/time.h \
+ sys/select.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sys/select.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/select.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/sigset.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/time.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sys/sysmacros.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/pthreadtypes.h \
+ alloca.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/stdlib-float.h \
+ unistd.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/unistd.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/posix_opt.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/environments.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/confname.h \
+ getopt.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/getopt.h \
+ /home/aav/arm-2013.05_linux/bin/../lib/gcc/arm-none-linux-gnueabi/4.7.3/include/stdbool.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/errno.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/errno.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/linux/errno.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/asm/errno.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/asm-generic/errno.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/asm-generic/errno-base.h \
+ fcntl.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/fcntl.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/fcntl.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/fcntl-linux.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/uio.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/stat.h \
+ signal.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/signal.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/signum.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/siginfo.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/sigaction.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/sigcontext.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/asm/sigcontext.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/sigstack.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sys/ucontext.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/sigthread.h \
+ error.h fatal-signal.h unistd-safer.h wait-process.h gettext.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/libintl.h \
+ locale.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/locale.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/locale.h \
+ string.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/string.h \
+ spawn.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/spawn.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sched.h \
+ /home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/sched.h
+
+../src/config.h:
+
+spawn-pipe.h:
+
+stdlib.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/stdlib.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/features.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/stdc-predef.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/predefs.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sys/cdefs.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/wordsize.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/gnu/stubs.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/gnu/stubs-soft.h:
+
+/home/aav/arm-2013.05_linux/bin/../lib/gcc/arm-none-linux-gnueabi/4.7.3/include/stddef.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/waitflags.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/waitstatus.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/endian.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/endian.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/byteswap.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/types.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/typesizes.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/byteswap-16.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/xlocale.h:
+
+sys/types.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sys/types.h:
+
+time.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/time.h:
+
+sys/select.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sys/select.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/select.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/sigset.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/time.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sys/sysmacros.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/pthreadtypes.h:
+
+alloca.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/stdlib-float.h:
+
+unistd.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/unistd.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/posix_opt.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/environments.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/confname.h:
+
+getopt.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/getopt.h:
+
+/home/aav/arm-2013.05_linux/bin/../lib/gcc/arm-none-linux-gnueabi/4.7.3/include/stdbool.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/errno.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/errno.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/linux/errno.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/asm/errno.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/asm-generic/errno.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/asm-generic/errno-base.h:
+
+fcntl.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/fcntl.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/fcntl.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/fcntl-linux.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/uio.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/stat.h:
+
+signal.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/signal.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/signum.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/siginfo.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/sigaction.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/sigcontext.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/asm/sigcontext.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/sigstack.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sys/ucontext.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/sigthread.h:
+
+error.h:
+
+fatal-signal.h:
+
+unistd-safer.h:
+
+wait-process.h:
+
+gettext.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/libintl.h:
+
+locale.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/locale.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/locale.h:
+
+string.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/string.h:
+
+spawn.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/spawn.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sched.h:
+
+/home/aav/specter/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/sched.h:

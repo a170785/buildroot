@@ -1,0 +1,28 @@
+Source: mii-diag
+Section: net
+Priority: extra
+Maintainer: Alexander Reichle-Schmehl <tolimar@debian.org>
+Standards-Version: 3.8.3
+Build-Depends: debhelper (>= 5)
+
+Package: mii-diag
+Architecture: any
+Section: net
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: nictools-pci, nictools-nopci
+Description: A little tool to manipulate network cards
+ Examines and sets the MII registers of network cards.
+ .
+ This is a general program. You can find specialized programs for 
+ several network cards in the nictools-pci and nictools-nopci packages.
+
+Package: mii-diag-udeb
+Architecture: any
+Section: debian-installer
+Depends: ${shlibs:Depends}, ${misc:Depends}
+XC-Package-Type: udeb
+Description: A little tool to manipulate network cards
+ Examines and sets the MII registers of network cards.
+ .
+ This is a general program. You can find specialized programs for 
+ several network cards in the nictools-pci and nictools-nopci packages.

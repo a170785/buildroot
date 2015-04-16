@@ -1,0 +1,40 @@
+frametype.lo: frametype.c config.h global.h \
+ /home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/string.h \
+ /home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/features.h \
+ /home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/stdc-predef.h \
+ /home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/predefs.h \
+ /home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sys/cdefs.h \
+ /home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/wordsize.h \
+ /home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/gnu/stubs.h \
+ /home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/gnu/stubs-soft.h \
+ /home/aav/arm-2013.05_linux/bin/../lib/gcc/arm-none-linux-gnueabi/4.7.3/include/stddef.h \
+ /home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/xlocale.h \
+ id3tag.h frametype.h
+
+config.h:
+
+global.h:
+
+/home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/string.h:
+
+/home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/features.h:
+
+/home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/stdc-predef.h:
+
+/home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/predefs.h:
+
+/home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/sys/cdefs.h:
+
+/home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/bits/wordsize.h:
+
+/home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/gnu/stubs.h:
+
+/home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/gnu/stubs-soft.h:
+
+/home/aav/arm-2013.05_linux/bin/../lib/gcc/arm-none-linux-gnueabi/4.7.3/include/stddef.h:
+
+/home/aav/arbalet/buildroot-2013.08/output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/include/xlocale.h:
+
+id3tag.h:
+
+frametype.h:

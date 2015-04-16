@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PDS enumerations and flags</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libqmi-glib Reference Manual">
+<link rel="up" href="ch06.html" title="Position Determination Service (PDS)">
+<link rel="prev" href="QmiClientPds.html" title="QmiClientPds">
+<link rel="next" href="libqmi-glib-PDS-Event-Report.html" title="PDS Event Report">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="QmiClientPds.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch06.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libqmi-glib Reference Manual</th>
+<td><a accesskey="n" href="libqmi-glib-PDS-Event-Report.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libqmi-glib-PDS-enumerations-and-flags.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libqmi-glib-PDS-enumerations-and-flags.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#libqmi-glib-PDS-enumerations-and-flags.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libqmi-glib-PDS-enumerations-and-flags"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libqmi-glib-PDS-enumerations-and-flags.top_of_page"></a>PDS enumerations and flags</span></h2>
+<p>PDS enumerations and flags</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libqmi-glib-PDS-enumerations-and-flags.synopsis"></a><h2>Synopsis</h2>
+<a name="QmiPdsOperationMode"></a><a name="QmiPdsPositionSessionStatus"></a><a name="QmiPdsDataValid"></a><a name="QmiPdsTrackingSessionState"></a><pre class="synopsis">enum                <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsOperationMode-enum" title="enum QmiPdsOperationMode">QmiPdsOperationMode</a>;
+enum                <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsPositionSessionStatus-enum" title="enum QmiPdsPositionSessionStatus">QmiPdsPositionSessionStatus</a>;
+enum                <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsDataValid-enum" title="enum QmiPdsDataValid">QmiPdsDataValid</a>;
+enum                <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsTrackingSessionState-enum" title="enum QmiPdsTrackingSessionState">QmiPdsTrackingSessionState</a>;
+
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#qmi-pds-operation-mode-get-string" title="qmi_pds_operation_mode_get_string ()">qmi_pds_operation_mode_get_string</a>   (<em class="parameter"><code><a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsOperationMode"><span class="type">QmiPdsOperationMode</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#qmi-pds-position-session-status-get-string" title="qmi_pds_position_session_status_get_string ()">qmi_pds_position_session_status_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsPositionSessionStatus"><span class="type">QmiPdsPositionSessionStatus</span></a> val</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#qmi-pds-data-valid-build-string-from-mask" title="qmi_pds_data_valid_build_string_from_mask ()">qmi_pds_data_valid_build_string_from_mask</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsDataValid"><span class="type">QmiPdsDataValid</span></a> mask</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#qmi-pds-tracking-session-state-get-string" title="qmi_pds_tracking_session_state_get_string ()">qmi_pds_tracking_session_state_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsTrackingSessionState"><span class="type">QmiPdsTrackingSessionState</span></a> val</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-PDS-enumerations-and-flags.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GEnum
+   +----QmiPdsOperationMode
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiPdsPositionSessionStatus
+</pre>
+<pre class="synopsis">
+  GFlags
+   +----QmiPdsDataValid
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiPdsTrackingSessionState
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-PDS-enumerations-and-flags.description"></a><h2>Description</h2>
+<p>
+This section defines enumerations and flags used in the PDS service
+interface.
+</p>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-PDS-enumerations-and-flags.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="QmiPdsOperationMode-enum"></a><h3>enum QmiPdsOperationMode</h3>
+<pre class="programlisting">typedef enum {
+    QMI_PDS_OPERATION_MODE_UNKNOWN     = -1,
+    QMI_PDS_OPERATION_MODE_STANDALONE  =  0,
+    QMI_PDS_OPERATION_MODE_MS_BASED    =  1,
+    QMI_PDS_OPERATION_MODE_MS_ASSISTED =  2
+} QmiPdsOperationMode;
+</pre>
+<p>
+Operation mode used to compute the position.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-PDS-OPERATION-MODE-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_PDS_OPERATION_MODE_UNKNOWN</code></span></p></td>
+<td>Unknown (position not fixed yet).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-OPERATION-MODE-STANDALONE:CAPS"></a><span class="term"><code class="literal">QMI_PDS_OPERATION_MODE_STANDALONE</code></span></p></td>
+<td>Standalone.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-OPERATION-MODE-MS-BASED:CAPS"></a><span class="term"><code class="literal">QMI_PDS_OPERATION_MODE_MS_BASED</code></span></p></td>
+<td>MS based.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-OPERATION-MODE-MS-ASSISTED:CAPS"></a><span class="term"><code class="literal">QMI_PDS_OPERATION_MODE_MS_ASSISTED</code></span></p></td>
+<td>MS assisted.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiPdsPositionSessionStatus-enum"></a><h3>enum QmiPdsPositionSessionStatus</h3>
+<pre class="programlisting">typedef enum {
+    QMI_PDS_POSITION_SESSION_STATUS_SUCCESS                  = 0x00,
+    QMI_PDS_POSITION_SESSION_STATUS_IN_PROGRESS              = 0x01,
+    QMI_PDS_POSITION_SESSION_STATUS_GENERAL_FAILURE          = 0x02,
+    QMI_PDS_POSITION_SESSION_STATUS_TIMEOUT                  = 0x03,
+    QMI_PDS_POSITION_SESSION_STATUS_USER_ENDED_SESSION       = 0x04,
+    QMI_PDS_POSITION_SESSION_STATUS_BAD_PARAMETER            = 0x05,
+    QMI_PDS_POSITION_SESSION_STATUS_PHONE_OFFLINE            = 0x06,
+    QMI_PDS_POSITION_SESSION_STATUS_ENGINE_LOCKED            = 0x07,
+    QMI_PDS_POSITION_SESSION_STATUS_E911_SESSION_IN_PROGRESS = 0x08
+} QmiPdsPositionSessionStatus;
+</pre>
+<p>
+Status of the positioning session.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-PDS-POSITION-SESSION-STATUS-SUCCESS:CAPS"></a><span class="term"><code class="literal">QMI_PDS_POSITION_SESSION_STATUS_SUCCESS</code></span></p></td>
+<td>Success.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-POSITION-SESSION-STATUS-IN-PROGRESS:CAPS"></a><span class="term"><code class="literal">QMI_PDS_POSITION_SESSION_STATUS_IN_PROGRESS</code></span></p></td>
+<td>In progress.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-POSITION-SESSION-STATUS-GENERAL-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_PDS_POSITION_SESSION_STATUS_GENERAL_FAILURE</code></span></p></td>
+<td>General failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-POSITION-SESSION-STATUS-TIMEOUT:CAPS"></a><span class="term"><code class="literal">QMI_PDS_POSITION_SESSION_STATUS_TIMEOUT</code></span></p></td>
+<td>Timeout.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-POSITION-SESSION-STATUS-USER-ENDED-SESSION:CAPS"></a><span class="term"><code class="literal">QMI_PDS_POSITION_SESSION_STATUS_USER_ENDED_SESSION</code></span></p></td>
+<td>User ended session.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-POSITION-SESSION-STATUS-BAD-PARAMETER:CAPS"></a><span class="term"><code class="literal">QMI_PDS_POSITION_SESSION_STATUS_BAD_PARAMETER</code></span></p></td>
+<td>Bad parameter.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-POSITION-SESSION-STATUS-PHONE-OFFLINE:CAPS"></a><span class="term"><code class="literal">QMI_PDS_POSITION_SESSION_STATUS_PHONE_OFFLINE</code></span></p></td>
+<td>Phone is offline.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-POSITION-SESSION-STATUS-ENGINE-LOCKED:CAPS"></a><span class="term"><code class="literal">QMI_PDS_POSITION_SESSION_STATUS_ENGINE_LOCKED</code></span></p></td>
+<td>Engine locked.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-POSITION-SESSION-STATUS-E911-SESSION-IN-PROGRESS:CAPS"></a><span class="term"><code class="literal">QMI_PDS_POSITION_SESSION_STATUS_E911_SESSION_IN_PROGRESS</code></span></p></td>
+<td>Emergency call in progress.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiPdsDataValid-enum"></a><h3>enum QmiPdsDataValid</h3>
+<pre class="programlisting">typedef enum {
+    QMI_PDS_DATA_VALID_TIMESTAMP_CALENDAR      = 1 &lt;&lt; 0,
+    QMI_PDS_DATA_VALID_TIMESTAMP_UTC           = 1 &lt;&lt; 1,
+    QMI_PDS_DATA_VALID_LEAP_SECONDS            = 1 &lt;&lt; 2,
+    QMI_PDS_DATA_VALID_TIME_UNCERTAINTY        = 1 &lt;&lt; 3,
+    QMI_PDS_DATA_VALID_LATITUDE                = 1 &lt;&lt; 4,
+    QMI_PDS_DATA_VALID_LONGITUDE               = 1 &lt;&lt; 5,
+    QMI_PDS_DATA_VALID_ELLIPSOID_ALTITUDE      = 1 &lt;&lt; 6,
+    QMI_PDS_DATA_VALID_MEAN_SEA_LEVEL_ALTITUDE = 1 &lt;&lt; 7,
+    QMI_PDS_DATA_VALID_HORIZONTAL_SPEED        = 1 &lt;&lt; 8,
+    QMI_PDS_DATA_VALID_VERTICAL_SPEED          = 1 &lt;&lt; 9,
+    QMI_PDS_DATA_VALID_HEADING                 = 1 &lt;&lt; 10,
+    QMI_PDS_DATA_VALID_HORIZONTAL_UNCERTAINTY_CIRCULAR               = 1 &lt;&lt; 11,
+    QMI_PDS_DATA_VALID_HORIZONTAL_UNCERTAINTY_ELLIPSE_SEMI_MAJOR     = 1 &lt;&lt; 12,
+    QMI_PDS_DATA_VALID_HORIZONTAL_UNCERTAINTY_ELLIPSE_SEMI_MINOR     = 1 &lt;&lt; 13,
+    QMI_PDS_DATA_VALID_HORIZONTAL_UNCERTAINTY_ELLIPSE_ORIENT_AZIMUTH = 1 &lt;&lt; 14,
+    QMI_PDS_DATA_VALID_VERTICAL_UNCERTAINTY                          = 1 &lt;&lt; 15,
+    QMI_PDS_DATA_VALID_HORIZONTAL_VELOCITY_UNCERTAINTY               = 1 &lt;&lt; 16,
+    QMI_PDS_DATA_VALID_VERTICAL_VELOCITY_UNCERTAINTY                 = 1 &lt;&lt; 17,
+    QMI_PDS_DATA_VALID_HORIZONTAL_CONFIDENCE   = 1 &lt;&lt; 18,
+    QMI_PDS_DATA_VALID_POSITION_DOP            = 1 &lt;&lt; 19,
+    QMI_PDS_DATA_VALID_HORIZONTAL_DOP          = 1 &lt;&lt; 20,
+    QMI_PDS_DATA_VALID_VERTICAL_DOP            = 1 &lt;&lt; 21,
+    QMI_PDS_DATA_VALID_OPERATING_MODE          = 1 &lt;&lt; 22
+} QmiPdsDataValid;
+</pre>
+<p>
+Flags to indicate which position data parameters are valid.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-TIMESTAMP-CALENDAR:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_TIMESTAMP_CALENDAR</code></span></p></td>
+<td>Timestamp calendar (GPS time).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-TIMESTAMP-UTC:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_TIMESTAMP_UTC</code></span></p></td>
+<td>Timestamp (UTC).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-LEAP-SECONDS:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_LEAP_SECONDS</code></span></p></td>
+<td>Leap seconds.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-TIME-UNCERTAINTY:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_TIME_UNCERTAINTY</code></span></p></td>
+<td>Time uncertainty.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-LATITUDE:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_LATITUDE</code></span></p></td>
+<td>Latitude.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-LONGITUDE:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_LONGITUDE</code></span></p></td>
+<td>Longitude.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-ELLIPSOID-ALTITUDE:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_ELLIPSOID_ALTITUDE</code></span></p></td>
+<td>Ellipsoid altitude.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-MEAN-SEA-LEVEL-ALTITUDE:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_MEAN_SEA_LEVEL_ALTITUDE</code></span></p></td>
+<td>Mean sea level altitude.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-HORIZONTAL-SPEED:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_HORIZONTAL_SPEED</code></span></p></td>
+<td>Horizontal speed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-VERTICAL-SPEED:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_VERTICAL_SPEED</code></span></p></td>
+<td>Vertical speed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-HEADING:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_HEADING</code></span></p></td>
+<td>Heading.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-HORIZONTAL-UNCERTAINTY-CIRCULAR:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_HORIZONTAL_UNCERTAINTY_CIRCULAR</code></span></p></td>
+<td>Horizontal uncertainty circular.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-HORIZONTAL-UNCERTAINTY-ELLIPSE-SEMI-MAJOR:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_HORIZONTAL_UNCERTAINTY_ELLIPSE_SEMI_MAJOR</code></span></p></td>
+<td>Horizontal uncertainty ellipse semi-major.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-HORIZONTAL-UNCERTAINTY-ELLIPSE-SEMI-MINOR:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_HORIZONTAL_UNCERTAINTY_ELLIPSE_SEMI_MINOR</code></span></p></td>
+<td>Horizontal uncertainty ellipse semi-minor.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-HORIZONTAL-UNCERTAINTY-ELLIPSE-ORIENT-AZIMUTH:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_HORIZONTAL_UNCERTAINTY_ELLIPSE_ORIENT_AZIMUTH</code></span></p></td>
+<td>Horizontal uncertainty ellipse orient azimuth.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-VERTICAL-UNCERTAINTY:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_VERTICAL_UNCERTAINTY</code></span></p></td>
+<td>Vertical uncertainty.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-HORIZONTAL-VELOCITY-UNCERTAINTY:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_HORIZONTAL_VELOCITY_UNCERTAINTY</code></span></p></td>
+<td>Horizontal velocity uncertainty.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-VERTICAL-VELOCITY-UNCERTAINTY:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_VERTICAL_VELOCITY_UNCERTAINTY</code></span></p></td>
+<td>Vertical velocity uncertainty.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-HORIZONTAL-CONFIDENCE:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_HORIZONTAL_CONFIDENCE</code></span></p></td>
+<td>Horizontal confidence.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-POSITION-DOP:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_POSITION_DOP</code></span></p></td>
+<td>Position dillution of precision.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-HORIZONTAL-DOP:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_HORIZONTAL_DOP</code></span></p></td>
+<td>Horizontal dillution of precision.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-VERTICAL-DOP:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_VERTICAL_DOP</code></span></p></td>
+<td>Vertical dillution of precision.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-DATA-VALID-OPERATING-MODE:CAPS"></a><span class="term"><code class="literal">QMI_PDS_DATA_VALID_OPERATING_MODE</code></span></p></td>
+<td>Operating mode.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiPdsTrackingSessionState-enum"></a><h3>enum QmiPdsTrackingSessionState</h3>
+<pre class="programlisting">typedef enum {
+    QMI_PDS_TRACKING_SESSION_STATE_UNKNOWN  = 0,
+    QMI_PDS_TRACKING_SESSION_STATE_INACTIVE = 1,
+    QMI_PDS_TRACKING_SESSION_STATE_ACTIVE   = 2
+} QmiPdsTrackingSessionState;
+</pre>
+<p>
+State of the tracking session.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-PDS-TRACKING-SESSION-STATE-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_PDS_TRACKING_SESSION_STATE_UNKNOWN</code></span></p></td>
+<td>Unknown state.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-TRACKING-SESSION-STATE-INACTIVE:CAPS"></a><span class="term"><code class="literal">QMI_PDS_TRACKING_SESSION_STATE_INACTIVE</code></span></p></td>
+<td>Session inactive.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PDS-TRACKING-SESSION-STATE-ACTIVE:CAPS"></a><span class="term"><code class="literal">QMI_PDS_TRACKING_SESSION_STATE_ACTIVE</code></span></p></td>
+<td>Session active.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-pds-operation-mode-get-string"></a><h3>qmi_pds_operation_mode_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_pds_operation_mode_get_string   (<em class="parameter"><code><a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsOperationMode"><span class="type">QmiPdsOperationMode</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsOperationMode"><span class="type">QmiPdsOperationMode</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiPdsOperationMode.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-pds-position-session-status-get-string"></a><h3>qmi_pds_position_session_status_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_pds_position_session_status_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsPositionSessionStatus"><span class="type">QmiPdsPositionSessionStatus</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsPositionSessionStatus"><span class="type">QmiPdsPositionSessionStatus</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiPdsPositionSessionStatus.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-pds-data-valid-build-string-from-mask"></a><h3>qmi_pds_data_valid_build_string_from_mask ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             qmi_pds_data_valid_build_string_from_mask
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsDataValid"><span class="type">QmiPdsDataValid</span></a> mask</code></em>);</pre>
+<p>
+Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsDataValid"><span class="type">QmiPdsDataValid</span></a> in <em class="parameter"><code>mask</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
+<td>bitmask of QmiPdsDataValid values.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the list of nicknames, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none given. The returned value should be freed with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-pds-tracking-session-state-get-string"></a><h3>qmi_pds_tracking_session_state_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_pds_tracking_session_state_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsTrackingSessionState"><span class="type">QmiPdsTrackingSessionState</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-PDS-enumerations-and-flags.html#QmiPdsTrackingSessionState"><span class="type">QmiPdsTrackingSessionState</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiPdsTrackingSessionState.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>

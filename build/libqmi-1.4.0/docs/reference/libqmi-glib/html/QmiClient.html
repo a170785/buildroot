@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>QmiClient</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libqmi-glib Reference Manual">
+<link rel="up" href="ch01.html" title="Core">
+<link rel="prev" href="QmiDevice.html" title="QmiDevice">
+<link rel="next" href="libqmi-glib-Common-enumerations-and-flags.html" title="Common enumerations and flags">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="QmiDevice.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libqmi-glib Reference Manual</th>
+<td><a accesskey="n" href="libqmi-glib-Common-enumerations-and-flags.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#QmiClient.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#QmiClient.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#QmiClient.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#QmiClient.properties" class="shortcut">Properties</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="QmiClient"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="QmiClient.top_of_page"></a>QmiClient</span></h2>
+<p>QmiClient — Generic QMI client handling routines</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="QmiClient.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">#define             <a class="link" href="QmiClient.html#QMI-CID-NONE:CAPS" title="QMI_CID_NONE">QMI_CID_NONE</a>
+#define             <a class="link" href="QmiClient.html#QMI-CID-BROADCAST:CAPS" title="QMI_CID_BROADCAST">QMI_CID_BROADCAST</a>
+#define             <a class="link" href="QmiClient.html#QMI-CLIENT-DEVICE:CAPS" title="QMI_CLIENT_DEVICE">QMI_CLIENT_DEVICE</a>
+#define             <a class="link" href="QmiClient.html#QMI-CLIENT-SERVICE:CAPS" title="QMI_CLIENT_SERVICE">QMI_CLIENT_SERVICE</a>
+#define             <a class="link" href="QmiClient.html#QMI-CLIENT-CID:CAPS" title="QMI_CLIENT_CID">QMI_CLIENT_CID</a>
+#define             <a class="link" href="QmiClient.html#QMI-CLIENT-VERSION-MAJOR:CAPS" title="QMI_CLIENT_VERSION_MAJOR">QMI_CLIENT_VERSION_MAJOR</a>
+#define             <a class="link" href="QmiClient.html#QMI-CLIENT-VERSION-MINOR:CAPS" title="QMI_CLIENT_VERSION_MINOR">QMI_CLIENT_VERSION_MINOR</a>
+struct              <a class="link" href="QmiClient.html#QmiClient-struct" title="struct QmiClient">QmiClient</a>;
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *           <a class="link" href="QmiClient.html#qmi-client-get-device" title="qmi_client_get_device ()">qmi_client_get_device</a>               (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>);
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *           <a class="link" href="QmiClient.html#qmi-client-peek-device" title="qmi_client_peek_device ()">qmi_client_peek_device</a>              (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>);
+<a class="link" href="libqmi-glib-Common-enumerations-and-flags.html#QmiService"><span class="returnvalue">QmiService</span></a>          <a class="link" href="QmiClient.html#qmi-client-get-service" title="qmi_client_get_service ()">qmi_client_get_service</a>              (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a>              <a class="link" href="QmiClient.html#qmi-client-get-cid" title="qmi_client_get_cid ()">qmi_client_get_cid</a>                  (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="QmiClient.html#qmi-client-get-version" title="qmi_client_get_version ()">qmi_client_get_version</a>              (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *major</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *minor</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="QmiClient.html#qmi-client-check-version" title="qmi_client_check_version ()">qmi_client_check_version</a>            (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> major</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> minor</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="returnvalue">guint16</span></a>             <a class="link" href="QmiClient.html#qmi-client-get-next-transaction-id" title="qmi_client_get_next_transaction_id ()">qmi_client_get_next_transaction_id</a>  (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="QmiClient.html#qmi-client-process-indication" title="qmi_client_process_indication ()">qmi_client_process_indication</a>       (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *message</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="QmiClient.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----QmiClient
+         +----<a class="link" href="QmiClientDms.html" title="QmiClientDms">QmiClientDms</a>
+         +----<a class="link" href="QmiClientNas.html" title="QmiClientNas">QmiClientNas</a>
+         +----<a class="link" href="QmiClientPds.html" title="QmiClientPds">QmiClientPds</a>
+         +----<a class="link" href="QmiClientWds.html" title="QmiClientWds">QmiClientWds</a>
+         +----<a class="link" href="QmiClientWms.html" title="QmiClientWms">QmiClientWms</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="QmiClient.properties"></a><h2>Properties</h2>
+<pre class="synopsis">
+  "<a class="link" href="QmiClient.html#QmiClient--client-cid" title='The "client-cid" property'>client-cid</a>"               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>                 : Read / Write
+  "<a class="link" href="QmiClient.html#QmiClient--client-device" title='The "client-device" property'>client-device</a>"            <a class="link" href="QmiDevice.html" title="QmiDevice"><span class="type">QmiDevice</span></a>*            : Read / Write
+  "<a class="link" href="QmiClient.html#QmiClient--client-service" title='The "client-service" property'>client-service</a>"           <a class="link" href="libqmi-glib-Common-enumerations-and-flags.html#QmiService"><span class="type">QmiService</span></a>            : Read / Write
+  "<a class="link" href="QmiClient.html#QmiClient--client-version-major" title='The "client-version-major" property'>client-version-major</a>"     <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>                 : Read / Write
+  "<a class="link" href="QmiClient.html#QmiClient--client-version-minor" title='The "client-version-minor" property'>client-version-minor</a>"     <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>                 : Read / Write
+</pre>
+</div>
+<div class="refsect1">
+<a name="QmiClient.description"></a><h2>Description</h2>
+<p>
+<a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> is a generic type representing a QMI client for any kind of
+<a class="link" href="libqmi-glib-Common-enumerations-and-flags.html#QmiService"><span class="type">QmiService</span></a>.
+</p>
+<p>
+These objects are created by a <a class="link" href="QmiDevice.html" title="QmiDevice"><span class="type">QmiDevice</span></a> with <a class="link" href="QmiDevice.html#qmi-device-allocate-client" title="qmi_device_allocate_client ()"><code class="function">qmi_device_allocate_client()</code></a>,
+and before completely disposing them <a class="link" href="QmiDevice.html#qmi-device-release-client" title="qmi_device_release_client ()"><code class="function">qmi_device_release_client()</code></a> needs to be
+called in order to release the unique client ID reserved.
+</p>
+</div>
+<div class="refsect1">
+<a name="QmiClient.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="QMI-CID-NONE:CAPS"></a><h3>QMI_CID_NONE</h3>
+<pre class="programlisting">#define QMI_CID_NONE      0x00
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QMI-CID-BROADCAST:CAPS"></a><h3>QMI_CID_BROADCAST</h3>
+<pre class="programlisting">#define QMI_CID_BROADCAST 0xFF
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QMI-CLIENT-DEVICE:CAPS"></a><h3>QMI_CLIENT_DEVICE</h3>
+<pre class="programlisting">#define QMI_CLIENT_DEVICE        "client-device"
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QMI-CLIENT-SERVICE:CAPS"></a><h3>QMI_CLIENT_SERVICE</h3>
+<pre class="programlisting">#define QMI_CLIENT_SERVICE       "client-service"
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QMI-CLIENT-CID:CAPS"></a><h3>QMI_CLIENT_CID</h3>
+<pre class="programlisting">#define QMI_CLIENT_CID           "client-cid"
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QMI-CLIENT-VERSION-MAJOR:CAPS"></a><h3>QMI_CLIENT_VERSION_MAJOR</h3>
+<pre class="programlisting">#define QMI_CLIENT_VERSION_MAJOR "client-version-major"
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QMI-CLIENT-VERSION-MINOR:CAPS"></a><h3>QMI_CLIENT_VERSION_MINOR</h3>
+<pre class="programlisting">#define QMI_CLIENT_VERSION_MINOR "client-version-minor"
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiClient-struct"></a><h3>struct QmiClient</h3>
+<pre class="programlisting">struct QmiClient;</pre>
+<p>
+The <a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> structure contains private data and should only be accessed
+using the provided API.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-client-get-device"></a><h3>qmi_client_get_device ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *           qmi_client_get_device               (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>);</pre>
+<p>
+Get the <a class="link" href="QmiDevice.html" title="QmiDevice"><span class="type">QmiDevice</span></a> associated with this <a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> that must be freed with <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-client-peek-device"></a><h3>qmi_client_peek_device ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *           qmi_client_peek_device              (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>);</pre>
+<p>
+Get the <a class="link" href="QmiDevice.html" title="QmiDevice"><span class="type">QmiDevice</span></a> associated with this <a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a>, without increasing the reference count
+on the returned object.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a>. Do not free the returned object, it is owned by <em class="parameter"><code>self</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-client-get-service"></a><h3>qmi_client_get_service ()</h3>
+<pre class="programlisting"><a class="link" href="libqmi-glib-Common-enumerations-and-flags.html#QmiService"><span class="returnvalue">QmiService</span></a>          qmi_client_get_service              (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>);</pre>
+<p>
+Get the service being used by this <a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>A <a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-Common-enumerations-and-flags.html#QmiService"><span class="type">QmiService</span></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-client-get-cid"></a><h3>qmi_client_get_cid ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a>              qmi_client_get_cid                  (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>);</pre>
+<p>
+Get the client ID of this <a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>A <a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the client ID.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-client-get-version"></a><h3>qmi_client_get_version ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_client_get_version              (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *major</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *minor</code></em>);</pre>
+<p>
+Get the version of the service handled by this <a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>A <a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>major</code></em> :</span></p></td>
+<td>placeholder for the output major version.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>minor</code></em> :</span></p></td>
+<td>placeholder for the output minor version.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the version was properly reported, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-client-check-version"></a><h3>qmi_client_check_version ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_client_check_version            (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> major</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> minor</code></em>);</pre>
+<p>
+Checks if the version of the service handled by this <a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> is greater
+or equal than the given version.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>A <a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>major</code></em> :</span></p></td>
+<td>a major version.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>minor</code></em> :</span></p></td>
+<td>a minor version.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the version of the service is greater or equal than the one given, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-client-get-next-transaction-id"></a><h3>qmi_client_get_next_transaction_id ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="returnvalue">guint16</span></a>             qmi_client_get_next_transaction_id  (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>);</pre>
+<p>
+Acquire the next transaction ID of this <a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a>.
+The internal transaction ID gets incremented.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>A <a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the next transaction ID.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-client-process-indication"></a><h3>qmi_client_process_indication ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                qmi_client_process_indication       (<em class="parameter"><code><a class="link" href="QmiClient.html" title="QmiClient"><span class="type">QmiClient</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-QmiMessage.html#QmiMessage" title="QmiMessage"><span class="type">QmiMessage</span></a> *message</code></em>);</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="QmiClient.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="QmiClient--client-cid"></a><h3>The <code class="literal">"client-cid"</code> property</h3>
+<pre class="programlisting">  "client-cid"               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>                 : Read / Write</pre>
+<p>ID of the client registered into the QMI device.</p>
+<p>Allowed values: &lt;= 255</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiClient--client-device"></a><h3>The <code class="literal">"client-device"</code> property</h3>
+<pre class="programlisting">  "client-device"            <a class="link" href="QmiDevice.html" title="QmiDevice"><span class="type">QmiDevice</span></a>*            : Read / Write</pre>
+<p>The QMI device.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiClient--client-service"></a><h3>The <code class="literal">"client-service"</code> property</h3>
+<pre class="programlisting">  "client-service"           <a class="link" href="libqmi-glib-Common-enumerations-and-flags.html#QmiService"><span class="type">QmiService</span></a>            : Read / Write</pre>
+<p>QMI service this client is using.</p>
+<p>Default value: QMI_SERVICE_UNKNOWN</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiClient--client-version-major"></a><h3>The <code class="literal">"client-version-major"</code> property</h3>
+<pre class="programlisting">  "client-version-major"     <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>                 : Read / Write</pre>
+<p>Major version of the service handled by this client.</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiClient--client-version-minor"></a><h3>The <code class="literal">"client-version-minor"</code> property</h3>
+<pre class="programlisting">  "client-version-minor"     <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>                 : Read / Write</pre>
+<p>Minor version of the service handled by this client.</p>
+<p>Default value: 0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>

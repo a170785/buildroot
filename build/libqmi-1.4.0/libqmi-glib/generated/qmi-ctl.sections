@@ -1,0 +1,168 @@
+<SECTION>
+<FILE>qmi-client-ctl</FILE>
+<TITLE>QmiClientCtl</TITLE>
+QmiClientCtl
+<SUBSECTION Standard>
+QmiClientCtlClass
+QMI_TYPE_CLIENT_CTL
+QMI_CLIENT_CTL
+QMI_CLIENT_CTL_CLASS
+QMI_IS_CLIENT_CTL
+QMI_IS_CLIENT_CTL_CLASS
+QMI_CLIENT_CTL_GET_CLASS
+qmi_client_ctl_get_type
+</SECTION>
+
+<SECTION>
+<FILE>qmi-message-ctl-set-instance-id</FILE>
+<TITLE>CTL Set Instance ID</TITLE>
+QmiMessageCtlSetInstanceIdInput
+QmiMessageCtlSetInstanceIdOutput
+<SUBSECTION QmiMessageCtlSetInstanceIdInputMethods>
+qmi_message_ctl_set_instance_id_input_new
+qmi_message_ctl_set_instance_id_input_ref
+qmi_message_ctl_set_instance_id_input_unref
+qmi_message_ctl_set_instance_id_input_get_id
+qmi_message_ctl_set_instance_id_input_set_id
+<SUBSECTION QmiMessageCtlSetInstanceIdOutputMethods>
+qmi_message_ctl_set_instance_id_output_ref
+qmi_message_ctl_set_instance_id_output_unref
+qmi_message_ctl_set_instance_id_output_get_result
+qmi_message_ctl_set_instance_id_output_get_link_id
+<SUBSECTION QmiMessageCtlSetInstanceIdClientMethods>
+qmi_client_ctl_set_instance_id
+qmi_client_ctl_set_instance_id_finish
+<SUBSECTION Private>
+<SUBSECTION Standard>
+qmi_message_ctl_set_instance_id_input_get_type
+QMI_TYPE_MESSAGE_CTL_SET_INSTANCE_ID_INPUT
+qmi_message_ctl_set_instance_id_output_get_type
+QMI_TYPE_MESSAGE_CTL_SET_INSTANCE_ID_OUTPUT
+</SECTION>
+
+<SECTION>
+<FILE>qmi-message-ctl-get-version-info</FILE>
+<TITLE>CTL Get Version Info</TITLE>
+QmiMessageCtlGetVersionInfoOutput
+QmiMessageCtlGetVersionInfoOutputServiceListService
+<SUBSECTION QmiMessageCtlGetVersionInfoOutputMethods>
+qmi_message_ctl_get_version_info_output_ref
+qmi_message_ctl_get_version_info_output_unref
+qmi_message_ctl_get_version_info_output_get_result
+qmi_message_ctl_get_version_info_output_get_service_list
+<SUBSECTION QmiMessageCtlGetVersionInfoClientMethods>
+qmi_client_ctl_get_version_info
+qmi_client_ctl_get_version_info_finish
+<SUBSECTION Private>
+<SUBSECTION Standard>
+qmi_message_ctl_get_version_info_output_get_type
+QMI_TYPE_MESSAGE_CTL_GET_VERSION_INFO_OUTPUT
+</SECTION>
+
+<SECTION>
+<FILE>qmi-message-ctl-allocate-cid</FILE>
+<TITLE>CTL Allocate CID</TITLE>
+QmiMessageCtlAllocateCidInput
+QmiMessageCtlAllocateCidOutput
+<SUBSECTION QmiMessageCtlAllocateCidInputMethods>
+qmi_message_ctl_allocate_cid_input_new
+qmi_message_ctl_allocate_cid_input_ref
+qmi_message_ctl_allocate_cid_input_unref
+qmi_message_ctl_allocate_cid_input_get_service
+qmi_message_ctl_allocate_cid_input_set_service
+<SUBSECTION QmiMessageCtlAllocateCidOutputMethods>
+qmi_message_ctl_allocate_cid_output_ref
+qmi_message_ctl_allocate_cid_output_unref
+qmi_message_ctl_allocate_cid_output_get_result
+qmi_message_ctl_allocate_cid_output_get_allocation_info
+<SUBSECTION QmiMessageCtlAllocateCidClientMethods>
+qmi_client_ctl_allocate_cid
+qmi_client_ctl_allocate_cid_finish
+<SUBSECTION Private>
+<SUBSECTION Standard>
+qmi_message_ctl_allocate_cid_input_get_type
+QMI_TYPE_MESSAGE_CTL_ALLOCATE_CID_INPUT
+qmi_message_ctl_allocate_cid_output_get_type
+QMI_TYPE_MESSAGE_CTL_ALLOCATE_CID_OUTPUT
+</SECTION>
+
+<SECTION>
+<FILE>qmi-message-ctl-release-cid</FILE>
+<TITLE>CTL Release CID</TITLE>
+QmiMessageCtlReleaseCidInput
+QmiMessageCtlReleaseCidOutput
+<SUBSECTION QmiMessageCtlReleaseCidInputMethods>
+qmi_message_ctl_release_cid_input_new
+qmi_message_ctl_release_cid_input_ref
+qmi_message_ctl_release_cid_input_unref
+qmi_message_ctl_release_cid_input_get_release_info
+qmi_message_ctl_release_cid_input_set_release_info
+<SUBSECTION QmiMessageCtlReleaseCidOutputMethods>
+qmi_message_ctl_release_cid_output_ref
+qmi_message_ctl_release_cid_output_unref
+qmi_message_ctl_release_cid_output_get_result
+qmi_message_ctl_release_cid_output_get_release_info
+<SUBSECTION QmiMessageCtlReleaseCidClientMethods>
+qmi_client_ctl_release_cid
+qmi_client_ctl_release_cid_finish
+<SUBSECTION Private>
+<SUBSECTION Standard>
+qmi_message_ctl_release_cid_input_get_type
+QMI_TYPE_MESSAGE_CTL_RELEASE_CID_INPUT
+qmi_message_ctl_release_cid_output_get_type
+QMI_TYPE_MESSAGE_CTL_RELEASE_CID_OUTPUT
+</SECTION>
+
+<SECTION>
+<FILE>qmi-message-ctl-set-data-format</FILE>
+<TITLE>CTL Set Data Format</TITLE>
+QmiMessageCtlSetDataFormatInput
+QmiMessageCtlSetDataFormatOutput
+<SUBSECTION QmiMessageCtlSetDataFormatInputMethods>
+qmi_message_ctl_set_data_format_input_new
+qmi_message_ctl_set_data_format_input_ref
+qmi_message_ctl_set_data_format_input_unref
+qmi_message_ctl_set_data_format_input_get_protocol
+qmi_message_ctl_set_data_format_input_set_protocol
+qmi_message_ctl_set_data_format_input_get_format
+qmi_message_ctl_set_data_format_input_set_format
+<SUBSECTION QmiMessageCtlSetDataFormatOutputMethods>
+qmi_message_ctl_set_data_format_output_ref
+qmi_message_ctl_set_data_format_output_unref
+qmi_message_ctl_set_data_format_output_get_result
+qmi_message_ctl_set_data_format_output_get_protocol
+<SUBSECTION QmiMessageCtlSetDataFormatClientMethods>
+qmi_client_ctl_set_data_format
+qmi_client_ctl_set_data_format_finish
+<SUBSECTION Private>
+<SUBSECTION Standard>
+qmi_message_ctl_set_data_format_input_get_type
+QMI_TYPE_MESSAGE_CTL_SET_DATA_FORMAT_INPUT
+qmi_message_ctl_set_data_format_output_get_type
+QMI_TYPE_MESSAGE_CTL_SET_DATA_FORMAT_OUTPUT
+</SECTION>
+
+<SECTION>
+<FILE>qmi-message-ctl-sync</FILE>
+<TITLE>CTL Sync</TITLE>
+QmiMessageCtlSyncOutput
+<SUBSECTION QmiMessageCtlSyncOutputMethods>
+qmi_message_ctl_sync_output_ref
+qmi_message_ctl_sync_output_unref
+qmi_message_ctl_sync_output_get_result
+<SUBSECTION QmiMessageCtlSyncClientMethods>
+qmi_client_ctl_sync
+qmi_client_ctl_sync_finish
+<SUBSECTION Private>
+<SUBSECTION Standard>
+qmi_message_ctl_sync_output_get_type
+QMI_TYPE_MESSAGE_CTL_SYNC_OUTPUT
+</SECTION>
+
+<SECTION>
+<FILE>qmi-indication-ctl-sync</FILE>
+<TITLE>CTL Sync</TITLE>
+<SUBSECTION Private>
+<SUBSECTION Standard>
+</SECTION>
+

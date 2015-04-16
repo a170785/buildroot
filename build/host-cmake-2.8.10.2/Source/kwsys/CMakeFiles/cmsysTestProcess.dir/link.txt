@@ -1,0 +1,1 @@
+/usr/bin/gcc  -O2 -I/home/aav/specter/buildroot-2013.08/output/host/usr/include    -L/home/aav/specter/buildroot-2013.08/output/host/lib -L/home/aav/specter/buildroot-2013.08/output/host/usr/lib -Wl,-rpath,/home/aav/specter/buildroot-2013.08/output/host/usr/lib CMakeFiles/cmsysTestProcess.dir/testProcess.c.o  -o cmsysTestProcess -rdynamic libcmsys_c.a 

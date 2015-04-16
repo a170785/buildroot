@@ -1,0 +1,14 @@
+stripslash.o: stripslash.c ../src/config.h dirname.h \
+ /home/aav/arm-2013.05_linux/bin/../lib/gcc/arm-none-linux-gnueabi/4.7.3/include/stdbool.h \
+ /home/aav/arm-2013.05_linux/bin/../lib/gcc/arm-none-linux-gnueabi/4.7.3/include/stddef.h \
+ dosname.h
+
+../src/config.h:
+
+dirname.h:
+
+/home/aav/arm-2013.05_linux/bin/../lib/gcc/arm-none-linux-gnueabi/4.7.3/include/stdbool.h:
+
+/home/aav/arm-2013.05_linux/bin/../lib/gcc/arm-none-linux-gnueabi/4.7.3/include/stddef.h:
+
+dosname.h:

@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WMS Event Report</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libqmi-glib Reference Manual">
+<link rel="up" href="ch05.html#idm258757719872" title="WMS Indications">
+<link rel="prev" href="libqmi-glib-WMS-enumerations-and-flags.html" title="WMS enumerations and flags">
+<link rel="next" href="ch05s02.html" title="WMS Requests">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libqmi-glib-WMS-enumerations-and-flags.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch05.html#idm258757719872"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libqmi-glib Reference Manual</th>
+<td><a accesskey="n" href="ch05s02.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libqmi-glib-WMS-Event-Report.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libqmi-glib-WMS-Event-Report.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#libqmi-glib-WMS-Event-Report.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libqmi-glib-WMS-Event-Report"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libqmi-glib-WMS-Event-Report.top_of_page"></a>WMS Event Report</span></h2>
+<p>WMS Event Report</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libqmi-glib-WMS-Event-Report.synopsis"></a><h2>Synopsis</h2>
+<a name="QmiIndicationWmsEventReportOutput"></a><pre class="synopsis">                    <a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput-struct" title="QmiIndicationWmsEventReportOutput">QmiIndicationWmsEventReportOutput</a>;
+
+<a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="returnvalue">QmiIndicationWmsEventReportOutput</span></a> * <a class="link" href="libqmi-glib-WMS-Event-Report.html#qmi-indication-wms-event-report-output-ref" title="qmi_indication_wms_event_report_output_ref ()">qmi_indication_wms_event_report_output_ref</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="libqmi-glib-WMS-Event-Report.html#qmi-indication-wms-event-report-output-unref" title="qmi_indication_wms_event_report_output_unref ()">qmi_indication_wms_event_report_output_unref</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-WMS-Event-Report.html#qmi-indication-wms-event-report-output-get-sms-on-ims" title="qmi_indication_wms_event_report_output_get_sms_on_ims ()">qmi_indication_wms_event_report_output_get_sms_on_ims</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *sms_on_ims</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-WMS-Event-Report.html#qmi-indication-wms-event-report-output-get-smsc-address" title="qmi_indication_wms_event_report_output_get_smsc_address ()">qmi_indication_wms_event_report_output_get_smsc_address</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **smsc_address</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-WMS-Event-Report.html#qmi-indication-wms-event-report-output-get-etws-plmn-information" title="qmi_indication_wms_event_report_output_get_etws_plmn_information ()">qmi_indication_wms_event_report_output_get_etws_plmn_information</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> *etws_plmn_information_mcc</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> *etws_plmn_information_mnc</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-WMS-Event-Report.html#qmi-indication-wms-event-report-output-get-etws-message" title="qmi_indication_wms_event_report_output_get_etws_message ()">qmi_indication_wms_event_report_output_get_etws_message</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsNotificationType"><span class="type">QmiWmsNotificationType</span></a> *etws_message_notification_type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Arrays.html#GArray"><span class="type">GArray</span></a> **etws_message_raw_data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-WMS-Event-Report.html#qmi-indication-wms-event-report-output-get-message-mode" title="qmi_indication_wms_event_report_output_get_message_mode ()">qmi_indication_wms_event_report_output_get_message_mode</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageMode"><span class="type">QmiWmsMessageMode</span></a> *message_mode</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-WMS-Event-Report.html#qmi-indication-wms-event-report-output-get-transfer-route-mt-message" title="qmi_indication_wms_event_report_output_get_transfer_route_mt_message ()">qmi_indication_wms_event_report_output_get_transfer_route_mt_message</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsAckIndicator"><span class="type">QmiWmsAckIndicator</span></a> *transfer_route_mt_message_ack_indicator</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *transfer_route_mt_message_transaction_id</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageFormat"><span class="type">QmiWmsMessageFormat</span></a> *transfer_route_mt_message_format</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Arrays.html#GArray"><span class="type">GArray</span></a> **transfer_route_mt_message_raw_data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-WMS-Event-Report.html#qmi-indication-wms-event-report-output-get-mt-message" title="qmi_indication_wms_event_report_output_get_mt_message ()">qmi_indication_wms_event_report_output_get_mt_message</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsStorageType"><span class="type">QmiWmsStorageType</span></a> *mt_message_storage_type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *mt_message_memory_index</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-WMS-Event-Report.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GBoxed
+   +----QmiIndicationWmsEventReportOutput
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-WMS-Event-Report.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-WMS-Event-Report.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="QmiIndicationWmsEventReportOutput-struct"></a><h3>QmiIndicationWmsEventReportOutput</h3>
+<pre class="programlisting">typedef struct _QmiIndicationWmsEventReportOutput QmiIndicationWmsEventReportOutput;</pre>
+<p>
+The <a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> structure contains private data and should only be accessed
+using the provided API.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-wms-event-report-output-ref"></a><h3>qmi_indication_wms_event_report_output_ref ()</h3>
+<pre class="programlisting"><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="returnvalue">QmiIndicationWmsEventReportOutput</span></a> * qmi_indication_wms_event_report_output_ref
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>);</pre>
+<p>
+Atomically increments the reference count of <em class="parameter"><code>self</code></em> by one.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the new reference to <em class="parameter"><code>self</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-wms-event-report-output-unref"></a><h3>qmi_indication_wms_event_report_output_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                qmi_indication_wms_event_report_output_unref
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>);</pre>
+<p>
+Atomically decrements the reference count of <em class="parameter"><code>self</code></em> by one.
+If the reference count drops to 0, <em class="parameter"><code>self</code></em> is completely disposed.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a>.</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-wms-event-report-output-get-sms-on-ims"></a><h3>qmi_indication_wms_event_report_output_get_sms_on_ims ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_wms_event_report_output_get_sms_on_ims
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *sms_on_ims</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'SMS on IMS' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>sms_on_ims</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-wms-event-report-output-get-smsc-address"></a><h3>qmi_indication_wms_event_report_output_get_smsc_address ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_wms_event_report_output_get_smsc_address
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **smsc_address</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'SMSC Address' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>smsc_address</code></em> :</span></p></td>
+<td>a placeholder for the output constant string, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-wms-event-report-output-get-etws-plmn-information"></a><h3>qmi_indication_wms_event_report_output_get_etws_plmn_information ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_wms_event_report_output_get_etws_plmn_information
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> *etws_plmn_information_mcc</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> *etws_plmn_information_mnc</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'ETWS PLMN Information' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>etws_plmn_information_mcc</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>etws_plmn_information_mnc</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-wms-event-report-output-get-etws-message"></a><h3>qmi_indication_wms_event_report_output_get_etws_message ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_wms_event_report_output_get_etws_message
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsNotificationType"><span class="type">QmiWmsNotificationType</span></a> *etws_message_notification_type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Arrays.html#GArray"><span class="type">GArray</span></a> **etws_message_raw_data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'ETWS Message' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>etws_message_notification_type</code></em> :</span></p></td>
+<td>a placeholder for the output <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsNotificationType"><span class="type">QmiWmsNotificationType</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>etws_message_raw_data</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Arrays.html#GArray"><span class="type">GArray</span></a> of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> elements, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required. Do not free it, it is owned by <em class="parameter"><code>self</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-wms-event-report-output-get-message-mode"></a><h3>qmi_indication_wms_event_report_output_get_message_mode ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_wms_event_report_output_get_message_mode
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageMode"><span class="type">QmiWmsMessageMode</span></a> *message_mode</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'Message Mode' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>message_mode</code></em> :</span></p></td>
+<td>a placeholder for the output <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageMode"><span class="type">QmiWmsMessageMode</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-wms-event-report-output-get-transfer-route-mt-message"></a><h3>qmi_indication_wms_event_report_output_get_transfer_route_mt_message ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_wms_event_report_output_get_transfer_route_mt_message
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsAckIndicator"><span class="type">QmiWmsAckIndicator</span></a> *transfer_route_mt_message_ack_indicator</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *transfer_route_mt_message_transaction_id</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageFormat"><span class="type">QmiWmsMessageFormat</span></a> *transfer_route_mt_message_format</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Arrays.html#GArray"><span class="type">GArray</span></a> **transfer_route_mt_message_raw_data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'Transfer Route MT Message' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>transfer_route_mt_message_ack_indicator</code></em> :</span></p></td>
+<td>a placeholder for the output <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsAckIndicator"><span class="type">QmiWmsAckIndicator</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>transfer_route_mt_message_transaction_id</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>transfer_route_mt_message_format</code></em> :</span></p></td>
+<td>a placeholder for the output <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageFormat"><span class="type">QmiWmsMessageFormat</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>transfer_route_mt_message_raw_data</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Arrays.html#GArray"><span class="type">GArray</span></a> of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> elements, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required. Do not free it, it is owned by <em class="parameter"><code>self</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-indication-wms-event-report-output-get-mt-message"></a><h3>qmi_indication_wms_event_report_output_get_mt_message ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_indication_wms_event_report_output_get_mt_message
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsStorageType"><span class="type">QmiWmsStorageType</span></a> *mt_message_storage_type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *mt_message_memory_index</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'MT Message' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-WMS-Event-Report.html#QmiIndicationWmsEventReportOutput"><span class="type">QmiIndicationWmsEventReportOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mt_message_storage_type</code></em> :</span></p></td>
+<td>a placeholder for the output <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsStorageType"><span class="type">QmiWmsStorageType</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mt_message_memory_index</code></em> :</span></p></td>
+<td>a placeholder for the output <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>

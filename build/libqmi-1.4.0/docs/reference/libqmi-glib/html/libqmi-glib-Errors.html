@@ -1,0 +1,635 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Errors</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libqmi-glib Reference Manual">
+<link rel="up" href="ch01.html" title="Core">
+<link rel="prev" href="libqmi-glib-Common-enumerations-and-flags.html" title="Common enumerations and flags">
+<link rel="next" href="libqmi-glib-Common-utilities.html" title="Common utilities">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libqmi-glib-Common-enumerations-and-flags.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libqmi-glib Reference Manual</th>
+<td><a accesskey="n" href="libqmi-glib-Common-utilities.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libqmi-glib-Errors.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libqmi-glib-Errors.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#libqmi-glib-Errors.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libqmi-glib-Errors"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libqmi-glib-Errors.top_of_page"></a>Errors</span></h2>
+<p>Errors</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libqmi-glib-Errors.synopsis"></a><h2>Synopsis</h2>
+<a name="QmiCoreError"></a><a name="QmiProtocolError"></a><pre class="synopsis">enum                <a class="link" href="libqmi-glib-Errors.html#QmiCoreError-enum" title="enum QmiCoreError">QmiCoreError</a>;
+enum                <a class="link" href="libqmi-glib-Errors.html#QmiProtocolError-enum" title="enum QmiProtocolError">QmiProtocolError</a>;
+
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-Errors.html#qmi-core-error-get-string" title="qmi_core_error_get_string ()">qmi_core_error_get_string</a>           (<em class="parameter"><code><a class="link" href="libqmi-glib-Errors.html#QmiCoreError"><span class="type">QmiCoreError</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-Errors.html#qmi-protocol-error-get-string" title="qmi_protocol_error_get_string ()">qmi_protocol_error_get_string</a>       (<em class="parameter"><code><a class="link" href="libqmi-glib-Errors.html#QmiProtocolError"><span class="type">QmiProtocolError</span></a> val</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-Errors.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GEnum
+   +----QmiCoreError
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiProtocolError
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-Errors.description"></a><h2>Description</h2>
+<p>
+This section defines common error types used in the interface.
+</p>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-Errors.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="QmiCoreError-enum"></a><h3>enum QmiCoreError</h3>
+<pre class="programlisting">typedef enum {
+ /*&lt; underscore_name=qmi_core_error &gt;*/
+    QMI_CORE_ERROR_FAILED           = 0, /*&lt; nick=Failed &gt;*/
+    QMI_CORE_ERROR_WRONG_STATE      = 1, /*&lt; nick=WrongState &gt;*/
+    QMI_CORE_ERROR_TIMEOUT          = 2, /*&lt; nick=Timeout &gt;*/
+    QMI_CORE_ERROR_INVALID_ARGS     = 3, /*&lt; nick=InvalidArgs &gt;*/
+    QMI_CORE_ERROR_INVALID_MESSAGE  = 4, /*&lt; nick=InvalidMessage &gt;*/
+    QMI_CORE_ERROR_TLV_NOT_FOUND    = 5, /*&lt; nick=TlvNotFound &gt;*/
+    QMI_CORE_ERROR_TLV_TOO_LONG     = 6, /*&lt; nick=TlvTooLong &gt;*/
+    QMI_CORE_ERROR_UNSUPPORTED      = 7  /*&lt; nick=Unsupported &gt;*/
+} QmiCoreError;
+</pre>
+<p>
+Common errors that may be reported by libqmi-glib.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-CORE-ERROR-FAILED:CAPS"></a><span class="term"><code class="literal">QMI_CORE_ERROR_FAILED</code></span></p></td>
+<td>Operation failed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-CORE-ERROR-WRONG-STATE:CAPS"></a><span class="term"><code class="literal">QMI_CORE_ERROR_WRONG_STATE</code></span></p></td>
+<td>Operation cannot be executed in the current state.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-CORE-ERROR-TIMEOUT:CAPS"></a><span class="term"><code class="literal">QMI_CORE_ERROR_TIMEOUT</code></span></p></td>
+<td>Operation timed out.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-CORE-ERROR-INVALID-ARGS:CAPS"></a><span class="term"><code class="literal">QMI_CORE_ERROR_INVALID_ARGS</code></span></p></td>
+<td>Invalid arguments given.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-CORE-ERROR-INVALID-MESSAGE:CAPS"></a><span class="term"><code class="literal">QMI_CORE_ERROR_INVALID_MESSAGE</code></span></p></td>
+<td>QMI message is invalid.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-CORE-ERROR-TLV-NOT-FOUND:CAPS"></a><span class="term"><code class="literal">QMI_CORE_ERROR_TLV_NOT_FOUND</code></span></p></td>
+<td>TLV not found.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-CORE-ERROR-TLV-TOO-LONG:CAPS"></a><span class="term"><code class="literal">QMI_CORE_ERROR_TLV_TOO_LONG</code></span></p></td>
+<td>TLV is too long.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-CORE-ERROR-UNSUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_CORE_ERROR_UNSUPPORTED</code></span></p></td>
+<td>Not supported.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiProtocolError-enum"></a><h3>enum QmiProtocolError</h3>
+<pre class="programlisting">typedef enum {
+ /*&lt; underscore_name=qmi_protocol_error &gt;*/
+  QMI_PROTOCOL_ERROR_NONE                             = 0,  /*&lt; nick=None &gt;*/
+  QMI_PROTOCOL_ERROR_MALFORMED_MESSAGE                = 1,  /*&lt; nick=MalformedMessage &gt;*/
+  QMI_PROTOCOL_ERROR_NO_MEMORY                        = 2,  /*&lt; nick=NoMemory &gt;*/
+  QMI_PROTOCOL_ERROR_INTERNAL                         = 3,  /*&lt; nick=Internal &gt;*/
+  QMI_PROTOCOL_ERROR_ABORTED                          = 4,  /*&lt; nick=Aborted &gt;*/
+  QMI_PROTOCOL_ERROR_CLIENT_IDS_EXHAUSTED             = 5,  /*&lt; nick=ClientIdsExhausted &gt;*/
+  QMI_PROTOCOL_ERROR_UNABORTABLE_TRANSACTION          = 6,  /*&lt; nick=UnabortableTransaction &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_CLIENT_ID                = 7,  /*&lt; nick=InvalidClientId &gt;*/
+  QMI_PROTOCOL_ERROR_NO_THRESHOLDS_PROVIDED           = 8,  /*&lt; nick=NoThresholdsProvided &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_HANDLE                   = 9,  /*&lt; nick=InvalidHandle &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_PROFILE                  = 10, /*&lt; nick=InvalidProfile &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_PIN_ID                   = 11, /*&lt; nick=InvalidPinId &gt;*/
+  QMI_PROTOCOL_ERROR_INCORRECT_PIN                    = 12, /*&lt; nick=IncorrectPin &gt;*/
+  QMI_PROTOCOL_ERROR_NO_NETWORK_FOUND                 = 13, /*&lt; nick=NoNetworkFound &gt;*/
+  QMI_PROTOCOL_ERROR_CALL_FAILED                      = 14, /*&lt; nick=CallFailed &gt;*/
+  QMI_PROTOCOL_ERROR_OUT_OF_CALL                      = 15, /*&lt; nick=OutOfCall &gt;*/
+  QMI_PROTOCOL_ERROR_NOT_PROVISIONED                  = 16, /*&lt; nick=NotProvisioned &gt;*/
+  QMI_PROTOCOL_ERROR_MISSING_ARGUMENT                 = 17, /*&lt; nick=MissingArgument &gt;*/
+  QMI_PROTOCOL_ERROR_ARGUMENT_TOO_LONG                = 19, /*&lt; nick=ArgumentTooLong &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_TRANSACTION_ID           = 22, /*&lt; nick=InvalidTransactionId &gt;*/
+  QMI_PROTOCOL_ERROR_DEVICE_IN_USE                    = 23, /*&lt; nick=DeviceInUse &gt;*/
+  QMI_PROTOCOL_ERROR_NETWORK_UNSUPPORTED              = 24, /*&lt; nick=NetworkUnsupported &gt;*/
+  QMI_PROTOCOL_ERROR_DEVICE_UNSUPPORTED               = 25, /*&lt; nick=DeviceUnsupported &gt;*/
+  QMI_PROTOCOL_ERROR_NO_EFFECT                        = 26, /*&lt; nick=NoEffect &gt;*/
+  QMI_PROTOCOL_ERROR_NO_FREE_PROFILE                  = 27, /*&lt; nick=NoFreeProfile &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_PDP_TYPE                 = 28, /*&lt; nick=InvalidPdpType &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_TECHNOLOGY_PREFERENCE    = 29, /*&lt; nick=InvalidTechnologyPreference &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_PROFILE_TYPE             = 30, /*&lt; nick=InvalidProfileType &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_SERVICE_TYPE             = 31, /*&lt; nick=InvalidServiceType &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_REGISTER_ACTION          = 32, /*&lt; nick=InvalidRegisterAction &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_PS_ATTACH_ACTION         = 33, /*&lt; nick=InvalidPsAttachAction &gt;*/
+  QMI_PROTOCOL_ERROR_AUTHENTICATION_FAILED            = 34, /*&lt; nick=AuthenticationFailed &gt;*/
+  QMI_PROTOCOL_ERROR_PIN_BLOCKED                      = 35, /*&lt; nick=PinBlocked &gt;*/
+  QMI_PROTOCOL_ERROR_PIN_ALWAYS_BLOCKED               = 36, /*&lt; nick=PinAlwaysBlocked &gt;*/
+  QMI_PROTOCOL_ERROR_UIM_UNINITIALIZED                = 37, /*&lt; nick=UimUninitialized &gt;*/
+  QMI_PROTOCOL_ERROR_MAXIMUM_QOS_REQUESTS_IN_USE      = 38, /*&lt; nick=MaximumQosRequestsInUse &gt;*/
+  QMI_PROTOCOL_ERROR_INCORRECT_FLOW_FILTER            = 39, /*&lt; nick=IncorrectFlowFilter &gt;*/
+  QMI_PROTOCOL_ERROR_NETWORK_QOS_UNAWARE              = 40, /*&lt; nick= NetworkQosUnaware &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_QOS_ID                   = 41, /*&lt; nick=InvalidQosId &gt;*/
+  QMI_PROTOCOL_ERROR_QOS_UNAVAILABLE                  = 42, /*&lt; nick=QosUnavailable &gt;*/
+  QMI_PROTOCOL_ERROR_FLOW_SUSPENDED                   = 43, /*&lt; nick=FlowSuspended &gt;*/
+  QMI_PROTOCOL_ERROR_GENERAL_ERROR                    = 46, /*&lt; nick=GeneralError &gt;*/
+  QMI_PROTOCOL_ERROR_UNKNOWN_ERROR                    = 47, /*&lt; nick=UnknownError &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_ARGUMENT                 = 48, /*&lt; nick=InvalidArgument &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_INDEX                    = 49, /*&lt; nick=InvalidIndex &gt;*/
+  QMI_PROTOCOL_ERROR_NO_ENTRY                         = 50, /*&lt; nick=NoEntry &gt;*/
+  QMI_PROTOCOL_ERROR_DEVICE_STORAGE_FULL              = 51, /*&lt; nick=DeviceStorageFull &gt;*/
+  QMI_PROTOCOL_ERROR_DEVICE_NOT_READY                 = 52, /*&lt; nick=DeviceNotReady &gt;*/
+  QMI_PROTOCOL_ERROR_NETWORK_NOT_READY                = 53, /*&lt; nick=NetworkNotReady &gt;*/
+  QMI_PROTOCOL_ERROR_WMS_CAUSE_CODE                   = 54, /*&lt; nick=Wms.CauseCode &gt;*/
+  QMI_PROTOCOL_ERROR_WMS_MESSAGE_NOT_SENT             = 55, /*&lt; nick=Wms.MessageNotSent &gt;*/
+  QMI_PROTOCOL_ERROR_WMS_MESSAGE_DELIVERY_FAILURE     = 56, /*&lt; nick=Wms.MessageDeliveryFailure &gt;*/
+  QMI_PROTOCOL_ERROR_WMS_INVALID_MESSAGE_ID           = 57, /*&lt; nick=Wms.InvalidMessageId &gt;*/
+  QMI_PROTOCOL_ERROR_WMS_ENCODING                     = 58, /*&lt; nick=Wms.Encoding &gt;*/
+  QMI_PROTOCOL_ERROR_AUTHENTICATION_LOCK              = 59, /*&lt; nick=AuthenticationLock &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_TRANSITION               = 60, /*&lt; nick=InvalidTransaction &gt;*/
+  QMI_PROTOCOL_ERROR_SESSION_INACTIVE                 = 65, /*&lt; nick=SessionInactive &gt;*/
+  QMI_PROTOCOL_ERROR_SESSION_INVALID                  = 66, /*&lt; nick=SessionInvalid &gt;*/
+  QMI_PROTOCOL_ERROR_SESSION_OWNERSHIP                = 67, /*&lt; nick=SessionOwnership &gt;*/
+  QMI_PROTOCOL_ERROR_INSUFFICIENT_RESOURCES           = 68, /*&lt; nick=InsufficientResources &gt;*/
+  QMI_PROTOCOL_ERROR_DISABLED                         = 69, /*&lt; nick=Disabled &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_OPERATION                = 70, /*&lt; nick=InvalidOperation &gt;*/
+  QMI_PROTOCOL_ERROR_INVALID_QMI_COMMAND              = 71, /*&lt; nick=InvalidQmiCommand &gt;*/
+  QMI_PROTOCOL_ERROR_WMS_T_PDU_TYPE                   = 72, /*&lt; nick=Wms.TPduType &gt;*/
+  QMI_PROTOCOL_ERROR_WMS_SMSC_ADDRESS                 = 73, /*&lt; nick=Wms.SmscAddress &gt;*/
+  QMI_PROTOCOL_ERROR_INFORMATION_UNAVAILABLE          = 74, /*&lt; nick=InformationUnavailable &gt;*/
+  QMI_PROTOCOL_ERROR_SEGMENT_TOO_LONG                 = 75, /*&lt; nick=SegmentTooLong &gt;*/
+  QMI_PROTOCOL_ERROR_SEGMENT_ORDER                    = 76, /*&lt; nick=SegmentOrder &gt;*/
+  QMI_PROTOCOL_ERROR_BUNDLING_NOT_SUPPORTED           = 77, /*&lt; nick=BundlingNotSupported &gt;*/
+  QMI_PROTOCOL_ERROR_SIM_FILE_NOT_FOUND               = 80, /*&lt; nick=SimFileNotFound &gt;*/
+  QMI_PROTOCOL_ERROR_ACCESS_DENIED                    = 82, /*&lt; nick=AccessDenied &gt;*/
+  QMI_PROTOCOL_ERROR_HARDWARE_RESTRICTED              = 83, /*&lt; nick=HardwareRestricted &gt;*/
+  QMI_PROTOCOL_ERROR_CAT_EVENT_REGISTRATION_FAILED    = 61441, /*&lt; nick=Cat.EventRegistrationFailed &gt;*/
+  QMI_PROTOCOL_ERROR_CAT_INVALID_TERMINAL_RESPONSE    = 61442, /*&lt; nick=Cat.InvalidTerminalResponse &gt;*/
+  QMI_PROTOCOL_ERROR_CAT_INVALID_ENVELOPE_COMMAND     = 61443, /*&lt; nick=Cat.InvalidEnvelopeCommand &gt;*/
+  QMI_PROTOCOL_ERROR_CAT_ENVELOPE_COMMAND_BUSY        = 61444, /*&lt; nick=Cat.EnvelopCommandBusy &gt;*/
+  QMI_PROTOCOL_ERROR_CAT_ENVELOPE_COMMAND_FAILED      = 61445  /*&lt; nick=Cat.EnvelopeCommandFailed &gt;*/
+} QmiProtocolError;
+</pre>
+<p>
+QMI protocol errors.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NONE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NONE</code></span></p></td>
+<td>No error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-MALFORMED-MESSAGE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_MALFORMED_MESSAGE</code></span></p></td>
+<td>Malformed message.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NO-MEMORY:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NO_MEMORY</code></span></p></td>
+<td>No memory.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INTERNAL:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INTERNAL</code></span></p></td>
+<td>Internal.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-ABORTED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_ABORTED</code></span></p></td>
+<td>Aborted.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-CLIENT-IDS-EXHAUSTED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_CLIENT_IDS_EXHAUSTED</code></span></p></td>
+<td>Client IDs exhausted.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-UNABORTABLE-TRANSACTION:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_UNABORTABLE_TRANSACTION</code></span></p></td>
+<td>Unabortable transaction.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-CLIENT-ID:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_CLIENT_ID</code></span></p></td>
+<td>Invalid client ID.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NO-THRESHOLDS-PROVIDED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NO_THRESHOLDS_PROVIDED</code></span></p></td>
+<td>No thresholds provided.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-HANDLE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_HANDLE</code></span></p></td>
+<td>Invalid handle.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-PROFILE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_PROFILE</code></span></p></td>
+<td>Invalid profile.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-PIN-ID:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_PIN_ID</code></span></p></td>
+<td>Invalid PIN ID.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INCORRECT-PIN:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INCORRECT_PIN</code></span></p></td>
+<td>Incorrect PIN.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NO-NETWORK-FOUND:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NO_NETWORK_FOUND</code></span></p></td>
+<td>No network found.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-CALL-FAILED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_CALL_FAILED</code></span></p></td>
+<td>Call failed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-OUT-OF-CALL:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_OUT_OF_CALL</code></span></p></td>
+<td>Out of call.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NOT-PROVISIONED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NOT_PROVISIONED</code></span></p></td>
+<td>Not provisioned.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-MISSING-ARGUMENT:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_MISSING_ARGUMENT</code></span></p></td>
+<td>Missing argument.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-ARGUMENT-TOO-LONG:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_ARGUMENT_TOO_LONG</code></span></p></td>
+<td>Argument too long.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-TRANSACTION-ID:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_TRANSACTION_ID</code></span></p></td>
+<td>Invalid transaction ID.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-DEVICE-IN-USE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_DEVICE_IN_USE</code></span></p></td>
+<td>Device in use.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NETWORK-UNSUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NETWORK_UNSUPPORTED</code></span></p></td>
+<td>Network unsupported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-DEVICE-UNSUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_DEVICE_UNSUPPORTED</code></span></p></td>
+<td>Device unsupported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NO-EFFECT:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NO_EFFECT</code></span></p></td>
+<td>No effect.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NO-FREE-PROFILE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NO_FREE_PROFILE</code></span></p></td>
+<td>No free profile.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-PDP-TYPE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_PDP_TYPE</code></span></p></td>
+<td>Invalid PDP type.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-TECHNOLOGY-PREFERENCE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_TECHNOLOGY_PREFERENCE</code></span></p></td>
+<td>Invalid technology preference.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-PROFILE-TYPE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_PROFILE_TYPE</code></span></p></td>
+<td>Invalid profile type.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-SERVICE-TYPE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_SERVICE_TYPE</code></span></p></td>
+<td>Invalid service type.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-REGISTER-ACTION:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_REGISTER_ACTION</code></span></p></td>
+<td>Invalid register action.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-PS-ATTACH-ACTION:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_PS_ATTACH_ACTION</code></span></p></td>
+<td>Invalid PS attach action.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-AUTHENTICATION-FAILED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_AUTHENTICATION_FAILED</code></span></p></td>
+<td>Authentication failed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-PIN-BLOCKED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_PIN_BLOCKED</code></span></p></td>
+<td>PIN blocked.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-PIN-ALWAYS-BLOCKED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_PIN_ALWAYS_BLOCKED</code></span></p></td>
+<td>PIN always blocked.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-UIM-UNINITIALIZED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_UIM_UNINITIALIZED</code></span></p></td>
+<td>UIM uninitialized.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-MAXIMUM-QOS-REQUESTS-IN-USE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_MAXIMUM_QOS_REQUESTS_IN_USE</code></span></p></td>
+<td>Maximum QoS requests in use.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INCORRECT-FLOW-FILTER:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INCORRECT_FLOW_FILTER</code></span></p></td>
+<td>Incorrect flow filter.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NETWORK-QOS-UNAWARE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NETWORK_QOS_UNAWARE</code></span></p></td>
+<td>Network QoS unaware.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-QOS-ID:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_QOS_ID</code></span></p></td>
+<td>Invalid QoS ID.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-QOS-UNAVAILABLE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_QOS_UNAVAILABLE</code></span></p></td>
+<td>QoS unavailable.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-FLOW-SUSPENDED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_FLOW_SUSPENDED</code></span></p></td>
+<td>Flow suspended.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-GENERAL-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_GENERAL_ERROR</code></span></p></td>
+<td>General error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-UNKNOWN-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_UNKNOWN_ERROR</code></span></p></td>
+<td>Unknown error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-ARGUMENT:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_ARGUMENT</code></span></p></td>
+<td>Invalid argument.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-INDEX:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_INDEX</code></span></p></td>
+<td>Invalid index.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NO-ENTRY:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NO_ENTRY</code></span></p></td>
+<td>No entry.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-DEVICE-STORAGE-FULL:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_DEVICE_STORAGE_FULL</code></span></p></td>
+<td>Device storage full.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-DEVICE-NOT-READY:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_DEVICE_NOT_READY</code></span></p></td>
+<td>Device not ready.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-NETWORK-NOT-READY:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_NETWORK_NOT_READY</code></span></p></td>
+<td>Network not ready.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-WMS-CAUSE-CODE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_WMS_CAUSE_CODE</code></span></p></td>
+<td>WMS cause code.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-WMS-MESSAGE-NOT-SENT:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_WMS_MESSAGE_NOT_SENT</code></span></p></td>
+<td>WMS message not sent.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-WMS-MESSAGE-DELIVERY-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_WMS_MESSAGE_DELIVERY_FAILURE</code></span></p></td>
+<td>WMS message delivery failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-WMS-INVALID-MESSAGE-ID:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_WMS_INVALID_MESSAGE_ID</code></span></p></td>
+<td>WMS invalid message ID.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-WMS-ENCODING:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_WMS_ENCODING</code></span></p></td>
+<td>WMS encoding.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-AUTHENTICATION-LOCK:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_AUTHENTICATION_LOCK</code></span></p></td>
+<td>Authentication lock.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-TRANSITION:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_TRANSITION</code></span></p></td>
+<td>Invalid transition.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-SESSION-INACTIVE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_SESSION_INACTIVE</code></span></p></td>
+<td>Session inactive.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-SESSION-INVALID:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_SESSION_INVALID</code></span></p></td>
+<td>Session invalid.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-SESSION-OWNERSHIP:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_SESSION_OWNERSHIP</code></span></p></td>
+<td>Session ownership.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INSUFFICIENT-RESOURCES:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INSUFFICIENT_RESOURCES</code></span></p></td>
+<td>Insufficient resources.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-DISABLED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_DISABLED</code></span></p></td>
+<td>Disabled.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-OPERATION:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_OPERATION</code></span></p></td>
+<td>Invalid operation.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INVALID-QMI-COMMAND:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INVALID_QMI_COMMAND</code></span></p></td>
+<td>Invalid QMI command.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-WMS-T-PDU-TYPE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_WMS_T_PDU_TYPE</code></span></p></td>
+<td>WMS T-PDU type.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-WMS-SMSC-ADDRESS:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_WMS_SMSC_ADDRESS</code></span></p></td>
+<td>WMS SMSC address.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-INFORMATION-UNAVAILABLE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_INFORMATION_UNAVAILABLE</code></span></p></td>
+<td>Information unavailable.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-SEGMENT-TOO-LONG:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_SEGMENT_TOO_LONG</code></span></p></td>
+<td>Segment too long.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-SEGMENT-ORDER:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_SEGMENT_ORDER</code></span></p></td>
+<td>Segment order.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-BUNDLING-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_BUNDLING_NOT_SUPPORTED</code></span></p></td>
+<td>Bundling not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-SIM-FILE-NOT-FOUND:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_SIM_FILE_NOT_FOUND</code></span></p></td>
+<td>SIM file not found.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-ACCESS-DENIED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_ACCESS_DENIED</code></span></p></td>
+<td>Access denied.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-HARDWARE-RESTRICTED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_HARDWARE_RESTRICTED</code></span></p></td>
+<td>Hardware restricted.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-CAT-EVENT-REGISTRATION-FAILED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_CAT_EVENT_REGISTRATION_FAILED</code></span></p></td>
+<td>Event registration failed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-CAT-INVALID-TERMINAL-RESPONSE:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_CAT_INVALID_TERMINAL_RESPONSE</code></span></p></td>
+<td>Invalid terminal response.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-CAT-INVALID-ENVELOPE-COMMAND:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_CAT_INVALID_ENVELOPE_COMMAND</code></span></p></td>
+<td>Invalid envelope command.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-CAT-ENVELOPE-COMMAND-BUSY:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_CAT_ENVELOPE_COMMAND_BUSY</code></span></p></td>
+<td>Envelope command busy.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-PROTOCOL-ERROR-CAT-ENVELOPE-COMMAND-FAILED:CAPS"></a><span class="term"><code class="literal">QMI_PROTOCOL_ERROR_CAT_ENVELOPE_COMMAND_FAILED</code></span></p></td>
+<td>Envelope command failed.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-core-error-get-string"></a><h3>qmi_core_error_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_core_error_get_string           (<em class="parameter"><code><a class="link" href="libqmi-glib-Errors.html#QmiCoreError"><span class="type">QmiCoreError</span></a> val</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-protocol-error-get-string"></a><h3>qmi_protocol_error_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_protocol_error_get_string       (<em class="parameter"><code><a class="link" href="libqmi-glib-Errors.html#QmiProtocolError"><span class="type">QmiProtocolError</span></a> val</code></em>);</pre>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>

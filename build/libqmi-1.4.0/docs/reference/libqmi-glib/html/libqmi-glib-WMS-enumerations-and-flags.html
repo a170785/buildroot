@@ -1,0 +1,1618 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WMS enumerations and flags</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libqmi-glib Reference Manual">
+<link rel="up" href="ch05.html" title="Wireless Messaging Service (WMS)">
+<link rel="prev" href="QmiClientWms.html" title="QmiClientWms">
+<link rel="next" href="libqmi-glib-WMS-Event-Report.html" title="WMS Event Report">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="QmiClientWms.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch05.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libqmi-glib Reference Manual</th>
+<td><a accesskey="n" href="libqmi-glib-WMS-Event-Report.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libqmi-glib-WMS-enumerations-and-flags.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libqmi-glib-WMS-enumerations-and-flags.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#libqmi-glib-WMS-enumerations-and-flags.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libqmi-glib-WMS-enumerations-and-flags"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libqmi-glib-WMS-enumerations-and-flags.top_of_page"></a>WMS enumerations and flags</span></h2>
+<p>WMS enumerations and flags</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libqmi-glib-WMS-enumerations-and-flags.synopsis"></a><h2>Synopsis</h2>
+<a name="QmiWmsStorageType"></a><a name="QmiWmsAckIndicator"></a><a name="QmiWmsMessageFormat"></a><a name="QmiWmsMessageMode"></a><a name="QmiWmsNotificationType"></a><a name="QmiWmsCdmaServiceOption"></a><a name="QmiWmsCdmaCauseCode"></a><a name="QmiWmsCdmaErrorClass"></a><a name="QmiWmsGsmUmtsRpCause"></a><a name="QmiWmsGsmUmtsTpCause"></a><a name="QmiWmsMessageDeliveryFailureType"></a><a name="QmiWmsMessageTagType"></a><a name="QmiWmsMessageProtocol"></a><a name="QmiWmsMessageType"></a><a name="QmiWmsMessageClass"></a><a name="QmiWmsReceiptAction"></a><a name="QmiWmsTransferIndication"></a><pre class="synopsis">enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsStorageType-enum" title="enum QmiWmsStorageType">QmiWmsStorageType</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsAckIndicator-enum" title="enum QmiWmsAckIndicator">QmiWmsAckIndicator</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageFormat-enum" title="enum QmiWmsMessageFormat">QmiWmsMessageFormat</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageMode-enum" title="enum QmiWmsMessageMode">QmiWmsMessageMode</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsNotificationType-enum" title="enum QmiWmsNotificationType">QmiWmsNotificationType</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsCdmaServiceOption-enum" title="enum QmiWmsCdmaServiceOption">QmiWmsCdmaServiceOption</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsCdmaCauseCode-enum" title="enum QmiWmsCdmaCauseCode">QmiWmsCdmaCauseCode</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsCdmaErrorClass-enum" title="enum QmiWmsCdmaErrorClass">QmiWmsCdmaErrorClass</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsGsmUmtsRpCause-enum" title="enum QmiWmsGsmUmtsRpCause">QmiWmsGsmUmtsRpCause</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsGsmUmtsTpCause-enum" title="enum QmiWmsGsmUmtsTpCause">QmiWmsGsmUmtsTpCause</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageDeliveryFailureType-enum" title="enum QmiWmsMessageDeliveryFailureType">QmiWmsMessageDeliveryFailureType</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageTagType-enum" title="enum QmiWmsMessageTagType">QmiWmsMessageTagType</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageProtocol-enum" title="enum QmiWmsMessageProtocol">QmiWmsMessageProtocol</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageType-enum" title="enum QmiWmsMessageType">QmiWmsMessageType</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageClass-enum" title="enum QmiWmsMessageClass">QmiWmsMessageClass</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsReceiptAction-enum" title="enum QmiWmsReceiptAction">QmiWmsReceiptAction</a>;
+enum                <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsTransferIndication-enum" title="enum QmiWmsTransferIndication">QmiWmsTransferIndication</a>;
+
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-storage-type-get-string" title="qmi_wms_storage_type_get_string ()">qmi_wms_storage_type_get_string</a>     (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsStorageType"><span class="type">QmiWmsStorageType</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-ack-indicator-get-string" title="qmi_wms_ack_indicator_get_string ()">qmi_wms_ack_indicator_get_string</a>    (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsAckIndicator"><span class="type">QmiWmsAckIndicator</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-message-format-get-string" title="qmi_wms_message_format_get_string ()">qmi_wms_message_format_get_string</a>   (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageFormat"><span class="type">QmiWmsMessageFormat</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-message-mode-get-string" title="qmi_wms_message_mode_get_string ()">qmi_wms_message_mode_get_string</a>     (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageMode"><span class="type">QmiWmsMessageMode</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-notification-type-get-string" title="qmi_wms_notification_type_get_string ()">qmi_wms_notification_type_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsNotificationType"><span class="type">QmiWmsNotificationType</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-cdma-service-option-get-string" title="qmi_wms_cdma_service_option_get_string ()">qmi_wms_cdma_service_option_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsCdmaServiceOption"><span class="type">QmiWmsCdmaServiceOption</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-cdma-cause-code-get-string" title="qmi_wms_cdma_cause_code_get_string ()">qmi_wms_cdma_cause_code_get_string</a>  (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsCdmaCauseCode"><span class="type">QmiWmsCdmaCauseCode</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-cdma-error-class-get-string" title="qmi_wms_cdma_error_class_get_string ()">qmi_wms_cdma_error_class_get_string</a> (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsCdmaErrorClass"><span class="type">QmiWmsCdmaErrorClass</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-gsm-umts-rp-cause-get-string" title="qmi_wms_gsm_umts_rp_cause_get_string ()">qmi_wms_gsm_umts_rp_cause_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsGsmUmtsRpCause"><span class="type">QmiWmsGsmUmtsRpCause</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-gsm-umts-tp-cause-get-string" title="qmi_wms_gsm_umts_tp_cause_get_string ()">qmi_wms_gsm_umts_tp_cause_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsGsmUmtsTpCause"><span class="type">QmiWmsGsmUmtsTpCause</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-message-delivery-failure-type-get-string" title="qmi_wms_message_delivery_failure_type_get_string ()">qmi_wms_message_delivery_failure_type_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageDeliveryFailureType"><span class="type">QmiWmsMessageDeliveryFailureType</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-message-tag-type-get-string" title="qmi_wms_message_tag_type_get_string ()">qmi_wms_message_tag_type_get_string</a> (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageTagType"><span class="type">QmiWmsMessageTagType</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-message-protocol-get-string" title="qmi_wms_message_protocol_get_string ()">qmi_wms_message_protocol_get_string</a> (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageProtocol"><span class="type">QmiWmsMessageProtocol</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-message-type-get-string" title="qmi_wms_message_type_get_string ()">qmi_wms_message_type_get_string</a>     (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageType"><span class="type">QmiWmsMessageType</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-message-class-get-string" title="qmi_wms_message_class_get_string ()">qmi_wms_message_class_get_string</a>    (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageClass"><span class="type">QmiWmsMessageClass</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-receipt-action-get-string" title="qmi_wms_receipt_action_get_string ()">qmi_wms_receipt_action_get_string</a>   (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsReceiptAction"><span class="type">QmiWmsReceiptAction</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#qmi-wms-transfer-indication-get-string" title="qmi_wms_transfer_indication_get_string ()">qmi_wms_transfer_indication_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsTransferIndication"><span class="type">QmiWmsTransferIndication</span></a> val</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-WMS-enumerations-and-flags.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsStorageType
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsAckIndicator
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsMessageFormat
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsMessageMode
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsNotificationType
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsCdmaServiceOption
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsCdmaCauseCode
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsCdmaErrorClass
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsGsmUmtsRpCause
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsGsmUmtsTpCause
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsMessageDeliveryFailureType
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsMessageTagType
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsMessageProtocol
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsMessageType
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsMessageClass
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsReceiptAction
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWmsTransferIndication
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-WMS-enumerations-and-flags.description"></a><h2>Description</h2>
+<p>
+This section defines enumerations and flags used in the WMS service
+interface.
+</p>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-WMS-enumerations-and-flags.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="QmiWmsStorageType-enum"></a><h3>enum QmiWmsStorageType</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_STORAGE_TYPE_UIM  = 0x00,
+    QMI_WMS_STORAGE_TYPE_NV   = 0x01,
+    QMI_WMS_STORAGE_TYPE_NONE = 0xFF
+} QmiWmsStorageType;
+</pre>
+<p>
+Type of messaging storage
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WMS-STORAGE-TYPE-UIM:CAPS"></a><span class="term"><code class="literal">QMI_WMS_STORAGE_TYPE_UIM</code></span></p></td>
+<td>Message stored in UIM.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-STORAGE-TYPE-NV:CAPS"></a><span class="term"><code class="literal">QMI_WMS_STORAGE_TYPE_NV</code></span></p></td>
+<td>Message stored in non-volatile memory.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-STORAGE-TYPE-NONE:CAPS"></a><span class="term"><code class="literal">QMI_WMS_STORAGE_TYPE_NONE</code></span></p></td>
+<td>None.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsAckIndicator-enum"></a><h3>enum QmiWmsAckIndicator</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_ACK_INDICATOR_SEND        = 0x00,
+    QMI_WMS_ACK_INDICATOR_DO_NOT_SEND = 0x01
+} QmiWmsAckIndicator;
+</pre>
+<p>
+Indication of whether ACK needs to be sent or not.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WMS-ACK-INDICATOR-SEND:CAPS"></a><span class="term"><code class="literal">QMI_WMS_ACK_INDICATOR_SEND</code></span></p></td>
+<td>ACK needs to be sent.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-ACK-INDICATOR-DO-NOT-SEND:CAPS"></a><span class="term"><code class="literal">QMI_WMS_ACK_INDICATOR_DO_NOT_SEND</code></span></p></td>
+<td>ACK doesn't need to be sent.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsMessageFormat-enum"></a><h3>enum QmiWmsMessageFormat</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_MESSAGE_FORMAT_CDMA                     = 0x00,
+    QMI_WMS_MESSAGE_FORMAT_GSM_WCDMA_POINT_TO_POINT = 0x06,
+    QMI_WMS_MESSAGE_FORMAT_GSM_WCDMA_BROADCAST      = 0x07,
+    QMI_WMS_MESSAGE_FORMAT_MWI                      = 0x08
+} QmiWmsMessageFormat;
+</pre>
+<p>
+Type of message.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-FORMAT-CDMA:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_FORMAT_CDMA</code></span></p></td>
+<td>CDMA message.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-FORMAT-GSM-WCDMA-POINT-TO-POINT:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_FORMAT_GSM_WCDMA_POINT_TO_POINT</code></span></p></td>
+<td>Point-to-point 3GPP message.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-FORMAT-GSM-WCDMA-BROADCAST:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_FORMAT_GSM_WCDMA_BROADCAST</code></span></p></td>
+<td>Broadcast 3GPP message.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-FORMAT-MWI:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_FORMAT_MWI</code></span></p></td>
+<td>Message Waiting Indicator.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsMessageMode-enum"></a><h3>enum QmiWmsMessageMode</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_MESSAGE_MODE_CDMA      = 0x00,
+    QMI_WMS_MESSAGE_MODE_GSM_WCDMA = 0x01
+} QmiWmsMessageMode;
+</pre>
+<p>
+Message mode.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-MODE-CDMA:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_MODE_CDMA</code></span></p></td>
+<td>Message sent using 3GPP2 technologies.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-MODE-GSM-WCDMA:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_MODE_GSM_WCDMA</code></span></p></td>
+<td>Message sent using 3GPP technologies.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsNotificationType-enum"></a><h3>enum QmiWmsNotificationType</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_NOTIFICATION_TYPE_PRIMARY        = 0x00,
+    QMI_WMS_NOTIFICATION_TYPE_SECONDARY_GSM  = 0x01,
+    QMI_WMS_NOTIFICATION_TYPE_SECONDARY_UMTS = 0x02
+} QmiWmsNotificationType;
+</pre>
+<p>
+Type of notification.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WMS-NOTIFICATION-TYPE-PRIMARY:CAPS"></a><span class="term"><code class="literal">QMI_WMS_NOTIFICATION_TYPE_PRIMARY</code></span></p></td>
+<td>Primary.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-NOTIFICATION-TYPE-SECONDARY-GSM:CAPS"></a><span class="term"><code class="literal">QMI_WMS_NOTIFICATION_TYPE_SECONDARY_GSM</code></span></p></td>
+<td>Secondary GSM.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-NOTIFICATION-TYPE-SECONDARY-UMTS:CAPS"></a><span class="term"><code class="literal">QMI_WMS_NOTIFICATION_TYPE_SECONDARY_UMTS</code></span></p></td>
+<td>Secondary UMTS.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsCdmaServiceOption-enum"></a><h3>enum QmiWmsCdmaServiceOption</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_CDMA_SERVICE_OPTION_AUTO = 0x00,
+    QMI_WMS_CDMA_SERVICE_OPTION_6    = 0x06,
+    QMI_WMS_CDMA_SERVICE_OPTION_14   = 0x0E
+} QmiWmsCdmaServiceOption;
+</pre>
+<p>
+CDMA service option selection.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WMS-CDMA-SERVICE-OPTION-AUTO:CAPS"></a><span class="term"><code class="literal">QMI_WMS_CDMA_SERVICE_OPTION_AUTO</code></span></p></td>
+<td>Automatic selection of service option.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-CDMA-SERVICE-OPTION-6:CAPS"></a><span class="term"><code class="literal">QMI_WMS_CDMA_SERVICE_OPTION_6</code></span></p></td>
+<td>Use service option 6.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-CDMA-SERVICE-OPTION-14:CAPS"></a><span class="term"><code class="literal">QMI_WMS_CDMA_SERVICE_OPTION_14</code></span></p></td>
+<td>Use service option 14.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsCdmaCauseCode-enum"></a><h3>enum QmiWmsCdmaCauseCode</h3>
+<pre class="programlisting">typedef enum {
+    /* Network errors */
+    QMI_WDS_CDMA_CAUSE_CODE_NETWORK_ADDRESS_VACANT              = 0x00,
+    QMI_WDS_CDMA_CAUSE_CODE_NETWORK_ADDRESS_TRANSLATION_FAILURE = 0x01,
+    QMI_WDS_CDMA_CAUSE_CODE_NETWORK_RESOURCE_SHORTAGE           = 0x02,
+    QMI_WDS_CDMA_CAUSE_CODE_NETWORK_FAILURE                     = 0x03,
+    QMI_WDS_CDMA_CAUSE_CODE_NETWORK_INVALID_TELESERVICE_ID      = 0x04,
+    QMI_WDS_CDMA_CAUSE_CODE_NETWORK_OTHER                       = 0x05,
+
+    /* Destination errors */
+    QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_NO_PAGE_RESPONSE       = 0x20,
+    QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_BUSY                   = 0x21,
+    QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_NO_ACK                 = 0x22,
+    QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_RESOURCE_SHORTAGE      = 0x23,
+    QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_SMS_DELIVERY_POSTPONED = 0x24,
+    QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_OUT_OF_SERVICE         = 0x25,
+    QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_NOT_AT_ADDRESS         = 0x26,
+    QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_OTHER                  = 0x27,
+
+    /* Radio Interface errors */
+    QMI_WDS_CDMA_CAUSE_CODE_RADIO_INTERFACE_RESOURCE_SHORTAGE = 0x40,
+    QMI_WDS_CDMA_CAUSE_CODE_RADIO_INTERFACE_INCOMPATIBILITY   = 0x41,
+    QMI_WDS_CDMA_CAUSE_CODE_RADIO_INTERFACE_OTHER             = 0x42,
+
+    /* General errors */
+    QMI_WDS_CDMA_CAUSE_CODE_GENERAL_ENCODING                            = 0x60,
+    QMI_WDS_CDMA_CAUSE_CODE_GENERAL_SMS_ORIGIN_DENIED                   = 0x61,
+    QMI_WDS_CDMA_CAUSE_CODE_GENERAL_SMS_DESTINATION_DENIED              = 0x62,
+    QMI_WDS_CDMA_CAUSE_CODE_GENERAL_SUPPLEMENTARY_SERVICE_NOT_SUPPORTED = 0x63,
+    QMI_WDS_CDMA_CAUSE_CODE_GENERAL_SMS_NOT_SUPPORTED                   = 0x64,
+    QMI_WDS_CDMA_CAUSE_CODE_GENERAL_MISSING_EXPECTED_PARAMETER          = 0x65,
+    QMI_WDS_CDMA_CAUSE_CODE_GENERAL_MISSING_MANDATORY_PARAMETER         = 0x66,
+    QMI_WDS_CDMA_CAUSE_CODE_GENERAL_UNRECOGNIZED_PARAMETER_VALUE        = 0x67,
+    QMI_WDS_CDMA_CAUSE_CODE_GENERAL_UNEXPECTED_PARAMETER_VALUE          = 0x68,
+    QMI_WDS_CDMA_CAUSE_CODE_GENERAL_USER_DATA_SIZE_ERROR                = 0x69,
+    QMI_WDS_CDMA_CAUSE_CODE_GENERAL_OTHER                               = 0x6A
+} QmiWmsCdmaCauseCode;
+</pre>
+<p>
+Cause codes when failed to send an SMS in CDMA.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-NETWORK-ADDRESS-VACANT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_NETWORK_ADDRESS_VACANT</code></span></p></td>
+<td>Address is valid but not yet allocated.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-NETWORK-ADDRESS-TRANSLATION-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_NETWORK_ADDRESS_TRANSLATION_FAILURE</code></span></p></td>
+<td>Address is invalid.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-NETWORK-RESOURCE-SHORTAGE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_NETWORK_RESOURCE_SHORTAGE</code></span></p></td>
+<td>Network resource shortage.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-NETWORK-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_NETWORK_FAILURE</code></span></p></td>
+<td>Network failed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-NETWORK-INVALID-TELESERVICE-ID:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_NETWORK_INVALID_TELESERVICE_ID</code></span></p></td>
+<td>SMS teleservice ID is invalid.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-NETWORK-OTHER:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_NETWORK_OTHER</code></span></p></td>
+<td>Other network error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-DESTINATION-NO-PAGE-RESPONSE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_NO_PAGE_RESPONSE</code></span></p></td>
+<td>No page response from destination.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-DESTINATION-BUSY:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_BUSY</code></span></p></td>
+<td>Destination is busy.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-DESTINATION-NO-ACK:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_NO_ACK</code></span></p></td>
+<td>No acknowledge from destination.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-DESTINATION-RESOURCE-SHORTAGE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_RESOURCE_SHORTAGE</code></span></p></td>
+<td>Destination resource shortage.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-DESTINATION-SMS-DELIVERY-POSTPONED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_SMS_DELIVERY_POSTPONED</code></span></p></td>
+<td>SMS deliver postponed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-DESTINATION-OUT-OF-SERVICE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_OUT_OF_SERVICE</code></span></p></td>
+<td>Destination out of service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-DESTINATION-NOT-AT-ADDRESS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_NOT_AT_ADDRESS</code></span></p></td>
+<td>Destination not at address.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-DESTINATION-OTHER:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_DESTINATION_OTHER</code></span></p></td>
+<td>Other destination error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-RADIO-INTERFACE-RESOURCE-SHORTAGE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_RADIO_INTERFACE_RESOURCE_SHORTAGE</code></span></p></td>
+<td>Radio interface resource shortage.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-RADIO-INTERFACE-INCOMPATIBILITY:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_RADIO_INTERFACE_INCOMPATIBILITY</code></span></p></td>
+<td>Radio interface incompatibility.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-RADIO-INTERFACE-OTHER:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_RADIO_INTERFACE_OTHER</code></span></p></td>
+<td>Other radio interface error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-GENERAL-ENCODING:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_GENERAL_ENCODING</code></span></p></td>
+<td>Encoding error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-GENERAL-SMS-ORIGIN-DENIED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_GENERAL_SMS_ORIGIN_DENIED</code></span></p></td>
+<td>SMS origin denied.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-GENERAL-SMS-DESTINATION-DENIED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_GENERAL_SMS_DESTINATION_DENIED</code></span></p></td>
+<td>SMS destination denied.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-GENERAL-SUPPLEMENTARY-SERVICE-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_GENERAL_SUPPLEMENTARY_SERVICE_NOT_SUPPORTED</code></span></p></td>
+<td>Supplementary service not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-GENERAL-SMS-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_GENERAL_SMS_NOT_SUPPORTED</code></span></p></td>
+<td>SMS not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-GENERAL-MISSING-EXPECTED-PARAMETER:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_GENERAL_MISSING_EXPECTED_PARAMETER</code></span></p></td>
+<td>Missing optional expected parameter.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-GENERAL-MISSING-MANDATORY-PARAMETER:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_GENERAL_MISSING_MANDATORY_PARAMETER</code></span></p></td>
+<td>Missing mandatory parameter.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-GENERAL-UNRECOGNIZED-PARAMETER-VALUE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_GENERAL_UNRECOGNIZED_PARAMETER_VALUE</code></span></p></td>
+<td>Unrecognized parameter value.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-GENERAL-UNEXPECTED-PARAMETER-VALUE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_GENERAL_UNEXPECTED_PARAMETER_VALUE</code></span></p></td>
+<td>Unexpected parameter value.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-GENERAL-USER-DATA-SIZE-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_GENERAL_USER_DATA_SIZE_ERROR</code></span></p></td>
+<td>user data size error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CDMA-CAUSE-CODE-GENERAL-OTHER:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CDMA_CAUSE_CODE_GENERAL_OTHER</code></span></p></td>
+<td>Other general error.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsCdmaErrorClass-enum"></a><h3>enum QmiWmsCdmaErrorClass</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_CDMA_ERROR_CLASS_TEMPORARY = 0x00,
+    QMI_WMS_CDMA_ERROR_CLASS_PERMANENT = 0x01
+} QmiWmsCdmaErrorClass;
+</pre>
+<p>
+Error class when failed to send an SMS in CDMA.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WMS-CDMA-ERROR-CLASS-TEMPORARY:CAPS"></a><span class="term"><code class="literal">QMI_WMS_CDMA_ERROR_CLASS_TEMPORARY</code></span></p></td>
+<td>Temporary error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-CDMA-ERROR-CLASS-PERMANENT:CAPS"></a><span class="term"><code class="literal">QMI_WMS_CDMA_ERROR_CLASS_PERMANENT</code></span></p></td>
+<td>Permanent error.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsGsmUmtsRpCause-enum"></a><h3>enum QmiWmsGsmUmtsRpCause</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_GSM_UMTS_RP_CAUSE_UNASSIGNED_NUMBER                    = 0x01,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_OPERATOR_DETERMINED_BARRING          = 0x08,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_CALL_BARRED                          = 0x0A,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_RESERVED                             = 0x0B,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_SMS_TRANSFER_REJECTED                = 0x15,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_MEMORY_CAPACITY_EXCEEDED             = 0x16,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_DESTINATION_OUT_OF_ORDER             = 0x1B,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_UNIDENTIFIED_SUBSCRIBER              = 0x1C,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_FACILITY_REJECTED                    = 0x1D,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_UNKNOWN_SUBSCRIBER                   = 0x1E,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_NETWORK_OUF_OF_ORDER                 = 0x20,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_TEMPORARY_FAILURE                    = 0x21,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_CONGESTION                           = 0x2A,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_RESOURCES_UNAVAILABLE                = 0x2F,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_FACILITY_NOT_SUBSCRIBED              = 0x32,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_FACILITY_NOT_IMPLEMENTED             = 0x45,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_INVALID_SMS_TRANSFER_REFERENCE_VALUE = 0x51,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_SEMANTICALLY_INCORRECT_MESSAGE       = 0x5F,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_INVALID_MANDATORY_INFO               = 0x60,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_MESSAGE_TYPE_NOT_IMPLEMENTED         = 0x61,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_MESSAGE_NOT_COMPATIBLE_WITH_SMS      = 0x62,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_INFORMATION_ELEMENT_NOT_IMPLEMENTED  = 0x63,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_PROTOCOL_ERROR                       = 0x6F,
+    QMI_WMS_GSM_UMTS_RP_CAUSE_INTERWORKING                         = 0x7F
+} QmiWmsGsmUmtsRpCause;
+</pre>
+<p>
+RP cause codes when failed to send an SMS in GSM/WCDMA.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-UNASSIGNED-NUMBER:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_UNASSIGNED_NUMBER</code></span></p></td>
+<td>Unassigned number.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-OPERATOR-DETERMINED-BARRING:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_OPERATOR_DETERMINED_BARRING</code></span></p></td>
+<td>Operator determined barring.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-CALL-BARRED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_CALL_BARRED</code></span></p></td>
+<td>Call barred.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-RESERVED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_RESERVED</code></span></p></td>
+<td>Reserved.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-SMS-TRANSFER-REJECTED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_SMS_TRANSFER_REJECTED</code></span></p></td>
+<td>SMS transfer rejected.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-MEMORY-CAPACITY-EXCEEDED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_MEMORY_CAPACITY_EXCEEDED</code></span></p></td>
+<td>Memory capacity exceeded.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-DESTINATION-OUT-OF-ORDER:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_DESTINATION_OUT_OF_ORDER</code></span></p></td>
+<td>Destination out of order.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-UNIDENTIFIED-SUBSCRIBER:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_UNIDENTIFIED_SUBSCRIBER</code></span></p></td>
+<td>Unidentified subscriber.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-FACILITY-REJECTED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_FACILITY_REJECTED</code></span></p></td>
+<td>Facility rejected.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-UNKNOWN-SUBSCRIBER:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_UNKNOWN_SUBSCRIBER</code></span></p></td>
+<td>Unknown subscriber.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-NETWORK-OUF-OF-ORDER:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_NETWORK_OUF_OF_ORDER</code></span></p></td>
+<td>Network out of order.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-TEMPORARY-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_TEMPORARY_FAILURE</code></span></p></td>
+<td>Temporary failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-CONGESTION:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_CONGESTION</code></span></p></td>
+<td>Congestion.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-RESOURCES-UNAVAILABLE:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_RESOURCES_UNAVAILABLE</code></span></p></td>
+<td>Resources unavailable.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-FACILITY-NOT-SUBSCRIBED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_FACILITY_NOT_SUBSCRIBED</code></span></p></td>
+<td>Facility not subscribed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-FACILITY-NOT-IMPLEMENTED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_FACILITY_NOT_IMPLEMENTED</code></span></p></td>
+<td>Facility not implemented.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-INVALID-SMS-TRANSFER-REFERENCE-VALUE:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_INVALID_SMS_TRANSFER_REFERENCE_VALUE</code></span></p></td>
+<td>Invalid SMS transfer reference value.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-SEMANTICALLY-INCORRECT-MESSAGE:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_SEMANTICALLY_INCORRECT_MESSAGE</code></span></p></td>
+<td>Semantically incorrect message.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-INVALID-MANDATORY-INFO:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_INVALID_MANDATORY_INFO</code></span></p></td>
+<td>Invalid mandatory info.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-MESSAGE-TYPE-NOT-IMPLEMENTED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_MESSAGE_TYPE_NOT_IMPLEMENTED</code></span></p></td>
+<td>Message type not implemented.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-MESSAGE-NOT-COMPATIBLE-WITH-SMS:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_MESSAGE_NOT_COMPATIBLE_WITH_SMS</code></span></p></td>
+<td>Message not compatible with SMS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-INFORMATION-ELEMENT-NOT-IMPLEMENTED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_INFORMATION_ELEMENT_NOT_IMPLEMENTED</code></span></p></td>
+<td>Information element not implemented.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-PROTOCOL-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_PROTOCOL_ERROR</code></span></p></td>
+<td>Protocol error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-RP-CAUSE-INTERWORKING:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_RP_CAUSE_INTERWORKING</code></span></p></td>
+<td>Interworking error.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsGsmUmtsTpCause-enum"></a><h3>enum QmiWmsGsmUmtsTpCause</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_GSM_UMTS_TP_CAUSE_TELE_INTERWORKING_NOT_SUPPORTED    = 0x80,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_SHORT_MESSAGE_TYPE_0_NOT_SUPPORTED = 0x81,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_SHORT_MESSAGE_CANNOT_BE_REPLACED   = 0x82,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_UNSPECIFIED_PID_ERROR              = 0x8F,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_DCS_NOT_SUPPORTED                  = 0x90,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_MESSAGE_CLASS_NOT_SUPPORTED        = 0x91,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_UNSPECIFIED_DCS_ERROR              = 0x9F,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_COMMAND_CANNOT_BE_ACTIONED         = 0xA0,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_COMMAND_UNSUPPORTED                = 0xA1,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_UNSPECIFIED_COMMAND_ERROR          = 0xAF,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_TPDU_NOT_SUPPORTED                 = 0xB0,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_SC_BUSY                            = 0xC0,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_NO_SC_SUBSCRIPTION                 = 0xC1,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_SC_SYSTEM_FAILURE                  = 0xC2,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_INVALID_SME_ADDRESS                = 0xC3,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_DESTINATION_SME_BARRED             = 0xC4,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_SM_REJECTED_OR_DUPLICATE           = 0xC5,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_VPF_NOT_SUPPORTED                  = 0xC6,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_VP_NOT_SUPPORTED                   = 0xC7,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_SIM_SMS_STORAGE_FULL               = 0xD0,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_NO_SMS_STORAGE_CAPABILITY_IN_SIM   = 0xD1,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_MS_ERROR                           = 0xD2,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_MEMORY_CAPACITY_EXCEEDED           = 0xD3,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_SIM_APPLICATION_TOOLKIT_BUSY       = 0xD4,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_SIM_DATA_DOWNLOAD_ERROR            = 0xD5,
+    QMI_WMS_GSM_UMTS_TP_CAUSE_UNSPECIFIED_ERROR                  = 0xFF
+} QmiWmsGsmUmtsTpCause;
+</pre>
+<p>
+RT cause codes when failed to send an SMS in GSM/WCDMA.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-TELE-INTERWORKING-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_TELE_INTERWORKING_NOT_SUPPORTED</code></span></p></td>
+<td>Tele interworking not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-SHORT-MESSAGE-TYPE-0-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_SHORT_MESSAGE_TYPE_0_NOT_SUPPORTED</code></span></p></td>
+<td>Short message type 0 not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-SHORT-MESSAGE-CANNOT-BE-REPLACED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_SHORT_MESSAGE_CANNOT_BE_REPLACED</code></span></p></td>
+<td>Short message cannot be replaced.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-UNSPECIFIED-PID-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_UNSPECIFIED_PID_ERROR</code></span></p></td>
+<td>Unspecified TP-PID error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-DCS-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_DCS_NOT_SUPPORTED</code></span></p></td>
+<td>Data coding scheme not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-MESSAGE-CLASS-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_MESSAGE_CLASS_NOT_SUPPORTED</code></span></p></td>
+<td>Message class not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-UNSPECIFIED-DCS-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_UNSPECIFIED_DCS_ERROR</code></span></p></td>
+<td>Unspecified data coding scheme error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-COMMAND-CANNOT-BE-ACTIONED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_COMMAND_CANNOT_BE_ACTIONED</code></span></p></td>
+<td>Command cannot be actioned.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-COMMAND-UNSUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_COMMAND_UNSUPPORTED</code></span></p></td>
+<td>Command unsupported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-UNSPECIFIED-COMMAND-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_UNSPECIFIED_COMMAND_ERROR</code></span></p></td>
+<td>Unspecified command error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-TPDU-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_TPDU_NOT_SUPPORTED</code></span></p></td>
+<td>TPDU not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-SC-BUSY:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_SC_BUSY</code></span></p></td>
+<td>SC busy.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-NO-SC-SUBSCRIPTION:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_NO_SC_SUBSCRIPTION</code></span></p></td>
+<td>No SC subscription.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-SC-SYSTEM-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_SC_SYSTEM_FAILURE</code></span></p></td>
+<td>SC system failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-INVALID-SME-ADDRESS:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_INVALID_SME_ADDRESS</code></span></p></td>
+<td>Invalid SME address.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-DESTINATION-SME-BARRED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_DESTINATION_SME_BARRED</code></span></p></td>
+<td>Destination SME barred.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-SM-REJECTED-OR-DUPLICATE:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_SM_REJECTED_OR_DUPLICATE</code></span></p></td>
+<td>SM rejected or duplicate.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-VPF-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_VPF_NOT_SUPPORTED</code></span></p></td>
+<td>TP-VPF not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-VP-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_VP_NOT_SUPPORTED</code></span></p></td>
+<td>TP-VP not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-SIM-SMS-STORAGE-FULL:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_SIM_SMS_STORAGE_FULL</code></span></p></td>
+<td>SIM SMS storage full.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-NO-SMS-STORAGE-CAPABILITY-IN-SIM:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_NO_SMS_STORAGE_CAPABILITY_IN_SIM</code></span></p></td>
+<td>No SMS storage capability in SIM.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-MS-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_MS_ERROR</code></span></p></td>
+<td>MS error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-MEMORY-CAPACITY-EXCEEDED:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_MEMORY_CAPACITY_EXCEEDED</code></span></p></td>
+<td>Memory capacity exceeded.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-SIM-APPLICATION-TOOLKIT-BUSY:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_SIM_APPLICATION_TOOLKIT_BUSY</code></span></p></td>
+<td>SIM application toolkit busy.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-SIM-DATA-DOWNLOAD-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_SIM_DATA_DOWNLOAD_ERROR</code></span></p></td>
+<td>SIM data download error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-GSM-UMTS-TP-CAUSE-UNSPECIFIED-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WMS_GSM_UMTS_TP_CAUSE_UNSPECIFIED_ERROR</code></span></p></td>
+<td>Unspecified error.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsMessageDeliveryFailureType-enum"></a><h3>enum QmiWmsMessageDeliveryFailureType</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_MESSAGE_DELIVERY_FAILURE_TYPE_TEMPORARY = 0x00,
+    QMI_WMS_MESSAGE_DELIVERY_FAILURE_TYPE_PERMANENT = 0x01
+} QmiWmsMessageDeliveryFailureType;
+</pre>
+<p>
+Type of message delivery failure.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-DELIVERY-FAILURE-TYPE-TEMPORARY:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_DELIVERY_FAILURE_TYPE_TEMPORARY</code></span></p></td>
+<td>Temporary failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-DELIVERY-FAILURE-TYPE-PERMANENT:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_DELIVERY_FAILURE_TYPE_PERMANENT</code></span></p></td>
+<td>Permanent failure.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsMessageTagType-enum"></a><h3>enum QmiWmsMessageTagType</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_MESSAGE_TAG_TYPE_MT_READ     = 0x00,
+    QMI_WMS_MESSAGE_TAG_TYPE_MT_NOT_READ = 0x01,
+    QMI_WMS_MESSAGE_TAG_TYPE_MO_SENT     = 0x02,
+    QMI_WMS_MESSAGE_TAG_TYPE_MO_NOT_SENT = 0x03
+} QmiWmsMessageTagType;
+</pre>
+<p>
+Type of message tag.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-TAG-TYPE-MT-READ:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_TAG_TYPE_MT_READ</code></span></p></td>
+<td>Received SMS, already read.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-TAG-TYPE-MT-NOT-READ:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_TAG_TYPE_MT_NOT_READ</code></span></p></td>
+<td>Received SMS, not read.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-TAG-TYPE-MO-SENT:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_TAG_TYPE_MO_SENT</code></span></p></td>
+<td>Sent SMS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-TAG-TYPE-MO-NOT-SENT:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_TAG_TYPE_MO_NOT_SENT</code></span></p></td>
+<td>Not yet sent SMS.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsMessageProtocol-enum"></a><h3>enum QmiWmsMessageProtocol</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_MESSAGE_PROTOCOL_CDMA  = 0x00,
+    QMI_WMS_MESSAGE_PROTOCOL_WCDMA = 0x01
+} QmiWmsMessageProtocol;
+</pre>
+<p>
+Type of message protocol.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-PROTOCOL-CDMA:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_PROTOCOL_CDMA</code></span></p></td>
+<td>CDMA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-PROTOCOL-WCDMA:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_PROTOCOL_WCDMA</code></span></p></td>
+<td>WCDMA.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsMessageType-enum"></a><h3>enum QmiWmsMessageType</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_MESSAGE_TYPE_POINT_TO_POINT = 0x00
+} QmiWmsMessageType;
+</pre>
+<p>
+Type of message.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><a name="QMI-WMS-MESSAGE-TYPE-POINT-TO-POINT:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_TYPE_POINT_TO_POINT</code></span></p></td>
+<td>Point to point message.
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsMessageClass-enum"></a><h3>enum QmiWmsMessageClass</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_MESSAGE_CLASS_0    = 0x00,
+    QMI_WMS_MESSAGE_CLASS_1    = 0x01,
+    QMI_WMS_MESSAGE_CLASS_2    = 0x02,
+    QMI_WMS_MESSAGE_CLASS_3    = 0x03,
+    QMI_WMS_MESSAGE_CLASS_NONE = 0x04,
+    QMI_WMS_MESSAGE_CLASS_CDMA = 0x05
+} QmiWmsMessageClass;
+</pre>
+<p>
+Message class.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-CLASS-0:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_CLASS_0</code></span></p></td>
+<td>Class 0.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-CLASS-1:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_CLASS_1</code></span></p></td>
+<td>Class 1.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-CLASS-2:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_CLASS_2</code></span></p></td>
+<td>Class 2.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-CLASS-3:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_CLASS_3</code></span></p></td>
+<td>Class 3.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-CLASS-NONE:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_CLASS_NONE</code></span></p></td>
+<td>Class none.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-MESSAGE-CLASS-CDMA:CAPS"></a><span class="term"><code class="literal">QMI_WMS_MESSAGE_CLASS_CDMA</code></span></p></td>
+<td>Class CDMA.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsReceiptAction-enum"></a><h3>enum QmiWmsReceiptAction</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_RECEIPT_ACTION_DISCARD          = 0x00,
+    QMI_WMS_RECEIPT_ACTION_STORE_AND_NOTIFY = 0x01,
+    QMI_WMS_RECEIPT_ACTION_TRANSFER_ONLY    = 0x02,
+    QMI_WMS_RECEIPT_ACTION_TRANSFER_AND_ACK = 0x03,
+    QMI_WMS_RECEIPT_ACTION_UNKNOWN          = 0xFF
+} QmiWmsReceiptAction;
+</pre>
+<p>
+Action to perform when a message is received.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WMS-RECEIPT-ACTION-DISCARD:CAPS"></a><span class="term"><code class="literal">QMI_WMS_RECEIPT_ACTION_DISCARD</code></span></p></td>
+<td>Discard message.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-RECEIPT-ACTION-STORE-AND-NOTIFY:CAPS"></a><span class="term"><code class="literal">QMI_WMS_RECEIPT_ACTION_STORE_AND_NOTIFY</code></span></p></td>
+<td>Store and notify to client.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-RECEIPT-ACTION-TRANSFER-ONLY:CAPS"></a><span class="term"><code class="literal">QMI_WMS_RECEIPT_ACTION_TRANSFER_ONLY</code></span></p></td>
+<td>Notify to client, which should send back ACK.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-RECEIPT-ACTION-TRANSFER-AND-ACK:CAPS"></a><span class="term"><code class="literal">QMI_WMS_RECEIPT_ACTION_TRANSFER_AND_ACK</code></span></p></td>
+<td>Notify to client and send back ACK.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WMS-RECEIPT-ACTION-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_WMS_RECEIPT_ACTION_UNKNOWN</code></span></p></td>
+<td>Unknown action.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWmsTransferIndication-enum"></a><h3>enum QmiWmsTransferIndication</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WMS_TRANSFER_INDICATION_CLIENT = 0x01
+} QmiWmsTransferIndication;
+</pre>
+<p>
+Transfer indication actions.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><a name="QMI-WMS-TRANSFER-INDICATION-CLIENT:CAPS"></a><span class="term"><code class="literal">QMI_WMS_TRANSFER_INDICATION_CLIENT</code></span></p></td>
+<td>Status reports transferred to the client.
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-storage-type-get-string"></a><h3>qmi_wms_storage_type_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_storage_type_get_string     (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsStorageType"><span class="type">QmiWmsStorageType</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsStorageType"><span class="type">QmiWmsStorageType</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsStorageType.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-ack-indicator-get-string"></a><h3>qmi_wms_ack_indicator_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_ack_indicator_get_string    (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsAckIndicator"><span class="type">QmiWmsAckIndicator</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsAckIndicator"><span class="type">QmiWmsAckIndicator</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsAckIndicator.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-message-format-get-string"></a><h3>qmi_wms_message_format_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_message_format_get_string   (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageFormat"><span class="type">QmiWmsMessageFormat</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageFormat"><span class="type">QmiWmsMessageFormat</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsMessageFormat.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-message-mode-get-string"></a><h3>qmi_wms_message_mode_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_message_mode_get_string     (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageMode"><span class="type">QmiWmsMessageMode</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageMode"><span class="type">QmiWmsMessageMode</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsMessageMode.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-notification-type-get-string"></a><h3>qmi_wms_notification_type_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_notification_type_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsNotificationType"><span class="type">QmiWmsNotificationType</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsNotificationType"><span class="type">QmiWmsNotificationType</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsNotificationType.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-cdma-service-option-get-string"></a><h3>qmi_wms_cdma_service_option_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_cdma_service_option_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsCdmaServiceOption"><span class="type">QmiWmsCdmaServiceOption</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsCdmaServiceOption"><span class="type">QmiWmsCdmaServiceOption</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsCdmaServiceOption.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-cdma-cause-code-get-string"></a><h3>qmi_wms_cdma_cause_code_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_cdma_cause_code_get_string  (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsCdmaCauseCode"><span class="type">QmiWmsCdmaCauseCode</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsCdmaCauseCode"><span class="type">QmiWmsCdmaCauseCode</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsCdmaCauseCode.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-cdma-error-class-get-string"></a><h3>qmi_wms_cdma_error_class_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_cdma_error_class_get_string (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsCdmaErrorClass"><span class="type">QmiWmsCdmaErrorClass</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsCdmaErrorClass"><span class="type">QmiWmsCdmaErrorClass</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsCdmaErrorClass.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-gsm-umts-rp-cause-get-string"></a><h3>qmi_wms_gsm_umts_rp_cause_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_gsm_umts_rp_cause_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsGsmUmtsRpCause"><span class="type">QmiWmsGsmUmtsRpCause</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsGsmUmtsRpCause"><span class="type">QmiWmsGsmUmtsRpCause</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsGsmUmtsRpCause.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-gsm-umts-tp-cause-get-string"></a><h3>qmi_wms_gsm_umts_tp_cause_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_gsm_umts_tp_cause_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsGsmUmtsTpCause"><span class="type">QmiWmsGsmUmtsTpCause</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsGsmUmtsTpCause"><span class="type">QmiWmsGsmUmtsTpCause</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsGsmUmtsTpCause.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-message-delivery-failure-type-get-string"></a><h3>qmi_wms_message_delivery_failure_type_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_message_delivery_failure_type_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageDeliveryFailureType"><span class="type">QmiWmsMessageDeliveryFailureType</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageDeliveryFailureType"><span class="type">QmiWmsMessageDeliveryFailureType</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsMessageDeliveryFailureType.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-message-tag-type-get-string"></a><h3>qmi_wms_message_tag_type_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_message_tag_type_get_string (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageTagType"><span class="type">QmiWmsMessageTagType</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageTagType"><span class="type">QmiWmsMessageTagType</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsMessageTagType.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-message-protocol-get-string"></a><h3>qmi_wms_message_protocol_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_message_protocol_get_string (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageProtocol"><span class="type">QmiWmsMessageProtocol</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageProtocol"><span class="type">QmiWmsMessageProtocol</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsMessageProtocol.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-message-type-get-string"></a><h3>qmi_wms_message_type_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_message_type_get_string     (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageType"><span class="type">QmiWmsMessageType</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageType"><span class="type">QmiWmsMessageType</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsMessageType.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-message-class-get-string"></a><h3>qmi_wms_message_class_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_message_class_get_string    (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageClass"><span class="type">QmiWmsMessageClass</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsMessageClass"><span class="type">QmiWmsMessageClass</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsMessageClass.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-receipt-action-get-string"></a><h3>qmi_wms_receipt_action_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_receipt_action_get_string   (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsReceiptAction"><span class="type">QmiWmsReceiptAction</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsReceiptAction"><span class="type">QmiWmsReceiptAction</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsReceiptAction.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wms-transfer-indication-get-string"></a><h3>qmi_wms_transfer_indication_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wms_transfer_indication_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsTransferIndication"><span class="type">QmiWmsTransferIndication</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WMS-enumerations-and-flags.html#QmiWmsTransferIndication"><span class="type">QmiWmsTransferIndication</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWmsTransferIndication.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>

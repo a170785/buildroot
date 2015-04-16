@@ -1,0 +1,90 @@
+#!/usr/bin/make -f
+# Sample debian/rules that uses debhelper. 
+# GNU copyright 1997 by Joey Hess.
+#
+# This version is for a hypothetical package that builds an
+# architecture-dependant package, as well as an architecture-independent
+# package.
+
+# Uncomment this to turn on verbose mode. 
+#export DH_VERBOSE=1
+
+# This has to be exported to make some magic below work.
+export DH_OPTIONS
+
+BUILD_ARCH:=$(shell dpkg --print-gnu-build-architecture)
+# New cross-compilation policy may set the DEB_HOST_ARCH variable.
+ifdef DEB_HOST_ARCH
+ ARCH:=$(DEB_HOST_ARCH)
+else
+ # dpkg-cross sets the ARCH environment variable, so use it.
+ ifdef ARCH
+  ARCH:=$(ARCH)
+ else
+  ARCH:=$(BUILD_ARCH)
+ endif
+endif
+
+build: build-stamp
+build-stamp:
+	dh_testdir
+	touch build-stamp
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp 
+
+	# Add here commands to clean up after the build process.
+	# pointless, since we ship the Makefile ourself, but it makes lintian happy ;)
+	[ ! -f Makefile ] || $(MAKE) clean
+	-rm -rf debian/mii-diag debian/mii-diag-udeb
+
+	dh_clean
+
+install: DH_OPTIONS=
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	dh_installdirs
+	$(MAKE) mii-diag
+	dh_install -pmii-diag mii-diag usr/sbin
+	$(MAKE) clean
+	$(MAKE) mii-diag-udeb
+	dh_install -pmii-diag-udeb mii-diag usr/sbin
+	#dh_movefiles
+
+# Build architecture-independent files here.
+# Pass -i to all debhelper commands in this target to reduce clutter.
+binary-indep: DH_OPTIONS=-i
+binary-indep: build install
+
+# Build architecture-dependent files here.
+# Pass -a to all debhelper commands in this target to reduce clutter.
+binary-arch: DH_OPTIONS=-s
+binary-arch: build install
+#	dh_testversion 1.1.17
+	dh_testdir
+	dh_testroot
+	dh_installdocs
+	dh_installexamples
+	dh_installmenu
+	dh_installcron
+	
+	dh_installman
+
+	dh_installinfo
+	dh_installchangelogs 
+	dh_strip
+	dh_link
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install

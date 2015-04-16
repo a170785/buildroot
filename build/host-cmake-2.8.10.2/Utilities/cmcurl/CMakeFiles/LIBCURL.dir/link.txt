@@ -1,0 +1,1 @@
+/usr/bin/gcc   -O2 -I/home/aav/specter/buildroot-2013.08/output/host/usr/include    -L/home/aav/specter/buildroot-2013.08/output/host/lib -L/home/aav/specter/buildroot-2013.08/output/host/usr/lib -Wl,-rpath,/home/aav/specter/buildroot-2013.08/output/host/usr/lib CMakeFiles/LIBCURL.dir/Testing/curltest.c.o  -o LIBCURL -rdynamic libcmcurl.a -ldl ../cmzlib/libcmzlib.a 

@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>DMS Get Software Version</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libqmi-glib Reference Manual">
+<link rel="up" href="ch02s02.html" title="DMS Requests">
+<link rel="prev" href="libqmi-glib-DMS-Set-Alt-Net-Config.html" title="DMS Set Alt Net Config">
+<link rel="next" href="libqmi-glib-DMS-Set-Service-Programming-Code.html" title="DMS Set Service Programming Code">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libqmi-glib-DMS-Set-Alt-Net-Config.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02s02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libqmi-glib Reference Manual</th>
+<td><a accesskey="n" href="libqmi-glib-DMS-Set-Service-Programming-Code.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libqmi-glib-DMS-Get-Software-Version.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libqmi-glib-DMS-Get-Software-Version.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#libqmi-glib-DMS-Get-Software-Version.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libqmi-glib-DMS-Get-Software-Version"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libqmi-glib-DMS-Get-Software-Version.top_of_page"></a>DMS Get Software Version</span></h2>
+<p>DMS Get Software Version</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libqmi-glib-DMS-Get-Software-Version.synopsis"></a><h2>Synopsis</h2>
+<a name="QmiMessageDmsGetSoftwareVersionOutput"></a><pre class="synopsis">                    <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput-struct" title="QmiMessageDmsGetSoftwareVersionOutput">QmiMessageDmsGetSoftwareVersionOutput</a>;
+
+<a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="returnvalue">QmiMessageDmsGetSoftwareVersionOutput</span></a> * <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#qmi-message-dms-get-software-version-output-ref" title="qmi_message_dms_get_software_version_output_ref ()">qmi_message_dms_get_software_version_output_ref</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="type">QmiMessageDmsGetSoftwareVersionOutput</span></a> *self</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#qmi-message-dms-get-software-version-output-unref" title="qmi_message_dms_get_software_version_output_unref ()">qmi_message_dms_get_software_version_output_unref</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="type">QmiMessageDmsGetSoftwareVersionOutput</span></a> *self</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#qmi-message-dms-get-software-version-output-get-result" title="qmi_message_dms_get_software_version_output_get_result ()">qmi_message_dms_get_software_version_output_get_result</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="type">QmiMessageDmsGetSoftwareVersionOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#qmi-message-dms-get-software-version-output-get-version" title="qmi_message_dms_get_software_version_output_get_version ()">qmi_message_dms_get_software_version_output_get_version</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="type">QmiMessageDmsGetSoftwareVersionOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **version</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+
+<span class="returnvalue">void</span>                <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#qmi-client-dms-get-software-version" title="qmi_client_dms_get_software_version ()">qmi_client_dms_get_software_version</a> (<em class="parameter"><code><a class="link" href="QmiClientDms.html" title="QmiClientDms"><span class="type">QmiClientDms</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> unused</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timeout</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
+<a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="returnvalue">QmiMessageDmsGetSoftwareVersionOutput</span></a> * <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#qmi-client-dms-get-software-version-finish" title="qmi_client_dms_get_software_version_finish ()">qmi_client_dms_get_software_version_finish</a>
+                                                        (<em class="parameter"><code><a class="link" href="QmiClientDms.html" title="QmiClientDms"><span class="type">QmiClientDms</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *res</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-DMS-Get-Software-Version.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GBoxed
+   +----QmiMessageDmsGetSoftwareVersionOutput
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-DMS-Get-Software-Version.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-DMS-Get-Software-Version.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="QmiMessageDmsGetSoftwareVersionOutput-struct"></a><h3>QmiMessageDmsGetSoftwareVersionOutput</h3>
+<pre class="programlisting">typedef struct _QmiMessageDmsGetSoftwareVersionOutput QmiMessageDmsGetSoftwareVersionOutput;</pre>
+<p>
+The <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="type">QmiMessageDmsGetSoftwareVersionOutput</span></a> structure contains private data and should only be accessed
+using the provided API.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-message-dms-get-software-version-output-ref"></a><h3>qmi_message_dms_get_software_version_output_ref ()</h3>
+<pre class="programlisting"><a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="returnvalue">QmiMessageDmsGetSoftwareVersionOutput</span></a> * qmi_message_dms_get_software_version_output_ref
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="type">QmiMessageDmsGetSoftwareVersionOutput</span></a> *self</code></em>);</pre>
+<p>
+Atomically increments the reference count of <em class="parameter"><code>self</code></em> by one.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="type">QmiMessageDmsGetSoftwareVersionOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the new reference to <em class="parameter"><code>self</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-message-dms-get-software-version-output-unref"></a><h3>qmi_message_dms_get_software_version_output_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                qmi_message_dms_get_software_version_output_unref
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="type">QmiMessageDmsGetSoftwareVersionOutput</span></a> *self</code></em>);</pre>
+<p>
+Atomically decrements the reference count of <em class="parameter"><code>self</code></em> by one.
+If the reference count drops to 0, <em class="parameter"><code>self</code></em> is completely disposed.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="type">QmiMessageDmsGetSoftwareVersionOutput</span></a>.</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-message-dms-get-software-version-output-get-result"></a><h3>qmi_message_dms_get_software_version_output_get_result ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_message_dms_get_software_version_output_get_result
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="type">QmiMessageDmsGetSoftwareVersionOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the result of the QMI operation.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a QmiMessageDmsGetSoftwareVersionOutput.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the QMI operation succeeded, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if <em class="parameter"><code>error</code></em> is set.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-message-dms-get-software-version-output-get-version"></a><h3>qmi_message_dms_get_software_version_output_get_version ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            qmi_message_dms_get_software_version_output_get_version
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="type">QmiMessageDmsGetSoftwareVersionOutput</span></a> *self</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **version</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Get the 'Version' field from <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="type">QmiMessageDmsGetSoftwareVersionOutput</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>version</code></em> :</span></p></td>
+<td>a placeholder for the output constant string, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not required.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field is found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-client-dms-get-software-version"></a><h3>qmi_client_dms_get_software_version ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                qmi_client_dms_get_software_version (<em class="parameter"><code><a class="link" href="QmiClientDms.html" title="QmiClientDms"><span class="type">QmiClientDms</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> unused</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timeout</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>
+Asynchronously sends a Get Software Version request to the device.
+</p>
+<p>
+When the operation is finished, <em class="parameter"><code>callback</code></em> will be invoked in the thread-default main loop of the thread you are calling this method from.
+</p>
+<p>
+You can then call <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#qmi-client-dms-get-software-version-finish" title="qmi_client_dms_get_software_version_finish ()"><code class="function">qmi_client_dms_get_software_version_finish()</code></a> to get the result of the operation.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="QmiClientDms.html" title="QmiClientDms"><span class="type">QmiClientDms</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>unused</code></em> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. This message doesn't have any input bundle.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>timeout</code></em> :</span></p></td>
+<td>maximum time to wait for the method to complete, in seconds.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>cancellable</code></em> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>callback</code></em> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> to call when the request is satisfied.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data to pass to <em class="parameter"><code>callback</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-client-dms-get-software-version-finish"></a><h3>qmi_client_dms_get_software_version_finish ()</h3>
+<pre class="programlisting"><a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="returnvalue">QmiMessageDmsGetSoftwareVersionOutput</span></a> * qmi_client_dms_get_software_version_finish
+                                                        (<em class="parameter"><code><a class="link" href="QmiClientDms.html" title="QmiClientDms"><span class="type">QmiClientDms</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *res</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Finishes an async operation started with <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#qmi-client-dms-get-software-version" title="qmi_client_dms_get_software_version ()"><code class="function">qmi_client_dms_get_software_version()</code></a>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="QmiClientDms.html" title="QmiClientDms"><span class="type">QmiClientDms</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>res</code></em> :</span></p></td>
+<td>the <a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> obtained from the <a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> passed to <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#qmi-client-dms-get-software-version" title="qmi_client_dms_get_software_version ()"><code class="function">qmi_client_dms_get_software_version()</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>Return location for error or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#QmiMessageDmsGetSoftwareVersionOutput"><span class="type">QmiMessageDmsGetSoftwareVersionOutput</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>error</code></em> is set. The returned value should be freed with <a class="link" href="libqmi-glib-DMS-Get-Software-Version.html#qmi-message-dms-get-software-version-output-unref" title="qmi_message_dms_get_software_version_output_unref ()"><code class="function">qmi_message_dms_get_software_version_output_unref()</code></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>

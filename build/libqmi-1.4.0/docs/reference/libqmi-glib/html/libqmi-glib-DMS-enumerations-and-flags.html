@@ -1,0 +1,1771 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>DMS enumerations and flags</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libqmi-glib Reference Manual">
+<link rel="up" href="ch02.html" title="Device Management Service (DMS)">
+<link rel="prev" href="QmiClientDms.html" title="QmiClientDms">
+<link rel="next" href="libqmi-glib-DMS-Event-Report.html" title="DMS Event Report">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="QmiClientDms.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libqmi-glib Reference Manual</th>
+<td><a accesskey="n" href="libqmi-glib-DMS-Event-Report.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libqmi-glib-DMS-enumerations-and-flags.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libqmi-glib-DMS-enumerations-and-flags.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#libqmi-glib-DMS-enumerations-and-flags.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libqmi-glib-DMS-enumerations-and-flags"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libqmi-glib-DMS-enumerations-and-flags.top_of_page"></a>DMS enumerations and flags</span></h2>
+<p>DMS enumerations and flags</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libqmi-glib-DMS-enumerations-and-flags.synopsis"></a><h2>Synopsis</h2>
+<a name="QmiDmsDataServiceCapability"></a><a name="QmiDmsSimCapability"></a><a name="QmiDmsRadioInterface"></a><a name="QmiDmsPowerState"></a><a name="QmiDmsUimPinId"></a><a name="QmiDmsUimPinStatus"></a><a name="QmiDmsOperatingMode"></a><a name="QmiDmsOfflineReason"></a><a name="QmiDmsTimeSource"></a><a name="QmiDmsActivationState"></a><a name="QmiDmsUimFacility"></a><a name="QmiDmsUimFacilityState"></a><a name="QmiDmsUimState"></a><a name="QmiDmsTimeReferenceType"></a><a name="QmiDmsFirmwareImageType"></a><pre class="synopsis">enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsDataServiceCapability-enum" title="enum QmiDmsDataServiceCapability">QmiDmsDataServiceCapability</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsSimCapability-enum" title="enum QmiDmsSimCapability">QmiDmsSimCapability</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsBandCapability" title="enum QmiDmsBandCapability">QmiDmsBandCapability</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsLteBandCapability" title="enum QmiDmsLteBandCapability">QmiDmsLteBandCapability</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsRadioInterface-enum" title="enum QmiDmsRadioInterface">QmiDmsRadioInterface</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsPowerState-enum" title="enum QmiDmsPowerState">QmiDmsPowerState</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimPinId-enum" title="enum QmiDmsUimPinId">QmiDmsUimPinId</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimPinStatus-enum" title="enum QmiDmsUimPinStatus">QmiDmsUimPinStatus</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsOperatingMode-enum" title="enum QmiDmsOperatingMode">QmiDmsOperatingMode</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsOfflineReason-enum" title="enum QmiDmsOfflineReason">QmiDmsOfflineReason</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsTimeSource-enum" title="enum QmiDmsTimeSource">QmiDmsTimeSource</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsActivationState-enum" title="enum QmiDmsActivationState">QmiDmsActivationState</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimFacility-enum" title="enum QmiDmsUimFacility">QmiDmsUimFacility</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimFacilityState-enum" title="enum QmiDmsUimFacilityState">QmiDmsUimFacilityState</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimState-enum" title="enum QmiDmsUimState">QmiDmsUimState</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsTimeReferenceType-enum" title="enum QmiDmsTimeReferenceType">QmiDmsTimeReferenceType</a>;
+enum                <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsFirmwareImageType-enum" title="enum QmiDmsFirmwareImageType">QmiDmsFirmwareImageType</a>;
+
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-data-service-capability-get-string" title="qmi_dms_data_service_capability_get_string ()">qmi_dms_data_service_capability_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsDataServiceCapability"><span class="type">QmiDmsDataServiceCapability</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-sim-capability-get-string" title="qmi_dms_sim_capability_get_string ()">qmi_dms_sim_capability_get_string</a>   (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsSimCapability"><span class="type">QmiDmsSimCapability</span></a> val</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-band-capability-build-string-from-mask" title="qmi_dms_band_capability_build_string_from_mask ()">qmi_dms_band_capability_build_string_from_mask</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsBandCapability" title="enum QmiDmsBandCapability"><span class="type">QmiDmsBandCapability</span></a> mask</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-lte-band-capability-build-string-from-mask" title="qmi_dms_lte_band_capability_build_string_from_mask ()">qmi_dms_lte_band_capability_build_string_from_mask</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsLteBandCapability" title="enum QmiDmsLteBandCapability"><span class="type">QmiDmsLteBandCapability</span></a> mask</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-radio-interface-get-string" title="qmi_dms_radio_interface_get_string ()">qmi_dms_radio_interface_get_string</a>  (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsRadioInterface"><span class="type">QmiDmsRadioInterface</span></a> val</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-power-state-build-string-from-mask" title="qmi_dms_power_state_build_string_from_mask ()">qmi_dms_power_state_build_string_from_mask</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsPowerState"><span class="type">QmiDmsPowerState</span></a> mask</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-uim-pin-id-get-string" title="qmi_dms_uim_pin_id_get_string ()">qmi_dms_uim_pin_id_get_string</a>       (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimPinId"><span class="type">QmiDmsUimPinId</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-uim-pin-status-get-string" title="qmi_dms_uim_pin_status_get_string ()">qmi_dms_uim_pin_status_get_string</a>   (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimPinStatus"><span class="type">QmiDmsUimPinStatus</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-operating-mode-get-string" title="qmi_dms_operating_mode_get_string ()">qmi_dms_operating_mode_get_string</a>   (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsOperatingMode"><span class="type">QmiDmsOperatingMode</span></a> val</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-offline-reason-build-string-from-mask" title="qmi_dms_offline_reason_build_string_from_mask ()">qmi_dms_offline_reason_build_string_from_mask</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsOfflineReason"><span class="type">QmiDmsOfflineReason</span></a> mask</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-time-source-get-string" title="qmi_dms_time_source_get_string ()">qmi_dms_time_source_get_string</a>      (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsTimeSource"><span class="type">QmiDmsTimeSource</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-activation-state-get-string" title="qmi_dms_activation_state_get_string ()">qmi_dms_activation_state_get_string</a> (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsActivationState"><span class="type">QmiDmsActivationState</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-uim-facility-get-string" title="qmi_dms_uim_facility_get_string ()">qmi_dms_uim_facility_get_string</a>     (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimFacility"><span class="type">QmiDmsUimFacility</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-uim-facility-state-get-string" title="qmi_dms_uim_facility_state_get_string ()">qmi_dms_uim_facility_state_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimFacilityState"><span class="type">QmiDmsUimFacilityState</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-uim-state-get-string" title="qmi_dms_uim_state_get_string ()">qmi_dms_uim_state_get_string</a>        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimState"><span class="type">QmiDmsUimState</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-time-reference-type-get-string" title="qmi_dms_time_reference_type_get_string ()">qmi_dms_time_reference_type_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsTimeReferenceType"><span class="type">QmiDmsTimeReferenceType</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#qmi-dms-firmware-image-type-get-string" title="qmi_dms_firmware_image_type_get_string ()">qmi_dms_firmware_image_type_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsFirmwareImageType"><span class="type">QmiDmsFirmwareImageType</span></a> val</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-DMS-enumerations-and-flags.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GEnum
+   +----QmiDmsDataServiceCapability
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiDmsSimCapability
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiDmsRadioInterface
+</pre>
+<pre class="synopsis">
+  GFlags
+   +----QmiDmsPowerState
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiDmsUimPinId
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiDmsUimPinStatus
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiDmsOperatingMode
+</pre>
+<pre class="synopsis">
+  GFlags
+   +----QmiDmsOfflineReason
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiDmsTimeSource
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiDmsActivationState
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiDmsUimFacility
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiDmsUimFacilityState
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiDmsUimState
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiDmsTimeReferenceType
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiDmsFirmwareImageType
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-DMS-enumerations-and-flags.description"></a><h2>Description</h2>
+<p>
+This section defines enumerations and flags used in the DMS service
+interface.
+</p>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-DMS-enumerations-and-flags.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="QmiDmsDataServiceCapability-enum"></a><h3>enum QmiDmsDataServiceCapability</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_DATA_SERVICE_CAPABILITY_NONE                   = 0,
+    QMI_DMS_DATA_SERVICE_CAPABILITY_CS                     = 1,
+    QMI_DMS_DATA_SERVICE_CAPABILITY_PS                     = 2,
+    QMI_DMS_DATA_SERVICE_CAPABILITY_SIMULTANEOUS_CS_PS     = 3,
+    QMI_DMS_DATA_SERVICE_CAPABILITY_NON_SIMULTANEOUS_CS_PS = 4
+} QmiDmsDataServiceCapability;
+</pre>
+<p>
+Data service capability.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-DATA-SERVICE-CAPABILITY-NONE:CAPS"></a><span class="term"><code class="literal">QMI_DMS_DATA_SERVICE_CAPABILITY_NONE</code></span></p></td>
+<td>No data services supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-DATA-SERVICE-CAPABILITY-CS:CAPS"></a><span class="term"><code class="literal">QMI_DMS_DATA_SERVICE_CAPABILITY_CS</code></span></p></td>
+<td>Only CS supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-DATA-SERVICE-CAPABILITY-PS:CAPS"></a><span class="term"><code class="literal">QMI_DMS_DATA_SERVICE_CAPABILITY_PS</code></span></p></td>
+<td>Only PS supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-DATA-SERVICE-CAPABILITY-SIMULTANEOUS-CS-PS:CAPS"></a><span class="term"><code class="literal">QMI_DMS_DATA_SERVICE_CAPABILITY_SIMULTANEOUS_CS_PS</code></span></p></td>
+<td>Simultaneous CS and PS supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-DATA-SERVICE-CAPABILITY-NON-SIMULTANEOUS-CS-PS:CAPS"></a><span class="term"><code class="literal">QMI_DMS_DATA_SERVICE_CAPABILITY_NON_SIMULTANEOUS_CS_PS</code></span></p></td>
+<td>Non simultaneous CS and PS supported.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsSimCapability-enum"></a><h3>enum QmiDmsSimCapability</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_SIM_CAPABILITY_NOT_SUPPORTED = 1,
+    QMI_DMS_SIM_CAPABILITY_SUPPORTED     = 2
+} QmiDmsSimCapability;
+</pre>
+<p>
+SIM capability.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-SIM-CAPABILITY-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_SIM_CAPABILITY_NOT_SUPPORTED</code></span></p></td>
+<td>SIM not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-SIM-CAPABILITY-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_SIM_CAPABILITY_SUPPORTED</code></span></p></td>
+<td>SIM is supported.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsBandCapability"></a><h3>enum QmiDmsBandCapability</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_BAND_CAPABILITY_BC_0_A_SYSTEM    = 1 &lt;&lt; 0,
+    QMI_DMS_BAND_CAPABILITY_BC_0_B_SYSTEM    = 1 &lt;&lt; 1,
+    QMI_DMS_BAND_CAPABILITY_BC_1_ALL_BLOCKS  = 1 &lt;&lt; 2,
+    QMI_DMS_BAND_CAPABILITY_BC_2             = 1 &lt;&lt; 3,
+    QMI_DMS_BAND_CAPABILITY_BC_3_A_SYSTEM    = 1 &lt;&lt; 4,
+    QMI_DMS_BAND_CAPABILITY_BC_4_ALL_BLOCKS  = 1 &lt;&lt; 5,
+    QMI_DMS_BAND_CAPABILITY_BC_5_ALL_BLOCKS  = 1 &lt;&lt; 6,
+    QMI_DMS_BAND_CAPABILITY_GSM_DCS_1800     = 1 &lt;&lt; 7,
+    QMI_DMS_BAND_CAPABILITY_GSM_900_EXTENDED = 1 &lt;&lt; 8,
+    QMI_DMS_BAND_CAPABILITY_GSM_900_PRIMARY  = 1 &lt;&lt; 9,
+    QMI_DMS_BAND_CAPABILITY_BC_6             = 1 &lt;&lt; 10,
+    QMI_DMS_BAND_CAPABILITY_BC_7             = 1 &lt;&lt; 11,
+    QMI_DMS_BAND_CAPABILITY_BC_8             = 1 &lt;&lt; 12,
+    QMI_DMS_BAND_CAPABILITY_BC_9             = 1 &lt;&lt; 13,
+    QMI_DMS_BAND_CAPABILITY_BC_10            = 1 &lt;&lt; 14,
+    QMI_DMS_BAND_CAPABILITY_BC_11            = 1 &lt;&lt; 15,
+    QMI_DMS_BAND_CAPABILITY_GSM_450          = 1 &lt;&lt; 16,
+    QMI_DMS_BAND_CAPABILITY_GSM_480          = 1 &lt;&lt; 17,
+    QMI_DMS_BAND_CAPABILITY_GSM_750          = 1 &lt;&lt; 18,
+    QMI_DMS_BAND_CAPABILITY_GSM_850          = 1 &lt;&lt; 19,
+    QMI_DMS_BAND_CAPABILITY_GSM_900_RAILWAYS = 1 &lt;&lt; 20,
+    QMI_DMS_BAND_CAPABILITY_GSM_PCS_1900     = 1 &lt;&lt; 21,
+    QMI_DMS_BAND_CAPABILITY_WCDMA_2100       = 1 &lt;&lt; 22,
+    QMI_DMS_BAND_CAPABILITY_WCDMA_PCS_1900   = 1 &lt;&lt; 23,
+    QMI_DMS_BAND_CAPABILITY_WCDMA_DCS_1800   = 1 &lt;&lt; 24,
+    QMI_DMS_BAND_CAPABILITY_WCDMA_1700_US    = 1 &lt;&lt; 25,
+    QMI_DMS_BAND_CAPABILITY_WCDMA_850_US     = 1 &lt;&lt; 26,
+    QMI_DMS_BAND_CAPABILITY_WCDMA_800        = 1 &lt;&lt; 27,
+    QMI_DMS_BAND_CAPABILITY_BC_12            = 1 &lt;&lt; 28,
+    QMI_DMS_BAND_CAPABILITY_BC_14            = 1 &lt;&lt; 29,
+    /* Bit 30 reserved */
+    QMI_DMS_BAND_CAPABILITY_BC_15            = 1 &lt;&lt; 31,
+    /* Bits 32-47 reserved */
+    QMI_DMS_BAND_CAPABILITY_WCDMA_2600       = ((guint64) 1) &lt;&lt; 48,
+    QMI_DMS_BAND_CAPABILITY_WCDMA_900        = ((guint64) 1) &lt;&lt; 49,
+    QMI_DMS_BAND_CAPABILITY_WCDMA_1700_JAPAN = ((guint64) 1) &lt;&lt; 50,
+    /* Bits 51-55 reserved */
+    QMI_DMS_BAND_CAPABILITY_BC_16            = ((guint64) 1) &lt;&lt; 56,
+    QMI_DMS_BAND_CAPABILITY_BC_17            = ((guint64) 1) &lt;&lt; 57,
+    QMI_DMS_BAND_CAPABILITY_BC_18            = ((guint64) 1) &lt;&lt; 58,
+    QMI_DMS_BAND_CAPABILITY_BC_19            = ((guint64) 1) &lt;&lt; 59,
+    QMI_DMS_BAND_CAPABILITY_WCDMA_850_JAPAN  = ((guint64) 1) &lt;&lt; 60,
+    QMI_DMS_BAND_CAPABILITY_WCDMA_1500       = ((guint64) 1) &lt;&lt; 61
+    /* Bits 62-63 reserved */
+} QmiDmsBandCapability;
+</pre>
+<p>
+Frequency band capabilities.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-0-A-SYSTEM:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_0_A_SYSTEM</code></span></p></td>
+<td>Band class 0, A-system.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-0-B-SYSTEM:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_0_B_SYSTEM</code></span></p></td>
+<td>Band class 0, B-system.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-1-ALL-BLOCKS:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_1_ALL_BLOCKS</code></span></p></td>
+<td>Band class 1, all blocks.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-2:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_2</code></span></p></td>
+<td>Band class 2.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-3-A-SYSTEM:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_3_A_SYSTEM</code></span></p></td>
+<td>Band class 3, A-system.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-4-ALL-BLOCKS:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_4_ALL_BLOCKS</code></span></p></td>
+<td>Band class 4, all blocks.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-5-ALL-BLOCKS:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_5_ALL_BLOCKS</code></span></p></td>
+<td>Band class 5, all blocks.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-GSM-DCS-1800:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_GSM_DCS_1800</code></span></p></td>
+<td>GSM DCS band.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-GSM-900-EXTENDED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_GSM_900_EXTENDED</code></span></p></td>
+<td>GSM Extended GSM band (900).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-GSM-900-PRIMARY:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_GSM_900_PRIMARY</code></span></p></td>
+<td>GSM Primary GSM band (900).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-6:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_6</code></span></p></td>
+<td>Band class 6.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-7:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_7</code></span></p></td>
+<td>Band class 7.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-8:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_8</code></span></p></td>
+<td>Band class 8.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-9:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_9</code></span></p></td>
+<td>Band class 9.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-10:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_10</code></span></p></td>
+<td>Band class 10.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-11:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_11</code></span></p></td>
+<td>Band class 11.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-GSM-450:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_GSM_450</code></span></p></td>
+<td>GSM 450 band.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-GSM-480:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_GSM_480</code></span></p></td>
+<td>GSM 480 band.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-GSM-750:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_GSM_750</code></span></p></td>
+<td>GSM 750 band.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-GSM-850:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_GSM_850</code></span></p></td>
+<td>GSM 850 band.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-GSM-900-RAILWAYS:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_GSM_900_RAILWAYS</code></span></p></td>
+<td>GSM railways band (900).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-GSM-PCS-1900:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_GSM_PCS_1900</code></span></p></td>
+<td>GSM PCS band (1900).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-WCDMA-2100:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_WCDMA_2100</code></span></p></td>
+<td>WCDMA 2100 band (Europe, Japan, China).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-WCDMA-PCS-1900:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_WCDMA_PCS_1900</code></span></p></td>
+<td>WCDMA PCS 1900 band (US).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-WCDMA-DCS-1800:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_WCDMA_DCS_1800</code></span></p></td>
+<td>WCDMA DCS 1800 band (Europe, China).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-WCDMA-1700-US:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_WCDMA_1700_US</code></span></p></td>
+<td>WCDMA 1700 band (US).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-WCDMA-850-US:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_WCDMA_850_US</code></span></p></td>
+<td>WCDMA 850 band (US).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-WCDMA-800:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_WCDMA_800</code></span></p></td>
+<td>QWCDMA 850 band (Japan).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-12:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_12</code></span></p></td>
+<td>Band class 12.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-14:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_14</code></span></p></td>
+<td>Band class 14.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-15:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_15</code></span></p></td>
+<td>Band class 15.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-WCDMA-2600:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_WCDMA_2600</code></span></p></td>
+<td>WCDMA 2600 band (Europe).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-WCDMA-900:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_WCDMA_900</code></span></p></td>
+<td>WCDMA 900 band (Europe, Japan).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-WCDMA-1700-JAPAN:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_WCDMA_1700_JAPAN</code></span></p></td>
+<td>WCDMA 1700 band (Japan).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-16:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_16</code></span></p></td>
+<td>Band class 16.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-17:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_17</code></span></p></td>
+<td>Band class 17.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-18:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_18</code></span></p></td>
+<td>Band class 18.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-BC-19:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_BC_19</code></span></p></td>
+<td>Band class 19.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-WCDMA-850-JAPAN:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_WCDMA_850_JAPAN</code></span></p></td>
+<td>WCDMA 850 band (Japan)
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-BAND-CAPABILITY-WCDMA-1500:CAPS"></a><span class="term"><code class="literal">QMI_DMS_BAND_CAPABILITY_WCDMA_1500</code></span></p></td>
+<td>WCDMA 1500 band.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsLteBandCapability"></a><h3>enum QmiDmsLteBandCapability</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_1  = 1 &lt;&lt; 0,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_2  = 1 &lt;&lt; 1,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_3  = 1 &lt;&lt; 2,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_4  = 1 &lt;&lt; 3,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_5  = 1 &lt;&lt; 4,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_6  = 1 &lt;&lt; 5,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_7  = 1 &lt;&lt; 6,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_8  = 1 &lt;&lt; 7,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_9  = 1 &lt;&lt; 8,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_10 = 1 &lt;&lt; 9,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_11 = 1 &lt;&lt; 10,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_12 = 1 &lt;&lt; 11,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_13 = 1 &lt;&lt; 12,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_14 = 1 &lt;&lt; 13,
+    /* Bit 14-15 reserved */
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_17 = 1 &lt;&lt; 16,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_18 = 1 &lt;&lt; 17,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_19 = 1 &lt;&lt; 18,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_20 = 1 &lt;&lt; 19,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_21 = 1 &lt;&lt; 20,
+    /* Bit 21-22 reserved */
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_24 = 1 &lt;&lt; 23,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_25 = 1 &lt;&lt; 24,
+    /* Bit 25-31 reserved */
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_33 = ((guint64) 1) &lt;&lt; 32,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_34 = ((guint64) 1) &lt;&lt; 33,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_35 = ((guint64) 1) &lt;&lt; 34,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_36 = ((guint64) 1) &lt;&lt; 35,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_37 = ((guint64) 1) &lt;&lt; 36,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_38 = ((guint64) 1) &lt;&lt; 37,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_39 = ((guint64) 1) &lt;&lt; 38,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_40 = ((guint64) 1) &lt;&lt; 39,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_41 = ((guint64) 1) &lt;&lt; 40,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_42 = ((guint64) 1) &lt;&lt; 41,
+    QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_43 = ((guint64) 1) &lt;&lt; 42
+    /* Bit 43-64 reserved */
+} QmiDmsLteBandCapability;
+</pre>
+<p>
+LTE-specific Frequency bands.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-1:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_1</code></span></p></td>
+<td>LTE EUTRAN Band 1
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-2:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_2</code></span></p></td>
+<td>LTE EUTRAN Band 2.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-3:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_3</code></span></p></td>
+<td>LTE EUTRAN Band 3.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-4:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_4</code></span></p></td>
+<td>LTE EUTRAN Band 4.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-5:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_5</code></span></p></td>
+<td>LTE EUTRAN Band 5.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-6:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_6</code></span></p></td>
+<td>LTE EUTRAN Band 6.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-7:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_7</code></span></p></td>
+<td>LTE EUTRAN Band 7.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-8:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_8</code></span></p></td>
+<td>LTE EUTRAN Band 8.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-9:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_9</code></span></p></td>
+<td>LTE EUTRAN Band 9.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-10:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_10</code></span></p></td>
+<td>LTE EUTRAN Band 10.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-11:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_11</code></span></p></td>
+<td>LTE EUTRAN Band 11.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-12:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_12</code></span></p></td>
+<td>LTE EUTRAN Band 12.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-13:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_13</code></span></p></td>
+<td>LTE EUTRAN Band 13.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-14:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_14</code></span></p></td>
+<td>LTE EUTRAN Band 14.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-17:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_17</code></span></p></td>
+<td>LTE EUTRAN Band 17.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-18:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_18</code></span></p></td>
+<td>LTE EUTRAN Band 18.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-19:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_19</code></span></p></td>
+<td>LTE EUTRAN Band 19.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-20:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_20</code></span></p></td>
+<td>LTE EUTRAN Band 20.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-21:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_21</code></span></p></td>
+<td>LTE EUTRAN Band 21.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-24:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_24</code></span></p></td>
+<td>LTE EUTRAN Band 24.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-25:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_25</code></span></p></td>
+<td>LTE EUTRAN Band 25.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-33:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_33</code></span></p></td>
+<td>LTE EUTRAN Band 33.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-34:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_34</code></span></p></td>
+<td>LTE EUTRAN Band 34.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-35:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_35</code></span></p></td>
+<td>LTE EUTRAN Band 35.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-36:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_36</code></span></p></td>
+<td>LTE EUTRAN Band 36.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-37:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_37</code></span></p></td>
+<td>LTE EUTRAN Band 37.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-38:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_38</code></span></p></td>
+<td>LTE EUTRAN Band 38.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-39:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_39</code></span></p></td>
+<td>LTE EUTRAN Band 39.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-40:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_40</code></span></p></td>
+<td>LTE EUTRAN Band 40.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-41:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_41</code></span></p></td>
+<td>LTE EUTRAN Band 41.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-42:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_42</code></span></p></td>
+<td>LTE EUTRAN Band 42.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-LTE-BAND-CAPABILITY-EUTRAN-43:CAPS"></a><span class="term"><code class="literal">QMI_DMS_LTE_BAND_CAPABILITY_EUTRAN_43</code></span></p></td>
+<td>LTE EUTRAN Band 43.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsRadioInterface-enum"></a><h3>enum QmiDmsRadioInterface</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_RADIO_INTERFACE_CDMA20001X = 1,
+    QMI_DMS_RADIO_INTERFACE_EVDO       = 2,
+    QMI_DMS_RADIO_INTERFACE_GSM        = 4,
+    QMI_DMS_RADIO_INTERFACE_UMTS       = 5,
+    QMI_DMS_RADIO_INTERFACE_LTE        = 8
+} QmiDmsRadioInterface;
+</pre>
+<p>
+Radio interface type.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-RADIO-INTERFACE-CDMA20001X:CAPS"></a><span class="term"><code class="literal">QMI_DMS_RADIO_INTERFACE_CDMA20001X</code></span></p></td>
+<td>CDMA2000 1x.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-RADIO-INTERFACE-EVDO:CAPS"></a><span class="term"><code class="literal">QMI_DMS_RADIO_INTERFACE_EVDO</code></span></p></td>
+<td>CDMA2000 HRPD (1xEV-DO)
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-RADIO-INTERFACE-GSM:CAPS"></a><span class="term"><code class="literal">QMI_DMS_RADIO_INTERFACE_GSM</code></span></p></td>
+<td>GSM.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-RADIO-INTERFACE-UMTS:CAPS"></a><span class="term"><code class="literal">QMI_DMS_RADIO_INTERFACE_UMTS</code></span></p></td>
+<td>UMTS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-RADIO-INTERFACE-LTE:CAPS"></a><span class="term"><code class="literal">QMI_DMS_RADIO_INTERFACE_LTE</code></span></p></td>
+<td>LTE.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsPowerState-enum"></a><h3>enum QmiDmsPowerState</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_POWER_STATE_EXTERNAL_SOURCE   = 1 &lt;&lt; 0,
+    QMI_DMS_POWER_STATE_BATTERY_CONNECTED = 1 &lt;&lt; 1,
+    QMI_DMS_POWER_STATE_BATTERY_CHARGING  = 1 &lt;&lt; 2,
+    QMI_DMS_POWER_STATE_FAULT             = 1 &lt;&lt; 3,
+} QmiDmsPowerState;
+</pre>
+<p>
+Flags specifying the current power state.
+</p>
+<p>
+If <em class="parameter"><code>QMI_DMS_POWER_STATE_EXTERNAL_SOURCE</code></em> is set, the device is powerered by an
+external source; otherwise it is powered by a battery.
+</p>
+<p>
+If <em class="parameter"><code>QMI_DMS_POWER_STATE_BATTERY_CONNECTED</code></em> is set, the battery is connected;
+otherwise the battery is not connected.
+</p>
+<p>
+If <em class="parameter"><code>QMI_DMS_POWER_STATE_BATTERY_CHARGING</code></em> is set, the battery is being charged;
+otherwise the battery is not being charged.
+</p>
+<p>
+If <em class="parameter"><code>QMI_DMS_POWER_STATE_FAULT</code></em> is set, a power fault has been detected.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-POWER-STATE-EXTERNAL-SOURCE:CAPS"></a><span class="term"><code class="literal">QMI_DMS_POWER_STATE_EXTERNAL_SOURCE</code></span></p></td>
+<td>Powered by an external source.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-POWER-STATE-BATTERY-CONNECTED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_POWER_STATE_BATTERY_CONNECTED</code></span></p></td>
+<td>Battery is connected.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-POWER-STATE-BATTERY-CHARGING:CAPS"></a><span class="term"><code class="literal">QMI_DMS_POWER_STATE_BATTERY_CHARGING</code></span></p></td>
+<td>Battery is currently being charged.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-POWER-STATE-FAULT:CAPS"></a><span class="term"><code class="literal">QMI_DMS_POWER_STATE_FAULT</code></span></p></td>
+<td>Recognized power fault.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsUimPinId-enum"></a><h3>enum QmiDmsUimPinId</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_UIM_PIN_ID_PIN  = 1,
+    QMI_DMS_UIM_PIN_ID_PIN2 = 2
+} QmiDmsUimPinId;
+</pre>
+<p>
+The PIN identifier.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-UIM-PIN-ID-PIN:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_PIN_ID_PIN</code></span></p></td>
+<td>PIN.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-PIN-ID-PIN2:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_PIN_ID_PIN2</code></span></p></td>
+<td>PIN2.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsUimPinStatus-enum"></a><h3>enum QmiDmsUimPinStatus</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_UIM_PIN_STATUS_NOT_INITIALIZED      = 0,
+    QMI_DMS_UIM_PIN_STATUS_ENABLED_NOT_VERIFIED = 1,
+    QMI_DMS_UIM_PIN_STATUS_ENABLED_VERIFIED     = 2,
+    QMI_DMS_UIM_PIN_STATUS_DISABLED             = 3,
+    QMI_DMS_UIM_PIN_STATUS_BLOCKED              = 4,
+    QMI_DMS_UIM_PIN_STATUS_PERMANENTLY_BLOCKED  = 5,
+    QMI_DMS_UIM_PIN_STATUS_UNBLOCKED            = 6,
+    QMI_DMS_UIM_PIN_STATUS_CHANGED              = 7,
+} QmiDmsUimPinStatus;
+</pre>
+<p>
+The PIN status.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-UIM-PIN-STATUS-NOT-INITIALIZED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_PIN_STATUS_NOT_INITIALIZED</code></span></p></td>
+<td>Not initialized.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-PIN-STATUS-ENABLED-NOT-VERIFIED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_PIN_STATUS_ENABLED_NOT_VERIFIED</code></span></p></td>
+<td>Enabled, not verified.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-PIN-STATUS-ENABLED-VERIFIED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_PIN_STATUS_ENABLED_VERIFIED</code></span></p></td>
+<td>Enabled, verified.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-PIN-STATUS-DISABLED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_PIN_STATUS_DISABLED</code></span></p></td>
+<td>Disabled.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-PIN-STATUS-BLOCKED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_PIN_STATUS_BLOCKED</code></span></p></td>
+<td>Blocked.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-PIN-STATUS-PERMANENTLY-BLOCKED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_PIN_STATUS_PERMANENTLY_BLOCKED</code></span></p></td>
+<td>Permanently Blocked.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-PIN-STATUS-UNBLOCKED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_PIN_STATUS_UNBLOCKED</code></span></p></td>
+<td>Unblocked.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-PIN-STATUS-CHANGED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_PIN_STATUS_CHANGED</code></span></p></td>
+<td>Changed.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsOperatingMode-enum"></a><h3>enum QmiDmsOperatingMode</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_OPERATING_MODE_ONLINE                = 0,
+    QMI_DMS_OPERATING_MODE_LOW_POWER             = 1,
+    QMI_DMS_OPERATING_MODE_FACTORY_TEST          = 2,
+    QMI_DMS_OPERATING_MODE_OFFLINE               = 3,
+    QMI_DMS_OPERATING_MODE_RESET                 = 4,
+    QMI_DMS_OPERATING_MODE_SHUTTING_DOWN         = 5,
+    QMI_DMS_OPERATING_MODE_PERSISTENT_LOW_POWER  = 6,
+    QMI_DMS_OPERATING_MODE_MODE_ONLY_LOW_POWER   = 7,
+    QMI_DMS_OPERATING_MODE_UNKNOWN               = 0xFF
+} QmiDmsOperatingMode;
+</pre>
+<p>
+Operating mode of the device.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-OPERATING-MODE-ONLINE:CAPS"></a><span class="term"><code class="literal">QMI_DMS_OPERATING_MODE_ONLINE</code></span></p></td>
+<td>Device can acquire a system and make calls.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-OPERATING-MODE-LOW-POWER:CAPS"></a><span class="term"><code class="literal">QMI_DMS_OPERATING_MODE_LOW_POWER</code></span></p></td>
+<td>Device has temporarily disabled RF.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-OPERATING-MODE-FACTORY-TEST:CAPS"></a><span class="term"><code class="literal">QMI_DMS_OPERATING_MODE_FACTORY_TEST</code></span></p></td>
+<td>Special mode for manufacturer tests.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-OPERATING-MODE-OFFLINE:CAPS"></a><span class="term"><code class="literal">QMI_DMS_OPERATING_MODE_OFFLINE</code></span></p></td>
+<td>Device has deactivated RF and is partially shutdown.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-OPERATING-MODE-RESET:CAPS"></a><span class="term"><code class="literal">QMI_DMS_OPERATING_MODE_RESET</code></span></p></td>
+<td>Device is in the process of power cycling.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-OPERATING-MODE-SHUTTING-DOWN:CAPS"></a><span class="term"><code class="literal">QMI_DMS_OPERATING_MODE_SHUTTING_DOWN</code></span></p></td>
+<td>Device is in the process of shutting down.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-OPERATING-MODE-PERSISTENT-LOW-POWER:CAPS"></a><span class="term"><code class="literal">QMI_DMS_OPERATING_MODE_PERSISTENT_LOW_POWER</code></span></p></td>
+<td>Device has disabled RF and state persists even after a reset.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-OPERATING-MODE-MODE-ONLY-LOW-POWER:CAPS"></a><span class="term"><code class="literal">QMI_DMS_OPERATING_MODE_MODE_ONLY_LOW_POWER</code></span></p></td>
+<td>Mode-only Low Power.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-OPERATING-MODE-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_DMS_OPERATING_MODE_UNKNOWN</code></span></p></td>
+<td>Unknown.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsOfflineReason-enum"></a><h3>enum QmiDmsOfflineReason</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_OFFLINE_REASON_HOST_IMAGE_MISCONFIGURATION = 1 &lt;&lt; 0,
+    QMI_DMS_OFFLINE_REASON_PRI_IMAGE_MISCONFIGURATION  = 1 &lt;&lt; 1,
+    QMI_DMS_OFFLINE_REASON_PRI_VERSION_INCOMPATIBLE    = 1 &lt;&lt; 2,
+    QMI_DMS_OFFLINE_REASON_DEVICE_MEMORY_FULL          = 1 &lt;&lt; 3
+} QmiDmsOfflineReason;
+</pre>
+<p>
+Reasons for being in Offline (<em class="parameter"><code>QMI_DMS_OPERATING_MODE_OFFLINE</code></em>) state.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-OFFLINE-REASON-HOST-IMAGE-MISCONFIGURATION:CAPS"></a><span class="term"><code class="literal">QMI_DMS_OFFLINE_REASON_HOST_IMAGE_MISCONFIGURATION</code></span></p></td>
+<td>Host image misconfiguration.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-OFFLINE-REASON-PRI-IMAGE-MISCONFIGURATION:CAPS"></a><span class="term"><code class="literal">QMI_DMS_OFFLINE_REASON_PRI_IMAGE_MISCONFIGURATION</code></span></p></td>
+<td>PRI image misconfiguration.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-OFFLINE-REASON-PRI-VERSION-INCOMPATIBLE:CAPS"></a><span class="term"><code class="literal">QMI_DMS_OFFLINE_REASON_PRI_VERSION_INCOMPATIBLE</code></span></p></td>
+<td>PRI version incompatible.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-OFFLINE-REASON-DEVICE-MEMORY-FULL:CAPS"></a><span class="term"><code class="literal">QMI_DMS_OFFLINE_REASON_DEVICE_MEMORY_FULL</code></span></p></td>
+<td>Memory full, cannot copy PRI information.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsTimeSource-enum"></a><h3>enum QmiDmsTimeSource</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_TIME_SOURCE_DEVICE        = 0,
+    QMI_DMS_TIME_SOURCE_CDMA_NETWORK  = 1,
+    QMI_DMS_TIME_SOURCE_HDR_NETWORK   = 2,
+} QmiDmsTimeSource;
+</pre>
+<p>
+Source of the timestamp.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-TIME-SOURCE-DEVICE:CAPS"></a><span class="term"><code class="literal">QMI_DMS_TIME_SOURCE_DEVICE</code></span></p></td>
+<td>32 kHz device clock.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-TIME-SOURCE-CDMA-NETWORK:CAPS"></a><span class="term"><code class="literal">QMI_DMS_TIME_SOURCE_CDMA_NETWORK</code></span></p></td>
+<td>CDMA network.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-TIME-SOURCE-HDR-NETWORK:CAPS"></a><span class="term"><code class="literal">QMI_DMS_TIME_SOURCE_HDR_NETWORK</code></span></p></td>
+<td>HDR network.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsActivationState-enum"></a><h3>enum QmiDmsActivationState</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_ACTIVATION_STATE_NOT_ACTIVATED       = 0x00,
+    QMI_DMS_ACTIVATION_STATE_ACTIVATED           = 0x01,
+    QMI_DMS_ACTIVATION_STATE_CONNECTING          = 0x02,
+    QMI_DMS_ACTIVATION_STATE_CONNECTED           = 0x03,
+    QMI_DMS_ACTIVATION_STATE_OTASP_AUTHENTICATED = 0x04,
+    QMI_DMS_ACTIVATION_STATE_OTASP_NAM           = 0x05,
+    QMI_DMS_ACTIVATION_STATE_OTASP_MDN           = 0x06,
+    QMI_DMS_ACTIVATION_STATE_OTASP_IMSI          = 0x07,
+    QMI_DMS_ACTIVATION_STATE_OTASP_PRL           = 0x08,
+    QMI_DMS_ACTIVATION_STATE_OTASP_SPC           = 0x09,
+    QMI_DMS_ACTIVATION_STATE_OTASP_COMMITED      = 0x0A
+} QmiDmsActivationState;
+</pre>
+<p>
+State of the service activation.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-ACTIVATION-STATE-NOT-ACTIVATED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_ACTIVATION_STATE_NOT_ACTIVATED</code></span></p></td>
+<td>Service not activated.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-ACTIVATION-STATE-ACTIVATED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_ACTIVATION_STATE_ACTIVATED</code></span></p></td>
+<td>Service is activated.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-ACTIVATION-STATE-CONNECTING:CAPS"></a><span class="term"><code class="literal">QMI_DMS_ACTIVATION_STATE_CONNECTING</code></span></p></td>
+<td>Connection in progress for automatic activation.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-ACTIVATION-STATE-CONNECTED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_ACTIVATION_STATE_CONNECTED</code></span></p></td>
+<td>Connection connected for automatic activation.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-ACTIVATION-STATE-OTASP-AUTHENTICATED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_ACTIVATION_STATE_OTASP_AUTHENTICATED</code></span></p></td>
+<td>OTASP security authenticated.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-ACTIVATION-STATE-OTASP-NAM:CAPS"></a><span class="term"><code class="literal">QMI_DMS_ACTIVATION_STATE_OTASP_NAM</code></span></p></td>
+<td>OTASP NAM downloaded.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-ACTIVATION-STATE-OTASP-MDN:CAPS"></a><span class="term"><code class="literal">QMI_DMS_ACTIVATION_STATE_OTASP_MDN</code></span></p></td>
+<td>OTASP MDN downloaded.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-ACTIVATION-STATE-OTASP-IMSI:CAPS"></a><span class="term"><code class="literal">QMI_DMS_ACTIVATION_STATE_OTASP_IMSI</code></span></p></td>
+<td>OTASP IMSI downloaded.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-ACTIVATION-STATE-OTASP-PRL:CAPS"></a><span class="term"><code class="literal">QMI_DMS_ACTIVATION_STATE_OTASP_PRL</code></span></p></td>
+<td>OTASP PRL downloaded.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-ACTIVATION-STATE-OTASP-SPC:CAPS"></a><span class="term"><code class="literal">QMI_DMS_ACTIVATION_STATE_OTASP_SPC</code></span></p></td>
+<td>OTASP SPC downloaded.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-ACTIVATION-STATE-OTASP-COMMITED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_ACTIVATION_STATE_OTASP_COMMITED</code></span></p></td>
+<td>OTASP settings committed.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsUimFacility-enum"></a><h3>enum QmiDmsUimFacility</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_UIM_FACILITY_PN = 0,
+    QMI_DMS_UIM_FACILITY_PU = 1,
+    QMI_DMS_UIM_FACILITY_PP = 2,
+    QMI_DMS_UIM_FACILITY_PC = 3,
+    QMI_DMS_UIM_FACILITY_PF = 4
+} QmiDmsUimFacility;
+</pre>
+<p>
+UIM personalization facilities.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-UIM-FACILITY-PN:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_FACILITY_PN</code></span></p></td>
+<td>Network personalization facility.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-FACILITY-PU:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_FACILITY_PU</code></span></p></td>
+<td>Network subset personalization facility.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-FACILITY-PP:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_FACILITY_PP</code></span></p></td>
+<td>Service provider facility.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-FACILITY-PC:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_FACILITY_PC</code></span></p></td>
+<td>Corporate personalization facility.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-FACILITY-PF:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_FACILITY_PF</code></span></p></td>
+<td>UIM personalization facility.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsUimFacilityState-enum"></a><h3>enum QmiDmsUimFacilityState</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_UIM_FACILITY_STATE_DEACTIVATED = 0,
+    QMI_DMS_UIM_FACILITY_STATE_ACTIVATED   = 1,
+    QMI_DMS_UIM_FACILITY_STATE_BLOCKED     = 2
+} QmiDmsUimFacilityState;
+</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-UIM-FACILITY-STATE-DEACTIVATED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_FACILITY_STATE_DEACTIVATED</code></span></p></td>
+<td>Facility is deactivated.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-FACILITY-STATE-ACTIVATED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_FACILITY_STATE_ACTIVATED</code></span></p></td>
+<td>Facility is activated.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-FACILITY-STATE-BLOCKED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_FACILITY_STATE_BLOCKED</code></span></p></td>
+<td>Facility is blocked.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsUimState-enum"></a><h3>enum QmiDmsUimState</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_UIM_STATE_INITIALIZATION_COMPLETED = 0x00,
+    QMI_DMS_UIM_STATE_LOCKED_OR_FAILED         = 0x01,
+    QMI_DMS_UIM_STATE_NOT_PRESENT              = 0x02,
+    QMI_DMS_UIM_STATE_RESERVED                 = 0x03,
+    QMI_DMS_UIM_STATE_UNKNOWN                  = 0xFF
+} QmiDmsUimState;
+</pre>
+<p>
+State of the UIM.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-UIM-STATE-INITIALIZATION-COMPLETED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_STATE_INITIALIZATION_COMPLETED</code></span></p></td>
+<td>UIM initialization completed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-STATE-LOCKED-OR-FAILED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_STATE_LOCKED_OR_FAILED</code></span></p></td>
+<td>UIM is locked or failed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-STATE-NOT-PRESENT:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_STATE_NOT_PRESENT</code></span></p></td>
+<td>No UIM in the device.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-STATE-RESERVED:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_STATE_RESERVED</code></span></p></td>
+<td>Reserved, unknown.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-UIM-STATE-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_DMS_UIM_STATE_UNKNOWN</code></span></p></td>
+<td>UIM state currently unavailable.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsTimeReferenceType-enum"></a><h3>enum QmiDmsTimeReferenceType</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_TIME_REFERENCE_TYPE_USER = 0
+} QmiDmsTimeReferenceType;
+</pre>
+<p>
+Time reference type.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><a name="QMI-DMS-TIME-REFERENCE-TYPE-USER:CAPS"></a><span class="term"><code class="literal">QMI_DMS_TIME_REFERENCE_TYPE_USER</code></span></p></td>
+<td>User time.
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiDmsFirmwareImageType-enum"></a><h3>enum QmiDmsFirmwareImageType</h3>
+<pre class="programlisting">typedef enum {
+    QMI_DMS_FIRMWARE_IMAGE_TYPE_MODEM = 0,
+    QMI_DMS_FIRMWARE_IMAGE_TYPE_PRI   = 1
+} QmiDmsFirmwareImageType;
+</pre>
+<p>
+Type of firmware image.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-DMS-FIRMWARE-IMAGE-TYPE-MODEM:CAPS"></a><span class="term"><code class="literal">QMI_DMS_FIRMWARE_IMAGE_TYPE_MODEM</code></span></p></td>
+<td>Modem image.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-DMS-FIRMWARE-IMAGE-TYPE-PRI:CAPS"></a><span class="term"><code class="literal">QMI_DMS_FIRMWARE_IMAGE_TYPE_PRI</code></span></p></td>
+<td>PRI image.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-data-service-capability-get-string"></a><h3>qmi_dms_data_service_capability_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_dms_data_service_capability_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsDataServiceCapability"><span class="type">QmiDmsDataServiceCapability</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsDataServiceCapability"><span class="type">QmiDmsDataServiceCapability</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiDmsDataServiceCapability.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-sim-capability-get-string"></a><h3>qmi_dms_sim_capability_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_dms_sim_capability_get_string   (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsSimCapability"><span class="type">QmiDmsSimCapability</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsSimCapability"><span class="type">QmiDmsSimCapability</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiDmsSimCapability.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-band-capability-build-string-from-mask"></a><h3>qmi_dms_band_capability_build_string_from_mask ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             qmi_dms_band_capability_build_string_from_mask
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsBandCapability" title="enum QmiDmsBandCapability"><span class="type">QmiDmsBandCapability</span></a> mask</code></em>);</pre>
+<p>
+Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsBandCapability" title="enum QmiDmsBandCapability"><span class="type">QmiDmsBandCapability</span></a> in <em class="parameter"><code>mask</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
+<td>bitmask of QmiDmsBandCapability values.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the list of nicknames, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none given. The returned value should be freed with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-lte-band-capability-build-string-from-mask"></a><h3>qmi_dms_lte_band_capability_build_string_from_mask ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             qmi_dms_lte_band_capability_build_string_from_mask
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsLteBandCapability" title="enum QmiDmsLteBandCapability"><span class="type">QmiDmsLteBandCapability</span></a> mask</code></em>);</pre>
+<p>
+Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsLteBandCapability" title="enum QmiDmsLteBandCapability"><span class="type">QmiDmsLteBandCapability</span></a> in <em class="parameter"><code>mask</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
+<td>bitmask of QmiDmsLteBandCapability values.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the list of nicknames, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none given. The returned value should be freed with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-radio-interface-get-string"></a><h3>qmi_dms_radio_interface_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_dms_radio_interface_get_string  (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsRadioInterface"><span class="type">QmiDmsRadioInterface</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsRadioInterface"><span class="type">QmiDmsRadioInterface</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiDmsRadioInterface.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-power-state-build-string-from-mask"></a><h3>qmi_dms_power_state_build_string_from_mask ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             qmi_dms_power_state_build_string_from_mask
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsPowerState"><span class="type">QmiDmsPowerState</span></a> mask</code></em>);</pre>
+<p>
+Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsPowerState"><span class="type">QmiDmsPowerState</span></a> in <em class="parameter"><code>mask</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
+<td>bitmask of QmiDmsPowerState values.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the list of nicknames, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none given. The returned value should be freed with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-uim-pin-id-get-string"></a><h3>qmi_dms_uim_pin_id_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_dms_uim_pin_id_get_string       (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimPinId"><span class="type">QmiDmsUimPinId</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimPinId"><span class="type">QmiDmsUimPinId</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiDmsUimPinId.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-uim-pin-status-get-string"></a><h3>qmi_dms_uim_pin_status_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_dms_uim_pin_status_get_string   (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimPinStatus"><span class="type">QmiDmsUimPinStatus</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimPinStatus"><span class="type">QmiDmsUimPinStatus</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiDmsUimPinStatus.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-operating-mode-get-string"></a><h3>qmi_dms_operating_mode_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_dms_operating_mode_get_string   (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsOperatingMode"><span class="type">QmiDmsOperatingMode</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsOperatingMode"><span class="type">QmiDmsOperatingMode</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiDmsOperatingMode.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-offline-reason-build-string-from-mask"></a><h3>qmi_dms_offline_reason_build_string_from_mask ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             qmi_dms_offline_reason_build_string_from_mask
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsOfflineReason"><span class="type">QmiDmsOfflineReason</span></a> mask</code></em>);</pre>
+<p>
+Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsOfflineReason"><span class="type">QmiDmsOfflineReason</span></a> in <em class="parameter"><code>mask</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
+<td>bitmask of QmiDmsOfflineReason values.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the list of nicknames, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none given. The returned value should be freed with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-time-source-get-string"></a><h3>qmi_dms_time_source_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_dms_time_source_get_string      (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsTimeSource"><span class="type">QmiDmsTimeSource</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsTimeSource"><span class="type">QmiDmsTimeSource</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiDmsTimeSource.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-activation-state-get-string"></a><h3>qmi_dms_activation_state_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_dms_activation_state_get_string (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsActivationState"><span class="type">QmiDmsActivationState</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsActivationState"><span class="type">QmiDmsActivationState</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiDmsActivationState.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-uim-facility-get-string"></a><h3>qmi_dms_uim_facility_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_dms_uim_facility_get_string     (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimFacility"><span class="type">QmiDmsUimFacility</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimFacility"><span class="type">QmiDmsUimFacility</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiDmsUimFacility.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-uim-facility-state-get-string"></a><h3>qmi_dms_uim_facility_state_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_dms_uim_facility_state_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimFacilityState"><span class="type">QmiDmsUimFacilityState</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimFacilityState"><span class="type">QmiDmsUimFacilityState</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiDmsUimFacilityState.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-uim-state-get-string"></a><h3>qmi_dms_uim_state_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_dms_uim_state_get_string        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimState"><span class="type">QmiDmsUimState</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsUimState"><span class="type">QmiDmsUimState</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiDmsUimState.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-time-reference-type-get-string"></a><h3>qmi_dms_time_reference_type_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_dms_time_reference_type_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsTimeReferenceType"><span class="type">QmiDmsTimeReferenceType</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsTimeReferenceType"><span class="type">QmiDmsTimeReferenceType</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiDmsTimeReferenceType.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-dms-firmware-image-type-get-string"></a><h3>qmi_dms_firmware_image_type_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_dms_firmware_image_type_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsFirmwareImageType"><span class="type">QmiDmsFirmwareImageType</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-DMS-enumerations-and-flags.html#QmiDmsFirmwareImageType"><span class="type">QmiDmsFirmwareImageType</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiDmsFirmwareImageType.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>

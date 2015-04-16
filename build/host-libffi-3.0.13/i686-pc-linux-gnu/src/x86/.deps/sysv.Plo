@@ -1,0 +1,13 @@
+src/x86/sysv.lo: ../src/x86/sysv.S /usr/include/stdc-predef.h \
+ /usr/include/i386-linux-gnu/bits/predefs.h fficonfig.h include/ffi.h \
+ include/ffitarget.h
+
+/usr/include/stdc-predef.h:
+
+/usr/include/i386-linux-gnu/bits/predefs.h:
+
+fficonfig.h:
+
+include/ffi.h:
+
+include/ffitarget.h:

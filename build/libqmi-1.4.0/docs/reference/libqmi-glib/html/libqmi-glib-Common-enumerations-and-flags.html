@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Common enumerations and flags</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libqmi-glib Reference Manual">
+<link rel="up" href="ch01.html" title="Core">
+<link rel="prev" href="QmiClient.html" title="QmiClient">
+<link rel="next" href="libqmi-glib-Errors.html" title="Errors">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="QmiClient.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libqmi-glib Reference Manual</th>
+<td><a accesskey="n" href="libqmi-glib-Errors.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libqmi-glib-Common-enumerations-and-flags.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libqmi-glib-Common-enumerations-and-flags.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#libqmi-glib-Common-enumerations-and-flags.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libqmi-glib-Common-enumerations-and-flags"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libqmi-glib-Common-enumerations-and-flags.top_of_page"></a>Common enumerations and flags</span></h2>
+<p>Common enumerations and flags</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libqmi-glib-Common-enumerations-and-flags.synopsis"></a><h2>Synopsis</h2>
+<a name="QmiService"></a><pre class="synopsis">enum                <a class="link" href="libqmi-glib-Common-enumerations-and-flags.html#QmiService-enum" title="enum QmiService">QmiService</a>;
+
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-Common-enumerations-and-flags.html#qmi-service-get-string" title="qmi_service_get_string ()">qmi_service_get_string</a>              (<em class="parameter"><code><a class="link" href="libqmi-glib-Common-enumerations-and-flags.html#QmiService"><span class="type">QmiService</span></a> val</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-Common-enumerations-and-flags.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GEnum
+   +----QmiService
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-Common-enumerations-and-flags.description"></a><h2>Description</h2>
+<p>
+This section defines common enumerations and flags used in the interface.
+</p>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-Common-enumerations-and-flags.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="QmiService-enum"></a><h3>enum QmiService</h3>
+<pre class="programlisting">typedef enum {
+    /* Unknown service */
+    QMI_SERVICE_UNKNOWN = -1,
+    /* Control service */
+    QMI_SERVICE_CTL = 0x00,
+    /* Wireless Data Service */
+    QMI_SERVICE_WDS = 0x01,
+    /* Device Management Service */
+    QMI_SERVICE_DMS = 0x02,
+    /* Network Access Service */
+    QMI_SERVICE_NAS = 0x03,
+    /* Quality Of Service service */
+    QMI_SERVICE_QOS = 0x04,
+    /* Wireless Messaging Service */
+    QMI_SERVICE_WMS = 0x05,
+    /* Position Determination Service */
+    QMI_SERVICE_PDS = 0x06,
+    /* Authentication service */
+    QMI_SERVICE_AUTH = 0x07,
+    /* AT service */
+    QMI_SERVICE_AT = 0x08,
+    /* Voice service */
+    QMI_SERVICE_VOICE = 0x09,
+    /* Card Application Toolkit service (major version 2) */
+    QMI_SERVICE_CAT2 = 0x0A,
+    /* User Identity Module service */
+    QMI_SERVICE_UIM = 0x0B,
+    /* Phonebook Management service */
+    QMI_SERVICE_PBM = 0x0C,
+    /* Location service (~ PDS major version 2) */
+    QMI_SERVICE_LOC = 0x10,
+    /* No idea what this one means.. Search And Rescue? */
+    QMI_SERVICE_SAR = 0x11,
+    /* Remote Filesystem service */
+    QMI_SERVICE_RMTFS = 0x14,
+    /* Card Application Toolkit service */
+    QMI_SERVICE_CAT = 0xE0,
+    /* Remote Management Service */
+    QMI_SERVICE_RMS = 0xE1,
+    /* Open Mobile Alliance device management service */
+    QMI_SERVICE_OMA = 0xE2
+} QmiService;
+</pre>
+<p>
+QMI services.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-SERVICE-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_UNKNOWN</code></span></p></td>
+<td>Unknown service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-CTL:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_CTL</code></span></p></td>
+<td>Control service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-WDS:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_WDS</code></span></p></td>
+<td>Wireless Data Service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-DMS:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_DMS</code></span></p></td>
+<td>Device Management Service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-NAS:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_NAS</code></span></p></td>
+<td>Network Access Service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-QOS:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_QOS</code></span></p></td>
+<td>Quality Of Service service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-WMS:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_WMS</code></span></p></td>
+<td>Wireless Messaging Service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-PDS:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_PDS</code></span></p></td>
+<td>Position Determination Service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-AUTH:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_AUTH</code></span></p></td>
+<td>Authentication service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-AT:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_AT</code></span></p></td>
+<td>AT service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-VOICE:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_VOICE</code></span></p></td>
+<td>Voice service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-CAT2:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_CAT2</code></span></p></td>
+<td>Card Application Toolkit service (v2).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-UIM:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_UIM</code></span></p></td>
+<td>User Identity Module service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-PBM:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_PBM</code></span></p></td>
+<td>Phonebook Management service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-LOC:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_LOC</code></span></p></td>
+<td>Location service (~ PDS v2).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-SAR:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_SAR</code></span></p></td>
+<td>SAR.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-RMTFS:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_RMTFS</code></span></p></td>
+<td>Remote Filesystem service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-CAT:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_CAT</code></span></p></td>
+<td>Card Application Toolkit service (v1).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-RMS:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_RMS</code></span></p></td>
+<td>Remote Management Service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-SERVICE-OMA:CAPS"></a><span class="term"><code class="literal">QMI_SERVICE_OMA</code></span></p></td>
+<td>Open Mobile Alliance device management service.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-service-get-string"></a><h3>qmi_service_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_service_get_string              (<em class="parameter"><code><a class="link" href="libqmi-glib-Common-enumerations-and-flags.html#QmiService"><span class="type">QmiService</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-Common-enumerations-and-flags.html#QmiService"><span class="type">QmiService</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiService.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>

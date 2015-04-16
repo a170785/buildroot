@@ -1,0 +1,2 @@
+#! /bin/sh
+exec '/home/aav/specter/buildroot-2013.08/output/host/usr/bin/bison' -y "$@"

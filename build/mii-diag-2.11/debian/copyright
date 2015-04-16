@@ -1,0 +1,15 @@
+This package was debianized by Alain Schroeder <alain@debian.org> on
+Tue,  9 Jan 2001 20:27:27 +0100. It is now maintained by Alexander
+Reichle-Schmehl <tolimar@debian.org>.
+
+It was downloaded from http://www.scyld.com/diag/index.html
+
+Upstream Author: Donald Becker <becker@scyld.com>
+
+Copyright: 
+  Copyright (C) 1997-2003 Donald Becker <becker@scyld.com>
+
+  You are free to distribute this software under the terms of the GNU 
+  General Public License. The full text of this license can be found 
+  in the file /usr/share/common-licenses/GPL.
+      

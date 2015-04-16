@@ -1,0 +1,3328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WDS enumerations and flags</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libqmi-glib Reference Manual">
+<link rel="up" href="ch04.html" title="Wireless Data Service (WDS)">
+<link rel="prev" href="QmiClientWds.html" title="QmiClientWds">
+<link rel="next" href="libqmi-glib-WDS-Reset.html" title="WDS Reset">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="QmiClientWds.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch04.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libqmi-glib Reference Manual</th>
+<td><a accesskey="n" href="libqmi-glib-WDS-Reset.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libqmi-glib-WDS-enumerations-and-flags.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libqmi-glib-WDS-enumerations-and-flags.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#libqmi-glib-WDS-enumerations-and-flags.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libqmi-glib-WDS-enumerations-and-flags"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libqmi-glib-WDS-enumerations-and-flags.top_of_page"></a>WDS enumerations and flags</span></h2>
+<p>WDS enumerations and flags</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libqmi-glib-WDS-enumerations-and-flags.synopsis"></a><h2>Synopsis</h2>
+<a name="QmiWdsIpFamily"></a><a name="QmiWdsTechnologyPreference"></a><a name="QmiWdsExtendedTechnologyPreference"></a><a name="QmiWdsCallType"></a><a name="QmiWdsCallEndReason"></a><a name="QmiWdsVerboseCallEndReasonType"></a><a name="QmiWdsVerboseCallEndReasonMip"></a><a name="QmiWdsVerboseCallEndReasonInternal"></a><a name="QmiWdsVerboseCallEndReasonCm"></a><a name="QmiWdsVerboseCallEndReason3gpp"></a><a name="QmiWdsVerboseCallEndReasonPpp"></a><a name="QmiWdsVerboseCallEndReasonEhrpd"></a><a name="QmiWdsVerboseCallEndReasonIpv6"></a><a name="QmiWdsConnectionStatus"></a><a name="QmiWdsDataBearerTechnology"></a><a name="QmiWdsNetworkType"></a><a name="QmiWdsRat3gpp2"></a><a name="QmiWdsRat3gpp"></a><a name="QmiWdsSoCdma1x"></a><a name="QmiWdsSoEvdoRevA"></a><a name="QmiWdsGetCurrentSettingsRequestedSettings"></a><a name="QmiWdsPdpType"></a><a name="QmiWdsTrafficClass"></a><a name="QmiWdsAuthentication"></a><a name="QmiWdsProfileType"></a><pre class="synopsis">enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsIpFamily-enum" title="enum QmiWdsIpFamily">QmiWdsIpFamily</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsTechnologyPreference-enum" title="enum QmiWdsTechnologyPreference">QmiWdsTechnologyPreference</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsExtendedTechnologyPreference-enum" title="enum QmiWdsExtendedTechnologyPreference">QmiWdsExtendedTechnologyPreference</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsCallType-enum" title="enum QmiWdsCallType">QmiWdsCallType</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsCallEndReason-enum" title="enum QmiWdsCallEndReason">QmiWdsCallEndReason</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonType-enum" title="enum QmiWdsVerboseCallEndReasonType">QmiWdsVerboseCallEndReasonType</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonMip-enum" title="enum QmiWdsVerboseCallEndReasonMip">QmiWdsVerboseCallEndReasonMip</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonInternal-enum" title="enum QmiWdsVerboseCallEndReasonInternal">QmiWdsVerboseCallEndReasonInternal</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonCm-enum" title="enum QmiWdsVerboseCallEndReasonCm">QmiWdsVerboseCallEndReasonCm</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReason3gpp-enum" title="enum QmiWdsVerboseCallEndReason3gpp">QmiWdsVerboseCallEndReason3gpp</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonPpp-enum" title="enum QmiWdsVerboseCallEndReasonPpp">QmiWdsVerboseCallEndReasonPpp</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonEhrpd-enum" title="enum QmiWdsVerboseCallEndReasonEhrpd">QmiWdsVerboseCallEndReasonEhrpd</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonIpv6-enum" title="enum QmiWdsVerboseCallEndReasonIpv6">QmiWdsVerboseCallEndReasonIpv6</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsConnectionStatus-enum" title="enum QmiWdsConnectionStatus">QmiWdsConnectionStatus</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsDataBearerTechnology-enum" title="enum QmiWdsDataBearerTechnology">QmiWdsDataBearerTechnology</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsNetworkType-enum" title="enum QmiWdsNetworkType">QmiWdsNetworkType</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsRat3gpp2-enum" title="enum QmiWdsRat3gpp2">QmiWdsRat3gpp2</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsRat3gpp-enum" title="enum QmiWdsRat3gpp">QmiWdsRat3gpp</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsSoCdma1x-enum" title="enum QmiWdsSoCdma1x">QmiWdsSoCdma1x</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsSoEvdoRevA-enum" title="enum QmiWdsSoEvdoRevA">QmiWdsSoEvdoRevA</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsGetCurrentSettingsRequestedSettings-enum" title="enum QmiWdsGetCurrentSettingsRequestedSettings">QmiWdsGetCurrentSettingsRequestedSettings</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsPdpType-enum" title="enum QmiWdsPdpType">QmiWdsPdpType</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsTrafficClass-enum" title="enum QmiWdsTrafficClass">QmiWdsTrafficClass</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsAuthentication-enum" title="enum QmiWdsAuthentication">QmiWdsAuthentication</a>;
+enum                <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsProfileType-enum" title="enum QmiWdsProfileType">QmiWdsProfileType</a>;
+
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-ip-family-get-string" title="qmi_wds_ip_family_get_string ()">qmi_wds_ip_family_get_string</a>        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsIpFamily"><span class="type">QmiWdsIpFamily</span></a> val</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-technology-preference-build-string-from-mask" title="qmi_wds_technology_preference_build_string_from_mask ()">qmi_wds_technology_preference_build_string_from_mask</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsTechnologyPreference"><span class="type">QmiWdsTechnologyPreference</span></a> mask</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-extended-technology-preference-get-string" title="qmi_wds_extended_technology_preference_get_string ()">qmi_wds_extended_technology_preference_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsExtendedTechnologyPreference"><span class="type">QmiWdsExtendedTechnologyPreference</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-call-type-get-string" title="qmi_wds_call_type_get_string ()">qmi_wds_call_type_get_string</a>        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsCallType"><span class="type">QmiWdsCallType</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-call-end-reason-get-string" title="qmi_wds_call_end_reason_get_string ()">qmi_wds_call_end_reason_get_string</a>  (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsCallEndReason"><span class="type">QmiWdsCallEndReason</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-verbose-call-end-reason-get-string" title="qmi_wds_verbose_call_end_reason_get_string ()">qmi_wds_verbose_call_end_reason_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonType"><span class="type">QmiWdsVerboseCallEndReasonType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a> reason</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-verbose-call-end-reason-type-get-string" title="qmi_wds_verbose_call_end_reason_type_get_string ()">qmi_wds_verbose_call_end_reason_type_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonType"><span class="type">QmiWdsVerboseCallEndReasonType</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-verbose-call-end-reason-mip-get-string" title="qmi_wds_verbose_call_end_reason_mip_get_string ()">qmi_wds_verbose_call_end_reason_mip_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonMip"><span class="type">QmiWdsVerboseCallEndReasonMip</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-verbose-call-end-reason-internal-get-string" title="qmi_wds_verbose_call_end_reason_internal_get_string ()">qmi_wds_verbose_call_end_reason_internal_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonInternal"><span class="type">QmiWdsVerboseCallEndReasonInternal</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-verbose-call-end-reason-cm-get-string" title="qmi_wds_verbose_call_end_reason_cm_get_string ()">qmi_wds_verbose_call_end_reason_cm_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonCm"><span class="type">QmiWdsVerboseCallEndReasonCm</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-verbose-call-end-reason-3gpp-get-string" title="qmi_wds_verbose_call_end_reason_3gpp_get_string ()">qmi_wds_verbose_call_end_reason_3gpp_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReason3gpp"><span class="type">QmiWdsVerboseCallEndReason3gpp</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-verbose-call-end-reason-ppp-get-string" title="qmi_wds_verbose_call_end_reason_ppp_get_string ()">qmi_wds_verbose_call_end_reason_ppp_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonPpp"><span class="type">QmiWdsVerboseCallEndReasonPpp</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-verbose-call-end-reason-ehrpd-get-string" title="qmi_wds_verbose_call_end_reason_ehrpd_get_string ()">qmi_wds_verbose_call_end_reason_ehrpd_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonEhrpd"><span class="type">QmiWdsVerboseCallEndReasonEhrpd</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-verbose-call-end-reason-ipv6-get-string" title="qmi_wds_verbose_call_end_reason_ipv6_get_string ()">qmi_wds_verbose_call_end_reason_ipv6_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonIpv6"><span class="type">QmiWdsVerboseCallEndReasonIpv6</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-connection-status-get-string" title="qmi_wds_connection_status_get_string ()">qmi_wds_connection_status_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsConnectionStatus"><span class="type">QmiWdsConnectionStatus</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-data-bearer-technology-get-string" title="qmi_wds_data_bearer_technology_get_string ()">qmi_wds_data_bearer_technology_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsDataBearerTechnology"><span class="type">QmiWdsDataBearerTechnology</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-network-type-get-string" title="qmi_wds_network_type_get_string ()">qmi_wds_network_type_get_string</a>     (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsNetworkType"><span class="type">QmiWdsNetworkType</span></a> val</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-rat-3gpp2-build-string-from-mask" title="qmi_wds_rat_3gpp2_build_string_from_mask ()">qmi_wds_rat_3gpp2_build_string_from_mask</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsRat3gpp2"><span class="type">QmiWdsRat3gpp2</span></a> mask</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-rat-3gpp-build-string-from-mask" title="qmi_wds_rat_3gpp_build_string_from_mask ()">qmi_wds_rat_3gpp_build_string_from_mask</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsRat3gpp"><span class="type">QmiWdsRat3gpp</span></a> mask</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-so-cdma1x-build-string-from-mask" title="qmi_wds_so_cdma1x_build_string_from_mask ()">qmi_wds_so_cdma1x_build_string_from_mask</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsSoCdma1x"><span class="type">QmiWdsSoCdma1x</span></a> mask</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-so-evdo-reva-build-string-from-mask" title="qmi_wds_so_evdo_reva_build_string_from_mask ()">qmi_wds_so_evdo_reva_build_string_from_mask</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsSoEvdoRevA"><span class="type">QmiWdsSoEvdoRevA</span></a> mask</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-get-current-settings-requested-settings-get-string" title="qmi_wds_get_current_settings_requested_settings_get_string ()">qmi_wds_get_current_settings_requested_settings_get_string</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsGetCurrentSettingsRequestedSettings"><span class="type">QmiWdsGetCurrentSettingsRequestedSettings</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-pdp-type-get-string" title="qmi_wds_pdp_type_get_string ()">qmi_wds_pdp_type_get_string</a>         (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsPdpType"><span class="type">QmiWdsPdpType</span></a> val</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-traffic-class-get-string" title="qmi_wds_traffic_class_get_string ()">qmi_wds_traffic_class_get_string</a>    (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsTrafficClass"><span class="type">QmiWdsTrafficClass</span></a> val</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-authentication-build-string-from-mask" title="qmi_wds_authentication_build_string_from_mask ()">qmi_wds_authentication_build_string_from_mask</a>
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsAuthentication"><span class="type">QmiWdsAuthentication</span></a> mask</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#qmi-wds-profile-type-get-string" title="qmi_wds_profile_type_get_string ()">qmi_wds_profile_type_get_string</a>     (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsProfileType"><span class="type">QmiWdsProfileType</span></a> val</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-WDS-enumerations-and-flags.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsIpFamily
+</pre>
+<pre class="synopsis">
+  GFlags
+   +----QmiWdsTechnologyPreference
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsExtendedTechnologyPreference
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsCallType
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsCallEndReason
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsVerboseCallEndReasonType
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsVerboseCallEndReasonMip
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsVerboseCallEndReasonInternal
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsVerboseCallEndReasonCm
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsVerboseCallEndReason3gpp
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsVerboseCallEndReasonPpp
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsVerboseCallEndReasonEhrpd
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsVerboseCallEndReasonIpv6
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsConnectionStatus
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsDataBearerTechnology
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsNetworkType
+</pre>
+<pre class="synopsis">
+  GFlags
+   +----QmiWdsRat3gpp2
+</pre>
+<pre class="synopsis">
+  GFlags
+   +----QmiWdsRat3gpp
+</pre>
+<pre class="synopsis">
+  GFlags
+   +----QmiWdsSoCdma1x
+</pre>
+<pre class="synopsis">
+  GFlags
+   +----QmiWdsSoEvdoRevA
+</pre>
+<pre class="synopsis">
+  GFlags
+   +----QmiWdsGetCurrentSettingsRequestedSettings
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsPdpType
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsTrafficClass
+</pre>
+<pre class="synopsis">
+  GFlags
+   +----QmiWdsAuthentication
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----QmiWdsProfileType
+</pre>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-WDS-enumerations-and-flags.description"></a><h2>Description</h2>
+<p>
+This section defines enumerations and flags used in the WDS service
+interface.
+</p>
+</div>
+<div class="refsect1">
+<a name="libqmi-glib-WDS-enumerations-and-flags.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="QmiWdsIpFamily-enum"></a><h3>enum QmiWdsIpFamily</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_IP_FAMILY_IPV4        = 4,
+    QMI_WDS_IP_FAMILY_IPV6        = 6,
+    QMI_WDS_IP_FAMILY_UNSPECIFIED = 8
+} QmiWdsIpFamily;
+</pre>
+<p>
+Type of IP family preference.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-IP-FAMILY-IPV4:CAPS"></a><span class="term"><code class="literal">QMI_WDS_IP_FAMILY_IPV4</code></span></p></td>
+<td>IPv4.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-IP-FAMILY-IPV6:CAPS"></a><span class="term"><code class="literal">QMI_WDS_IP_FAMILY_IPV6</code></span></p></td>
+<td>IPv6.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-IP-FAMILY-UNSPECIFIED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_IP_FAMILY_UNSPECIFIED</code></span></p></td>
+<td>None specified.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsTechnologyPreference-enum"></a><h3>enum QmiWdsTechnologyPreference</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_TECHNOLOGY_PREFERENCE_ALLOW_3GPP  = 1 &lt;&lt; 0,
+    QMI_WDS_TECHNOLOGY_PREFERENCE_ALLOW_3GPP2 = 1 &lt;&lt; 1
+} QmiWdsTechnologyPreference;
+</pre>
+<p>
+Type of network allowed when trying to connect.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-TECHNOLOGY-PREFERENCE-ALLOW-3GPP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_TECHNOLOGY_PREFERENCE_ALLOW_3GPP</code></span></p></td>
+<td>3GPP allowed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-TECHNOLOGY-PREFERENCE-ALLOW-3GPP2:CAPS"></a><span class="term"><code class="literal">QMI_WDS_TECHNOLOGY_PREFERENCE_ALLOW_3GPP2</code></span></p></td>
+<td>3GPP2 allowed.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsExtendedTechnologyPreference-enum"></a><h3>enum QmiWdsExtendedTechnologyPreference</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_EXTENDED_TECHNOLOGY_PREFERENCE_CDMA             = 32769,
+    QMI_WDS_EXTENDED_TECHNOLOGY_PREFERENCE_UMTS             = 32772,
+    QMI_WDS_EXTENDED_TECHNOLOGY_PREFERENCE_EPC              = 34944,
+    QMI_WDS_EXTENDED_TECHNOLOGY_PREFERENCE_EMBMS            = 34946,
+    QMI_WDS_EXTENDED_TECHNOLOGY_PREFERENCE_MODEM_LINK_LOCAL = 34952,
+} QmiWdsExtendedTechnologyPreference;
+</pre>
+<p>
+Type of network allowed when trying to connect.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-EXTENDED-TECHNOLOGY-PREFERENCE-CDMA:CAPS"></a><span class="term"><code class="literal">QMI_WDS_EXTENDED_TECHNOLOGY_PREFERENCE_CDMA</code></span></p></td>
+<td>Use CDMA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-EXTENDED-TECHNOLOGY-PREFERENCE-UMTS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_EXTENDED_TECHNOLOGY_PREFERENCE_UMTS</code></span></p></td>
+<td>Use UMTS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-EXTENDED-TECHNOLOGY-PREFERENCE-EPC:CAPS"></a><span class="term"><code class="literal">QMI_WDS_EXTENDED_TECHNOLOGY_PREFERENCE_EPC</code></span></p></td>
+<td>Use EPC (LTE).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-EXTENDED-TECHNOLOGY-PREFERENCE-EMBMS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_EXTENDED_TECHNOLOGY_PREFERENCE_EMBMS</code></span></p></td>
+<td>Use eMBMS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-EXTENDED-TECHNOLOGY-PREFERENCE-MODEM-LINK-LOCAL:CAPS"></a><span class="term"><code class="literal">QMI_WDS_EXTENDED_TECHNOLOGY_PREFERENCE_MODEM_LINK_LOCAL</code></span></p></td>
+<td>Use modem link-local.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsCallType-enum"></a><h3>enum QmiWdsCallType</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_CALL_TYPE_LAPTOP   = 0,
+    QMI_WDS_CALL_TYPE_EMBEDDED = 1
+} QmiWdsCallType;
+</pre>
+<p>
+Type of call to originate.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-CALL-TYPE-LAPTOP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_TYPE_LAPTOP</code></span></p></td>
+<td>Laptop call.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-TYPE-EMBEDDED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_TYPE_EMBEDDED</code></span></p></td>
+<td>Embedded call.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsCallEndReason-enum"></a><h3>enum QmiWdsCallEndReason</h3>
+<pre class="programlisting">typedef enum {
+    /* Generic reasons */
+    QMI_WDS_CALL_END_REASON_GENERIC_UNSPECIFIED                = 1,
+    QMI_WDS_CALL_END_REASON_GENERIC_CLIENT_END                 = 2,
+    QMI_WDS_CALL_END_REASON_GENERIC_NO_SERVICE                 = 3,
+    QMI_WDS_CALL_END_REASON_GENERIC_FADE                       = 4,
+    QMI_WDS_CALL_END_REASON_GENERIC_RELEASE_NORMAL             = 5,
+    QMI_WDS_CALL_END_REASON_GENERIC_ACCESS_ATTEMPT_IN_PROGRESS = 6,
+    QMI_WDS_CALL_END_REASON_GENERIC_ACCESS_FAILURE             = 7,
+    QMI_WDS_CALL_END_REASON_GENERIC_REDIRECTION_OR_HANDOFF     = 8,
+    QMI_WDS_CALL_END_REASON_GENERIC_CLOSE_IN_PROGRESS          = 9,
+    QMI_WDS_CALL_END_REASON_GENERIC_AUTHENTICATION_FAILED      = 10,
+    QMI_WDS_CALL_END_REASON_GENERIC_INTERNAL_ERROR             = 11,
+
+    /* CDMA specific reasons */
+    QMI_WDS_CALL_END_REASON_CDMA_LOCK                            = 500,
+    QMI_WDS_CALL_END_REASON_CDMA_INTERCEPT                       = 501,
+    QMI_WDS_CALL_END_REASON_CDMA_REORDER                         = 502,
+    QMI_WDS_CALL_END_REASON_CDMA_RELEASE_SO_REJECT               = 503,
+    QMI_WDS_CALL_END_REASON_CDMA_INCOMING_CALL                   = 504,
+    QMI_WDS_CALL_END_REASON_CDMA_ALERT_STOP                      = 505,
+    QMI_WDS_CALL_END_REASON_CDMA_ACTIVATION                      = 506,
+    QMI_WDS_CALL_END_REASON_CDMA_MAX_ACCESS_PROBES               = 507,
+    QMI_WDS_CALL_END_REASON_CDMA_CCS_NOT_SUPPORTED_BY_BS         = 508,
+    QMI_WDS_CALL_END_REASON_CDMA_NO_RESPONSE_FROM_BS             = 509,
+    QMI_WDS_CALL_END_REASON_CDMA_REJECTED_BY_BS                  = 510,
+    QMI_WDS_CALL_END_REASON_CDMA_INCOMPATIBLE                    = 511,
+    QMI_WDS_CALL_END_REASON_CDMA_ALREADY_IN_TC                   = 512,
+    QMI_WDS_CALL_END_REASON_CDMA_USER_CALL_ORIGINATED_DURING_GPS = 513,
+    QMI_WDS_CALL_END_REASON_CDMA_USER_CALL_ORIGINATED_DURING_SMS = 514,
+    QMI_WDS_CALL_END_REASON_CDMA_NO_SERVICE                      = 515,
+
+    /* GSM/WCDMA specific reasons */
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_CONFERENCE_FAILED                       = 1000,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_INCOMING_REJECTED                       = 1001,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_NO_SERVICE                              = 1002,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_NETWORK_END                             = 1003,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_LLC_SNDCP_FAILURE                       = 1004,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_INSUFFICIENT_RESOURCES                  = 1005,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_OPTION_TEMPORARILY_OUT_OF_ORDER         = 1006,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_NSAPI_ALREADY_USED                      = 1007,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_REGULAR_DEACTIVATION                    = 1008,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_NETWORK_FAILURE                         = 1009,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_REATTACH_REQUIRED                       = 1010,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_PROTOCOL_ERROR                          = 1011,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_OPERATOR_DETERMINED_BARRING             = 1012,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_UNKNOWN_APN                             = 1013,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_UNKNOWN_PDP                             = 1014,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_GGSN_REJECT                             = 1015,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_ACTIVATION_REJECT                       = 1016,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_OPTION_NOT_SUPPORTED                    = 1017,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_OPTION_UNSUBSCRIBED                     = 1018,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_QOS_NOT_ACCEPTED                        = 1019,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_TFT_SEMANTIC_ERROR                      = 1020,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_TFT_SYNTAX_ERROR                        = 1021,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_UNKNOWN_PDP_CONTEXT                     = 1022,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_FILTER_SEMANTIC_ERROR                   = 1023,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_FILTER_SYNTAX_ERROR                     = 1024,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_PDP_WITHOUT_ACTIVE_TFT                  = 1025,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_INVALID_TRANSACTION_ID                  = 1026,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_MESSAGE_INCORRECT_SEMANTIC              = 1027,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_INVALID_MANDATORY_INFO                  = 1028,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_MESSAGE_TYPE_UNSUPPORTED                = 1029,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_MESSAGE_TYPE_NONCOMPATIBLE_STATE        = 1030,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_UNKNOWN_INFO_ELEMENT                    = 1031,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_CONDITIONAL_IE_ERROR                    = 1032,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_MESSAGE_AND_PROTOCOL_STATE_UNCOMPATIBLE = 1033,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_APN_TYPE_CONFLICT                       = 1034,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_NO_GPRS_CONTEXT                         = 1035,
+    QMI_WDS_CALL_END_REASON_GSM_WCDMA_FEATURE_NOT_SUPPORTED                   = 1036,
+
+    /* EV-DO specific reasons */
+    QMI_WDS_CALL_END_REASON_EVDO_CONNECTION_DENY_GENERAL_OR_BUSY                   = 1500,
+    QMI_WDS_CALL_END_REASON_EVDO_CONNECTION_DENY_BILLING_OR_AUTHENTICATION_FAILURE = 1501,
+    QMI_WDS_CALL_END_REASON_EVDO_HDR_CHANGE                                        = 1502,
+    QMI_WDS_CALL_END_REASON_EVDO_HDR_EXIT                                          = 1503,
+    QMI_WDS_CALL_END_REASON_EVDO_HDR_NO_SESSION                                    = 1504,
+    QMI_WDS_CALL_END_REASON_EVDO_HDR_ORIGINATION_DURING_GPS_FIX                    = 1505,
+    QMI_WDS_CALL_END_REASON_EVDO_HDR_CONNECTION_SETUP_TIMEOUT                      = 1506,
+    QMI_WDS_CALL_END_REASON_EVDO_HDR_RELEASED_BY_CM                                = 1507
+} QmiWdsCallEndReason;
+</pre>
+<p>
+Reason for ending the call.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GENERIC-UNSPECIFIED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GENERIC_UNSPECIFIED</code></span></p></td>
+<td>Unspecified reason.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GENERIC-CLIENT-END:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GENERIC_CLIENT_END</code></span></p></td>
+<td>Client end.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GENERIC-NO-SERVICE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GENERIC_NO_SERVICE</code></span></p></td>
+<td>No service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GENERIC-FADE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GENERIC_FADE</code></span></p></td>
+<td>Fade.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GENERIC-RELEASE-NORMAL:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GENERIC_RELEASE_NORMAL</code></span></p></td>
+<td>Release normal.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GENERIC-ACCESS-ATTEMPT-IN-PROGRESS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GENERIC_ACCESS_ATTEMPT_IN_PROGRESS</code></span></p></td>
+<td>Access attempt in progress.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GENERIC-ACCESS-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GENERIC_ACCESS_FAILURE</code></span></p></td>
+<td>Access Failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GENERIC-REDIRECTION-OR-HANDOFF:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GENERIC_REDIRECTION_OR_HANDOFF</code></span></p></td>
+<td>Redirection or handoff.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GENERIC-CLOSE-IN-PROGRESS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GENERIC_CLOSE_IN_PROGRESS</code></span></p></td>
+<td>Close in progress.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GENERIC-AUTHENTICATION-FAILED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GENERIC_AUTHENTICATION_FAILED</code></span></p></td>
+<td>Authentication failed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GENERIC-INTERNAL-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GENERIC_INTERNAL_ERROR</code></span></p></td>
+<td>Internal error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-LOCK:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_LOCK</code></span></p></td>
+<td>(CDMA) Phone is CDMA-locked.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-INTERCEPT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_INTERCEPT</code></span></p></td>
+<td>(CDMA) Received intercept from the BS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-REORDER:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_REORDER</code></span></p></td>
+<td>(CDMA) Received reorder from the BS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-RELEASE-SO-REJECT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_RELEASE_SO_REJECT</code></span></p></td>
+<td>(CDMA) Received release from the BS, SO reject.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-INCOMING-CALL:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_INCOMING_CALL</code></span></p></td>
+<td>(CDMA) Received incoming call from the BS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-ALERT-STOP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_ALERT_STOP</code></span></p></td>
+<td>(CDMA) Received alert stop from the BS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-ACTIVATION:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_ACTIVATION</code></span></p></td>
+<td>(CDMA) Received end activation.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-MAX-ACCESS-PROBES:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_MAX_ACCESS_PROBES</code></span></p></td>
+<td>(CDMA) Maximum access probes transmitted.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-CCS-NOT-SUPPORTED-BY-BS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_CCS_NOT_SUPPORTED_BY_BS</code></span></p></td>
+<td>(CDMA) Concurrent service not supported by the BS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-NO-RESPONSE-FROM-BS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_NO_RESPONSE_FROM_BS</code></span></p></td>
+<td>(CDMA) No response received from the BS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-REJECTED-BY-BS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_REJECTED_BY_BS</code></span></p></td>
+<td>(CDMA) Rejected by the BS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-INCOMPATIBLE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_INCOMPATIBLE</code></span></p></td>
+<td>(CDMA) Concurrent services requested are incompatible.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-ALREADY-IN-TC:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_ALREADY_IN_TC</code></span></p></td>
+<td>(CDMA) Already in TC.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-USER-CALL-ORIGINATED-DURING-GPS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_USER_CALL_ORIGINATED_DURING_GPS</code></span></p></td>
+<td>(CDMA) Call originated during GPS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-USER-CALL-ORIGINATED-DURING-SMS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_USER_CALL_ORIGINATED_DURING_SMS</code></span></p></td>
+<td>(CDMA) Call originated during SMS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-CDMA-NO-SERVICE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_CDMA_NO_SERVICE</code></span></p></td>
+<td>(CDMA) No service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-CONFERENCE-FAILED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_CONFERENCE_FAILED</code></span></p></td>
+<td>(GSM/WCDMA) Call origination request failed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-INCOMING-REJECTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_INCOMING_REJECTED</code></span></p></td>
+<td>(GSM/WCDMA) Client rejected incoming call.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-NO-SERVICE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_NO_SERVICE</code></span></p></td>
+<td>(GSM/WCDMA) No service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-NETWORK-END:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_NETWORK_END</code></span></p></td>
+<td>(GSM/WCDMA) Network ended the call.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-LLC-SNDCP-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_LLC_SNDCP_FAILURE</code></span></p></td>
+<td>(GSM/WCDMA) LLC or SNDCP failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-INSUFFICIENT-RESOURCES:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_INSUFFICIENT_RESOURCES</code></span></p></td>
+<td>(GSM/WCDMA) Insufficient resources.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-OPTION-TEMPORARILY-OUT-OF-ORDER:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_OPTION_TEMPORARILY_OUT_OF_ORDER</code></span></p></td>
+<td>(GSM/WCDMA) Service option temporarily out of order.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-NSAPI-ALREADY-USED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_NSAPI_ALREADY_USED</code></span></p></td>
+<td>(GSM/WCDMA) NSAPI already used.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-REGULAR-DEACTIVATION:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_REGULAR_DEACTIVATION</code></span></p></td>
+<td>(GSM/WCDMA) Regular PDP context deactivation.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-NETWORK-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_NETWORK_FAILURE</code></span></p></td>
+<td>(GSM/WCDMA) Network failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-REATTACH-REQUIRED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_REATTACH_REQUIRED</code></span></p></td>
+<td>(GSM/WCDMA) Reattach required.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-PROTOCOL-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_PROTOCOL_ERROR</code></span></p></td>
+<td>(GSM/WCDMA) Protocol error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-OPERATOR-DETERMINED-BARRING:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_OPERATOR_DETERMINED_BARRING</code></span></p></td>
+<td>(GSM/WCDMA) Operator-determined barring.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-UNKNOWN-APN:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_UNKNOWN_APN</code></span></p></td>
+<td>(GSM/WCDMA) Unknown or missing APN.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-UNKNOWN-PDP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_UNKNOWN_PDP</code></span></p></td>
+<td>(GSM/WCDMA) Unknown PDP address or type.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-GGSN-REJECT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_GGSN_REJECT</code></span></p></td>
+<td>(GSM/WCDMA) Activation rejected by GGSN.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-ACTIVATION-REJECT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_ACTIVATION_REJECT</code></span></p></td>
+<td>(GSM/WCDMA) Activation rejected.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-OPTION-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_OPTION_NOT_SUPPORTED</code></span></p></td>
+<td>(GSM/WCDMA) Service option not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-OPTION-UNSUBSCRIBED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_OPTION_UNSUBSCRIBED</code></span></p></td>
+<td>(GSM/WCDMA) Service option not subscribed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-QOS-NOT-ACCEPTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_QOS_NOT_ACCEPTED</code></span></p></td>
+<td>(GSM/WCDMA) QoS not accepted.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-TFT-SEMANTIC-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_TFT_SEMANTIC_ERROR</code></span></p></td>
+<td>(GSM/WCDMA) Semantic error in TFT operation.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-TFT-SYNTAX-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_TFT_SYNTAX_ERROR</code></span></p></td>
+<td>(GSM/WCDMA) Syntax error in TFT operation.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-UNKNOWN-PDP-CONTEXT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_UNKNOWN_PDP_CONTEXT</code></span></p></td>
+<td>(GSM/WCDMA) Unknown PDP context.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-FILTER-SEMANTIC-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_FILTER_SEMANTIC_ERROR</code></span></p></td>
+<td>(GSM/WCDMA) Semantic error in packet filters.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-FILTER-SYNTAX-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_FILTER_SYNTAX_ERROR</code></span></p></td>
+<td>(GSM/WCDMA) Syntax error in packet filters.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-PDP-WITHOUT-ACTIVE-TFT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_PDP_WITHOUT_ACTIVE_TFT</code></span></p></td>
+<td>(GSM/WCDMA) PDP context without TFT activated.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-INVALID-TRANSACTION-ID:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_INVALID_TRANSACTION_ID</code></span></p></td>
+<td>(GSM/WCDMA) Invalid transaction ID.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-MESSAGE-INCORRECT-SEMANTIC:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_MESSAGE_INCORRECT_SEMANTIC</code></span></p></td>
+<td>(GSM/WCDMA) Message incorrect semantically.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-INVALID-MANDATORY-INFO:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_INVALID_MANDATORY_INFO</code></span></p></td>
+<td>(GSM/WCDMA) Invalid mandatory information.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-MESSAGE-TYPE-UNSUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_MESSAGE_TYPE_UNSUPPORTED</code></span></p></td>
+<td>(GSM/WCDMA) Message type not implemented.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-MESSAGE-TYPE-NONCOMPATIBLE-STATE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_MESSAGE_TYPE_NONCOMPATIBLE_STATE</code></span></p></td>
+<td>(GSM/WCDMA) Message not compatible with state.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-UNKNOWN-INFO-ELEMENT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_UNKNOWN_INFO_ELEMENT</code></span></p></td>
+<td>(GSM/WCDMA) Information element unknown.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-CONDITIONAL-IE-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_CONDITIONAL_IE_ERROR</code></span></p></td>
+<td>(GSM/WCDMA) Conditional IE error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-MESSAGE-AND-PROTOCOL-STATE-UNCOMPATIBLE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_MESSAGE_AND_PROTOCOL_STATE_UNCOMPATIBLE</code></span></p></td>
+<td>(GSM/WCDMA) Message and protocol state uncompatible.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-APN-TYPE-CONFLICT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_APN_TYPE_CONFLICT</code></span></p></td>
+<td>(GSM/WCDMA) APN type conflict.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-NO-GPRS-CONTEXT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_NO_GPRS_CONTEXT</code></span></p></td>
+<td>(GSM/WCDMA) No GPRS context.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-GSM-WCDMA-FEATURE-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_GSM_WCDMA_FEATURE_NOT_SUPPORTED</code></span></p></td>
+<td>(GSM/WCDMA) Feature not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-EVDO-CONNECTION-DENY-GENERAL-OR-BUSY:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_EVDO_CONNECTION_DENY_GENERAL_OR_BUSY</code></span></p></td>
+<td>(EV-DO) Received Connection Deny (General or Network busy).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-EVDO-CONNECTION-DENY-BILLING-OR-AUTHENTICATION-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_EVDO_CONNECTION_DENY_BILLING_OR_AUTHENTICATION_FAILURE</code></span></p></td>
+<td>(EV-DO) Received Connection Deny (Billing or Authentication failure).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-EVDO-HDR-CHANGE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_EVDO_HDR_CHANGE</code></span></p></td>
+<td>(EV-DO) Change HDR.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-EVDO-HDR-EXIT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_EVDO_HDR_EXIT</code></span></p></td>
+<td>(EV-DO) Exit HDR.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-EVDO-HDR-NO-SESSION:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_EVDO_HDR_NO_SESSION</code></span></p></td>
+<td>(EV-DO) No HDR session.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-EVDO-HDR-ORIGINATION-DURING-GPS-FIX:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_EVDO_HDR_ORIGINATION_DURING_GPS_FIX</code></span></p></td>
+<td>(EV-DO) HDR call ended in favor of a GPS fix.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-EVDO-HDR-CONNECTION-SETUP-TIMEOUT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_EVDO_HDR_CONNECTION_SETUP_TIMEOUT</code></span></p></td>
+<td>(EV-DO) Connection setup timeout.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CALL-END-REASON-EVDO-HDR-RELEASED-BY-CM:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CALL_END_REASON_EVDO_HDR_RELEASED_BY_CM</code></span></p></td>
+<td>(EV-DO) Released HDR call by call manager.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsVerboseCallEndReasonType-enum"></a><h3>enum QmiWdsVerboseCallEndReasonType</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_MIP      = 1,
+    QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_INTERNAL = 2,
+    QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_CM       = 3,
+    QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_3GPP     = 6,
+    QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_PPP      = 7,
+    QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_EHRPD    = 8,
+    QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_IPV6     = 9
+} QmiWdsVerboseCallEndReasonType;
+</pre>
+<p>
+Type of verbose call end reason.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-MIP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_MIP</code></span></p></td>
+<td>Mobile IP.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-INTERNAL:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_INTERNAL</code></span></p></td>
+<td>Internal.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-CM:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_CM</code></span></p></td>
+<td>Call manager.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-3GPP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_3GPP</code></span></p></td>
+<td>3GPP.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-PPP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_PPP</code></span></p></td>
+<td>PPP.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-EHRPD:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_EHRPD</code></span></p></td>
+<td>eHRPD.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-IPV6:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_IPV6</code></span></p></td>
+<td>IPv6.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsVerboseCallEndReasonMip-enum"></a><h3>enum QmiWdsVerboseCallEndReasonMip</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_ERROR_REASON_UNKNOWN                                = -1,
+
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_REASON_UNSPECIFIED                         = 64,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_ADMINISTRATIVELY_PROHIBITED                = 65,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_INSUFFICIENT_RESOURCES                     = 66,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_MOBILE_NODE_AUTHENTICATION_FAILURE         = 67,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_HA_AUTHENTICATION_FAILURE                  = 68,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_REQUESTED_LIFETIME_TOO_LONG                = 69,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_MALFORMED_REQUEST                          = 70,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_MALFORMED_REPLY                            = 71,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_ENCAPSULATION_UNAVAILABLE                  = 72,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_VJHC_UNAVAILABLE                           = 73,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_REVERSE_TUNNEL_UNAVAILABLE                 = 74,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_REVERSE_TUNNEL_MANDATORY_AND_T_BIT_NOT_SET = 75,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_DELIVERY_STYLE_NOT_SUPPORTED               = 79,
+
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_MISSING_NAI                                = 97,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_MISSING_HA                                 = 98,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_MISSING_HOME_ADDRESS                       = 99,
+
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_UNKNOWN_CHALLENGE                          = 104,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_MISSING_CHALLENGE                          = 105,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_STALE_CHALLENGE                            = 106,
+
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_REASON_UNSPECIFIED                         = 128,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_ADMINISTRATIVELY_PROHIBITED                = 129,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_INSUFFICIENT_RESOURCES                     = 130,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_MOBILE_NODE_AUTHENTICATION_FAILURE         = 131,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_FA_AUTHENTICATION_FAILURE                  = 132,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_REGISTRATION_ID_MISMATCH                   = 133,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_MALFORMED_REQUEST                          = 134,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_UNKNOWN_HA_ADDRESS                         = 136,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_REVERSE_TUNNEL_UNAVAILABLE                 = 137,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_REVERSE_TUNNEL_MANDATORY_AND_T_BIT_NOT_SET = 138,
+    QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_ENCAPSULATION_UNAVAILABLE                  = 139
+} QmiWdsVerboseCallEndReasonMip;
+</pre>
+<p>
+Mobile IP specific call end reasons, given when the <em class="parameter"><code>QmiWdsVerboseCallEndReasonType</code></em> is <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-MIP:CAPS"><span class="type">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_MIP</span></a>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-ERROR-REASON-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_ERROR_REASON_UNKNOWN</code></span></p></td>
+<td>Unknown reason.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-REASON-UNSPECIFIED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_REASON_UNSPECIFIED</code></span></p></td>
+<td>(FA error) Reason unspecified.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-ADMINISTRATIVELY-PROHIBITED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_ADMINISTRATIVELY_PROHIBITED</code></span></p></td>
+<td>(FA error) Administratively prohibited.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-INSUFFICIENT-RESOURCES:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_INSUFFICIENT_RESOURCES</code></span></p></td>
+<td>(FA error) Insufficient resources.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-MOBILE-NODE-AUTHENTICATION-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_MOBILE_NODE_AUTHENTICATION_FAILURE</code></span></p></td>
+<td>(FA error) Mobile node authenticatin failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-HA-AUTHENTICATION-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_HA_AUTHENTICATION_FAILURE</code></span></p></td>
+<td>(FA error) HA authentication failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-REQUESTED-LIFETIME-TOO-LONG:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_REQUESTED_LIFETIME_TOO_LONG</code></span></p></td>
+<td>(FA error) Requested lifetime too long.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-MALFORMED-REQUEST:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_MALFORMED_REQUEST</code></span></p></td>
+<td>(FA error) Malformed request.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-MALFORMED-REPLY:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_MALFORMED_REPLY</code></span></p></td>
+<td>(FA error) Malformed reply.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-ENCAPSULATION-UNAVAILABLE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_ENCAPSULATION_UNAVAILABLE</code></span></p></td>
+<td>(FA error) Encapsulation unavailable.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-VJHC-UNAVAILABLE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_VJHC_UNAVAILABLE</code></span></p></td>
+<td>(FA error) VJHC unavailable.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-REVERSE-TUNNEL-UNAVAILABLE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_REVERSE_TUNNEL_UNAVAILABLE</code></span></p></td>
+<td>(FA error) Reverse tunnel unavailable.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-REVERSE-TUNNEL-MANDATORY-AND-T-BIT-NOT-SET:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_REVERSE_TUNNEL_MANDATORY_AND_T_BIT_NOT_SET</code></span></p></td>
+<td>(FA error) Reverse tunnel mandatory and T bit not set.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-DELIVERY-STYLE-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_DELIVERY_STYLE_NOT_SUPPORTED</code></span></p></td>
+<td>(FA error) Delivery style not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-MISSING-NAI:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_MISSING_NAI</code></span></p></td>
+<td>(FA error) Missing NAI.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-MISSING-HA:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_MISSING_HA</code></span></p></td>
+<td>(FA error) Missing HA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-MISSING-HOME-ADDRESS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_MISSING_HOME_ADDRESS</code></span></p></td>
+<td>(FA error) Missing home address.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-UNKNOWN-CHALLENGE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_UNKNOWN_CHALLENGE</code></span></p></td>
+<td>(FA error) Unknown challenge.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-MISSING-CHALLENGE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_MISSING_CHALLENGE</code></span></p></td>
+<td>(FA error) Missing challenge.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-FA-ERROR-STALE-CHALLENGE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_FA_ERROR_STALE_CHALLENGE</code></span></p></td>
+<td>(FA error) Stale challenge.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-HA-ERROR-REASON-UNSPECIFIED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_REASON_UNSPECIFIED</code></span></p></td>
+<td>(HA error) Reason unspecified.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-HA-ERROR-ADMINISTRATIVELY-PROHIBITED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_ADMINISTRATIVELY_PROHIBITED</code></span></p></td>
+<td>(HA error) Administratively prohibited.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-HA-ERROR-INSUFFICIENT-RESOURCES:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_INSUFFICIENT_RESOURCES</code></span></p></td>
+<td>(HA error) Insufficient resources.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-HA-ERROR-MOBILE-NODE-AUTHENTICATION-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_MOBILE_NODE_AUTHENTICATION_FAILURE</code></span></p></td>
+<td>(HA error) Mobile node authentication failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-HA-ERROR-FA-AUTHENTICATION-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_FA_AUTHENTICATION_FAILURE</code></span></p></td>
+<td>(HA error) FA authentication failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-HA-ERROR-REGISTRATION-ID-MISMATCH:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_REGISTRATION_ID_MISMATCH</code></span></p></td>
+<td>(HA error) Registration ID mismatch.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-HA-ERROR-MALFORMED-REQUEST:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_MALFORMED_REQUEST</code></span></p></td>
+<td>(HA error) Malformed request.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-HA-ERROR-UNKNOWN-HA-ADDRESS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_UNKNOWN_HA_ADDRESS</code></span></p></td>
+<td>(HA error) Unknown HA address.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-HA-ERROR-REVERSE-TUNNEL-UNAVAILABLE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_REVERSE_TUNNEL_UNAVAILABLE</code></span></p></td>
+<td>(HA error) Reverse tunnel unavailable.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-HA-ERROR-REVERSE-TUNNEL-MANDATORY-AND-T-BIT-NOT-SET:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_REVERSE_TUNNEL_MANDATORY_AND_T_BIT_NOT_SET</code></span></p></td>
+<td>(HA error) Reverse tunnel mandatory and T bit not set.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-MIP-HA-ERROR-ENCAPSULATION-UNAVAILABLE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_MIP_HA_ERROR_ENCAPSULATION_UNAVAILABLE</code></span></p></td>
+<td>(HA error) Encapsulation unavailable.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsVerboseCallEndReasonInternal-enum"></a><h3>enum QmiWdsVerboseCallEndReasonInternal</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_VERBOSE_CALL_END_REASON_INTERNAL_ERROR                         = 201,
+    QMI_WDS_VERBOSE_CALL_END_REASON_INTERNAL_CALL_ENDED                    = 202,
+    QMI_WDS_VERBOSE_CALL_END_REASON_INTERNAL_UNKNOWN_INTERNAL_CAUSE        = 203,
+    QMI_WDS_VERBOSE_CALL_END_REASON_INTERNAL_UNKNOWN_CAUSE                 = 204,
+    QMI_WDS_VERBOSE_CALL_END_REASON_INTERNAL_CLOSE_IN_PROGRESS             = 205,
+    QMI_WDS_VERBOSE_CALL_END_REASON_INTERNAL_NETWORK_INITIATED_TERMINATION = 206,
+    QMI_WDS_VERBOSE_CALL_END_REASON_INTERNAL_APP_PREEMPTED                 = 207
+} QmiWdsVerboseCallEndReasonInternal;
+</pre>
+<p>
+Internal call end reasons, given when the <em class="parameter"><code>QmiWdsVerboseCallEndReasonType</code></em> is <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-INTERNAL:CAPS"><span class="type">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_INTERNAL</span></a>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-INTERNAL-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_INTERNAL_ERROR</code></span></p></td>
+<td>Internal error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-INTERNAL-CALL-ENDED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_INTERNAL_CALL_ENDED</code></span></p></td>
+<td>Call ended.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-INTERNAL-UNKNOWN-INTERNAL-CAUSE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_INTERNAL_UNKNOWN_INTERNAL_CAUSE</code></span></p></td>
+<td>Unknown internal cause.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-INTERNAL-UNKNOWN-CAUSE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_INTERNAL_UNKNOWN_CAUSE</code></span></p></td>
+<td>Unknown cause.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-INTERNAL-CLOSE-IN-PROGRESS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_INTERNAL_CLOSE_IN_PROGRESS</code></span></p></td>
+<td>Close in progress.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-INTERNAL-NETWORK-INITIATED-TERMINATION:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_INTERNAL_NETWORK_INITIATED_TERMINATION</code></span></p></td>
+<td>Network initiated termination.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-INTERNAL-APP-PREEMPTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_INTERNAL_APP_PREEMPTED</code></span></p></td>
+<td>App preempted.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsVerboseCallEndReasonCm-enum"></a><h3>enum QmiWdsVerboseCallEndReasonCm</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_CDMA_LOCK                       = 500,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_INTERCEPT                       = 501,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_REORDER                         = 502,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_RELEASE_SO_REJECT               = 503,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_INCOMING_CALL                   = 504,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_ALERT_STOP                      = 505,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_ACTIVATION                      = 506,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_MAX_ACCESS_PROBES               = 507,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_CCS_NOT_SUPPORTED_BY_BS         = 508,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_NO_RESPONSE_FROM_BS             = 509,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_REJECTED_BY_BS                  = 510,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_INCOMPATIBLE                    = 511,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_ALREADY_IN_TC                   = 512,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_USER_CALL_ORIGINATED_DURING_GPS = 513,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_USER_CALL_ORIGINATED_DURING_SMS = 514,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_NO_CDMA_SERVICE                 = 515,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_RETRY_ORDER                     = 519,
+
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_CONFIGURATION_FAILED                   = 1000,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_INCOMING_REJECTED                      = 1001,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_NO_GATEWAY_SERVICE                     = 1002,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_NO_GPRS_CONTEXT                        = 1003,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_ILLEGAL_MS                             = 1004,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_ILLEGAL_ME                             = 1005,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_GPRS_AND_NON_GPRS_SERVICES_NOT_ALLOWED = 1006,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_GPRS_SERVICES_NOT_ALLOWED              = 1007,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_MS_IDENTITY_NOT_DERIVED_BY_THE_NETWORK = 1008,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_IMPLICITLY_DETACHED                    = 1009,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_PLMN_NOT_ALLOWED                       = 1010,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_LA_NOT_ALLOWED                         = 1011,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_GPRS_SERVICES_NOT_ALLOWED_IN_PLMN      = 1012,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_PDP_DUPLICATE                          = 1013,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_UE_RAT_CHANGE                          = 1014,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_CONGESTION                             = 1015,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_NO_PDP_CONTEXT_ACTIVATED               = 1016,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_ACCESS_CLASS_DSAC_REJECTION            = 1017,
+
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_CONNECTION_DENY_GENERAL_OR_BUSY                   = 1500,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_CONNECTION_DENY_BILLING_OR_AUTHENTICATION_FAILURE = 1501,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_HDR_CHANGE                                        = 1502,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_HDR_EXIT                                          = 1503,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_HDR_NO_SESSION                                    = 1504,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_HDR_ORIGINATION_DURING_GPS_FIX                    = 1505,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_HDR_CONNECTION_SETUP_TIMEOUT                      = 1506,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_HDR_RELEASED_BY_CM                                = 1507,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_NO_HYBRID_HDR_SERVICE                             = 1510,
+
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_CLIENT_END                 = 2000,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_NO_SERVICE                 = 2001,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_FADE                       = 2002,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_RELEASE_NORMAL             = 2003,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_ACCESS_ATTEMPT_IN_PROGRESS = 2004,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_ACCESS_FAILURE             = 2005,
+    QMI_WDS_VERBOSE_CALL_END_REASON_CM_REDIRECTION_OR_HANDOFF     = 2006
+} QmiWdsVerboseCallEndReasonCm;
+</pre>
+<p>
+Call manager specific call end reasons, given when the <em class="parameter"><code>QmiWdsVerboseCallEndReasonType</code></em> is <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-CM:CAPS"><span class="type">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_CM</span></a>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-CDMA-LOCK:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_CDMA_LOCK</code></span></p></td>
+<td>(CDMA) Phone is CDMA-locked.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-INTERCEPT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_INTERCEPT</code></span></p></td>
+<td>(CDMA) Received intercept from the BS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-REORDER:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_REORDER</code></span></p></td>
+<td>(CDMA) Received reorder from the BS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-RELEASE-SO-REJECT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_RELEASE_SO_REJECT</code></span></p></td>
+<td>(CDMA) Received release from the BS, SO reject.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-INCOMING-CALL:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_INCOMING_CALL</code></span></p></td>
+<td>(CDMA) Received incoming call from the BS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-ALERT-STOP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_ALERT_STOP</code></span></p></td>
+<td>(CDMA) Received alert stop from the BS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-ACTIVATION:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_ACTIVATION</code></span></p></td>
+<td>(CDMA) Received end activation.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-MAX-ACCESS-PROBES:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_MAX_ACCESS_PROBES</code></span></p></td>
+<td>(CDMA) Maximum access probes transmitted.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-CCS-NOT-SUPPORTED-BY-BS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_CCS_NOT_SUPPORTED_BY_BS</code></span></p></td>
+<td>(CDMA) Concurrent service not supported by the BS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-NO-RESPONSE-FROM-BS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_NO_RESPONSE_FROM_BS</code></span></p></td>
+<td>(CDMA) No response received from the BS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-REJECTED-BY-BS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_REJECTED_BY_BS</code></span></p></td>
+<td>(CDMA) Rejected by the BS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-INCOMPATIBLE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_INCOMPATIBLE</code></span></p></td>
+<td>(CDMA) Concurrent services requested are incompatible.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-ALREADY-IN-TC:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_ALREADY_IN_TC</code></span></p></td>
+<td>(CDMA) Already in TC.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-USER-CALL-ORIGINATED-DURING-GPS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_USER_CALL_ORIGINATED_DURING_GPS</code></span></p></td>
+<td>(CDMA) Call originated during GPS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-USER-CALL-ORIGINATED-DURING-SMS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_USER_CALL_ORIGINATED_DURING_SMS</code></span></p></td>
+<td>(CDMA) Call originated during SMS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-NO-CDMA-SERVICE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_NO_CDMA_SERVICE</code></span></p></td>
+<td>(CDMA) No service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-RETRY-ORDER:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_RETRY_ORDER</code></span></p></td>
+<td>Retry order.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-CONFIGURATION-FAILED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_CONFIGURATION_FAILED</code></span></p></td>
+<td>Configuration failed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-INCOMING-REJECTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_INCOMING_REJECTED</code></span></p></td>
+<td>Incoming rejected.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-NO-GATEWAY-SERVICE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_NO_GATEWAY_SERVICE</code></span></p></td>
+<td>No gateway service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-NO-GPRS-CONTEXT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_NO_GPRS_CONTEXT</code></span></p></td>
+<td>No GPRS context.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-ILLEGAL-MS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_ILLEGAL_MS</code></span></p></td>
+<td>Illegal MS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-ILLEGAL-ME:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_ILLEGAL_ME</code></span></p></td>
+<td>Illegal ME.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-GPRS-AND-NON-GPRS-SERVICES-NOT-ALLOWED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_GPRS_AND_NON_GPRS_SERVICES_NOT_ALLOWED</code></span></p></td>
+<td>GPRS and non GPRS services not allowed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-GPRS-SERVICES-NOT-ALLOWED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_GPRS_SERVICES_NOT_ALLOWED</code></span></p></td>
+<td>GPRS services not allowed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-MS-IDENTITY-NOT-DERIVED-BY-THE-NETWORK:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_MS_IDENTITY_NOT_DERIVED_BY_THE_NETWORK</code></span></p></td>
+<td>MS identity not derived by the network.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-IMPLICITLY-DETACHED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_IMPLICITLY_DETACHED</code></span></p></td>
+<td>Implicitly detached.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-PLMN-NOT-ALLOWED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_PLMN_NOT_ALLOWED</code></span></p></td>
+<td>PLMN not allowed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-LA-NOT-ALLOWED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_LA_NOT_ALLOWED</code></span></p></td>
+<td>LA not allowed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-GPRS-SERVICES-NOT-ALLOWED-IN-PLMN:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_GPRS_SERVICES_NOT_ALLOWED_IN_PLMN</code></span></p></td>
+<td>GPRS services not allowed in PLMN.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-PDP-DUPLICATE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_PDP_DUPLICATE</code></span></p></td>
+<td>PDP duplicate.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-UE-RAT-CHANGE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_UE_RAT_CHANGE</code></span></p></td>
+<td>UE radio access technology change.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-CONGESTION:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_CONGESTION</code></span></p></td>
+<td>Congestion.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-NO-PDP-CONTEXT-ACTIVATED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_NO_PDP_CONTEXT_ACTIVATED</code></span></p></td>
+<td>No PDP context activated.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-ACCESS-CLASS-DSAC-REJECTION:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_ACCESS_CLASS_DSAC_REJECTION</code></span></p></td>
+<td>Access class DSAC rejection.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-CONNECTION-DENY-GENERAL-OR-BUSY:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_CONNECTION_DENY_GENERAL_OR_BUSY</code></span></p></td>
+<td>(EV-DO) Received Connection Deny (General or Network busy).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-CONNECTION-DENY-BILLING-OR-AUTHENTICATION-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_CONNECTION_DENY_BILLING_OR_AUTHENTICATION_FAILURE</code></span></p></td>
+<td>(EV-DO) Received Connection Deny (Billing or Authentication failure).
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-HDR-CHANGE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_HDR_CHANGE</code></span></p></td>
+<td>(EV-DO) Change HDR.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-HDR-EXIT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_HDR_EXIT</code></span></p></td>
+<td>(EV-DO) Exit HDR.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-HDR-NO-SESSION:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_HDR_NO_SESSION</code></span></p></td>
+<td>(EV-DO) No HDR session.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-HDR-ORIGINATION-DURING-GPS-FIX:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_HDR_ORIGINATION_DURING_GPS_FIX</code></span></p></td>
+<td>(EV-DO) HDR call ended in favor of a GPS fix.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-HDR-CONNECTION-SETUP-TIMEOUT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_HDR_CONNECTION_SETUP_TIMEOUT</code></span></p></td>
+<td>(EV-DO) Connection setup timeout.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-HDR-RELEASED-BY-CM:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_HDR_RELEASED_BY_CM</code></span></p></td>
+<td>(EV-DO) Released HDR call by call manager.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-NO-HYBRID-HDR-SERVICE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_NO_HYBRID_HDR_SERVICE</code></span></p></td>
+<td>(EV-DO) No hybrid HDR service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-CLIENT-END:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_CLIENT_END</code></span></p></td>
+<td>Client end.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-NO-SERVICE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_NO_SERVICE</code></span></p></td>
+<td>No service.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-FADE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_FADE</code></span></p></td>
+<td>Fade.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-RELEASE-NORMAL:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_RELEASE_NORMAL</code></span></p></td>
+<td>Release normal.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-ACCESS-ATTEMPT-IN-PROGRESS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_ACCESS_ATTEMPT_IN_PROGRESS</code></span></p></td>
+<td>Access attempt in progress.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-ACCESS-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_ACCESS_FAILURE</code></span></p></td>
+<td>Access Failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-CM-REDIRECTION-OR-HANDOFF:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_CM_REDIRECTION_OR_HANDOFF</code></span></p></td>
+<td>Redirection or handoff.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsVerboseCallEndReason3gpp-enum"></a><h3>enum QmiWdsVerboseCallEndReason3gpp</h3>
+<pre class="programlisting">typedef enum {
+ /*&lt; underscore_name=qmi_wds_verbose_call_end_reason_3gpp &gt;*/
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_OPERATOR_DETERMINED_BARRING = 8,
+
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_LLC_SNDCP_FAILURE               = 25,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_INSUFFICIENT_RESOURCES          = 26,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_UNKNOWN_APN                     = 27,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_UNKNOWN_PDP                     = 28,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_AUTHENTICATION_FAILED           = 29,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_GGSN_REJECT                     = 30,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_ACTIVATION_REJECT               = 31,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_OPTION_NOT_SUPPORTED            = 32,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_OPTION_UNSUBSCRIBED             = 33,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_OPTION_TEMPORARILY_OUT_OF_ORDER = 34,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_NSAPI_ALREADY_USED              = 35,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_REGULAR_DEACTIVATION            = 36,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_QOS_NOT_ACCEPTED                = 37,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_NETWORK_FAILURE                 = 38,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_REATTACH_REQUIRED               = 39,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_FEATURE_NOT_SUPPORTED           = 40,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_TFT_SEMANTIC_ERROR              = 41,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_TFT_SYNTAX_ERROR                = 42,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_UNKNOWN_PDP_CONTEXT             = 43,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_FILTER_SEMANTIC_ERROR           = 44,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_FILTER_SYNTAX_ERROR             = 45,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_PDP_WITHOUT_ACTIVE_TFT          = 46,
+
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_IPV4_ONLY_ALLOWED                           = 50,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_IPV6_ONLY_ALLOWED                           = 51,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_SINGLE_ADDRESS_BEARER_ONLY                  = 52,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_ESM_INFO_NOT_RECEIVED                       = 53,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_PDN_CONNECTION_DOES_NOT_EXIST               = 54,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_MULTIPLE_CONNECTION_TO_SAME_PDN_NOT_ALLOWED = 55,
+
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_INVALID_TRANSACTION_ID = 81,
+
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_MESSAGE_INCORRECT_SEMANTIC              = 95,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_INVALID_MANDATORY_INFO                  = 96,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_MESSAGE_TYPE_UNSUPPORTED                = 97,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_MESSAGE_TYPE_NONCOMPATIBLE_STATE        = 98,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_UNKNOWN_INFO_ELEMENT                    = 99,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_CONDITIONAL_IE_ERROR                    = 100,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_MESSAGE_AND_PROTOCOL_STATE_UNCOMPATIBLE = 101,
+
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_PROTOCOL_ERROR    = 111,
+    QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_APN_TYPE_CONFLICT = 112
+} QmiWdsVerboseCallEndReason3gpp;
+</pre>
+<p>
+3GPP-specific call end reasons, given when the <em class="parameter"><code>QmiWdsVerboseCallEndReasonType</code></em> is <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-3GPP:CAPS"><span class="type">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_3GPP</span></a>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-OPERATOR-DETERMINED-BARRING:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_OPERATOR_DETERMINED_BARRING</code></span></p></td>
+<td>Operator-determined barring.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-LLC-SNDCP-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_LLC_SNDCP_FAILURE</code></span></p></td>
+<td>LLC or SNDCP failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-INSUFFICIENT-RESOURCES:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_INSUFFICIENT_RESOURCES</code></span></p></td>
+<td>Insufficient resources.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-UNKNOWN-APN:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_UNKNOWN_APN</code></span></p></td>
+<td>Unknown or missing APN.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-UNKNOWN-PDP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_UNKNOWN_PDP</code></span></p></td>
+<td>Unknown PDP address or type.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-AUTHENTICATION-FAILED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_AUTHENTICATION_FAILED</code></span></p></td>
+<td>Authentication failed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-GGSN-REJECT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_GGSN_REJECT</code></span></p></td>
+<td>Activation rejected by GGSN.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-ACTIVATION-REJECT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_ACTIVATION_REJECT</code></span></p></td>
+<td>Activation rejected.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-OPTION-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_OPTION_NOT_SUPPORTED</code></span></p></td>
+<td>Service option not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-OPTION-UNSUBSCRIBED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_OPTION_UNSUBSCRIBED</code></span></p></td>
+<td>Service option not subscribed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-OPTION-TEMPORARILY-OUT-OF-ORDER:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_OPTION_TEMPORARILY_OUT_OF_ORDER</code></span></p></td>
+<td>Service option temporarily out of order.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-NSAPI-ALREADY-USED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_NSAPI_ALREADY_USED</code></span></p></td>
+<td>NSAPI already used.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-REGULAR-DEACTIVATION:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_REGULAR_DEACTIVATION</code></span></p></td>
+<td>Regular PDP context deactivation.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-QOS-NOT-ACCEPTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_QOS_NOT_ACCEPTED</code></span></p></td>
+<td>QoS not accepted.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-NETWORK-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_NETWORK_FAILURE</code></span></p></td>
+<td>Network failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-REATTACH-REQUIRED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_REATTACH_REQUIRED</code></span></p></td>
+<td>Reattach required.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-FEATURE-NOT-SUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_FEATURE_NOT_SUPPORTED</code></span></p></td>
+<td>Feature not supported.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-TFT-SEMANTIC-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_TFT_SEMANTIC_ERROR</code></span></p></td>
+<td>Semantic error in TFT operation.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-TFT-SYNTAX-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_TFT_SYNTAX_ERROR</code></span></p></td>
+<td>Syntax error in TFT operation.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-UNKNOWN-PDP-CONTEXT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_UNKNOWN_PDP_CONTEXT</code></span></p></td>
+<td>Unknown PDP context.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-FILTER-SEMANTIC-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_FILTER_SEMANTIC_ERROR</code></span></p></td>
+<td>Semantic error in packet filters.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-FILTER-SYNTAX-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_FILTER_SYNTAX_ERROR</code></span></p></td>
+<td>Syntax error in packet filters.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-PDP-WITHOUT-ACTIVE-TFT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_PDP_WITHOUT_ACTIVE_TFT</code></span></p></td>
+<td>PDP context without TFT activated.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-IPV4-ONLY-ALLOWED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_IPV4_ONLY_ALLOWED</code></span></p></td>
+<td>IPv4 only allowed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-IPV6-ONLY-ALLOWED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_IPV6_ONLY_ALLOWED</code></span></p></td>
+<td>IPv6 only allowed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-SINGLE-ADDRESS-BEARER-ONLY:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_SINGLE_ADDRESS_BEARER_ONLY</code></span></p></td>
+<td>Single address bearer only.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-ESM-INFO-NOT-RECEIVED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_ESM_INFO_NOT_RECEIVED</code></span></p></td>
+<td>ESM information not received.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-PDN-CONNECTION-DOES-NOT-EXIST:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_PDN_CONNECTION_DOES_NOT_EXIST</code></span></p></td>
+<td>PDN connection does not exist.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-MULTIPLE-CONNECTION-TO-SAME-PDN-NOT-ALLOWED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_MULTIPLE_CONNECTION_TO_SAME_PDN_NOT_ALLOWED</code></span></p></td>
+<td>Multiple connection to same PDN not allowed.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-INVALID-TRANSACTION-ID:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_INVALID_TRANSACTION_ID</code></span></p></td>
+<td>Invalid transaction ID.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-MESSAGE-INCORRECT-SEMANTIC:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_MESSAGE_INCORRECT_SEMANTIC</code></span></p></td>
+<td>Message incorrect semantically.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-INVALID-MANDATORY-INFO:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_INVALID_MANDATORY_INFO</code></span></p></td>
+<td>Invalid mandatory information.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-MESSAGE-TYPE-UNSUPPORTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_MESSAGE_TYPE_UNSUPPORTED</code></span></p></td>
+<td>Message type not implemented.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-MESSAGE-TYPE-NONCOMPATIBLE-STATE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_MESSAGE_TYPE_NONCOMPATIBLE_STATE</code></span></p></td>
+<td>Message not compatible with state.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-UNKNOWN-INFO-ELEMENT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_UNKNOWN_INFO_ELEMENT</code></span></p></td>
+<td>Information element unknown.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-CONDITIONAL-IE-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_CONDITIONAL_IE_ERROR</code></span></p></td>
+<td>Conditional IE error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-MESSAGE-AND-PROTOCOL-STATE-UNCOMPATIBLE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_MESSAGE_AND_PROTOCOL_STATE_UNCOMPATIBLE</code></span></p></td>
+<td>Message and protocol state uncompatible.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-PROTOCOL-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_PROTOCOL_ERROR</code></span></p></td>
+<td>Protocol error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-3GPP-APN-TYPE-CONFLICT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_3GPP_APN_TYPE_CONFLICT</code></span></p></td>
+<td>APN type conflict.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsVerboseCallEndReasonPpp-enum"></a><h3>enum QmiWdsVerboseCallEndReasonPpp</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_VERBOSE_CALL_END_REASON_PPP_UNKNOWN = -1,
+
+    QMI_WDS_VERBOSE_CALL_END_REASON_PPP_TIMEOUT                = 1,
+    QMI_WDS_VERBOSE_CALL_END_REASON_PPP_AUTHENTICATION_FAILURE = 2,
+    QMI_WDS_VERBOSE_CALL_END_REASON_PPP_OPTION_MISMATCH        = 3,
+
+    QMI_WDS_VERBOSE_CALL_END_REASON_PPP_PAP_FAILURE  = 31,
+    QMI_WDS_VERBOSE_CALL_END_REASON_PPP_CHAP_FAILURE = 32
+} QmiWdsVerboseCallEndReasonPpp;
+</pre>
+<p>
+PPP-specific call end reasons, given when the <em class="parameter"><code>QmiWdsVerboseCallEndReasonType</code></em> is <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-PPP:CAPS"><span class="type">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_PPP</span></a>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-PPP-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_PPP_UNKNOWN</code></span></p></td>
+<td>Unknown error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-PPP-TIMEOUT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_PPP_TIMEOUT</code></span></p></td>
+<td>Timeout.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-PPP-AUTHENTICATION-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_PPP_AUTHENTICATION_FAILURE</code></span></p></td>
+<td>Authentication failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-PPP-OPTION-MISMATCH:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_PPP_OPTION_MISMATCH</code></span></p></td>
+<td>Option mismatch.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-PPP-PAP-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_PPP_PAP_FAILURE</code></span></p></td>
+<td>PAP failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-PPP-CHAP-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_PPP_CHAP_FAILURE</code></span></p></td>
+<td>CHAP failure.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsVerboseCallEndReasonEhrpd-enum"></a><h3>enum QmiWdsVerboseCallEndReasonEhrpd</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_SUBSCRIPTION_LIMITED_TO_IPV4 = 1,
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_SUBSCRIPTION_LIMITED_TO_IPV6 = 2,
+
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_TIMEOUT                           = 4,
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_FAILURE                           = 5,
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_GENERAL_ERROR               = 6,
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_UNAUTHENTICATED_APN         = 7,
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_PDN_LIMIT_EXCEEDED          = 8,
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_NO_PDN_GATEWAY              = 9,
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_PDN_GATEWAY_UNREACHABLE     = 10,
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_PDN_GATEWAY_REJECTED        = 11,
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_INSUFFICIENT_PARAMETERS     = 12,
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_RESOURCE_UNAVAILABLE        = 13,
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_ADMINISTRATIVELY_PROHIBITED = 14,
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_PDN_ID_IN_USE               = 15,
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_SUBSCRIPTION_LIMITATION     = 16,
+    QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_PDN_EXISTS_FOR_THIS_APN     = 17
+} QmiWdsVerboseCallEndReasonEhrpd;
+</pre>
+<p>
+eHRPD-specific call end reasons, given when the <em class="parameter"><code>QmiWdsVerboseCallEndReasonType</code></em> is <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-EHRPD:CAPS"><span class="type">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_EHRPD</span></a>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-SUBSCRIPTION-LIMITED-TO-IPV4:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_SUBSCRIPTION_LIMITED_TO_IPV4</code></span></p></td>
+<td>Subscription limited to IPv4.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-SUBSCRIPTION-LIMITED-TO-IPV6:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_SUBSCRIPTION_LIMITED_TO_IPV6</code></span></p></td>
+<td>Subscription limited to IPv6.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-VSNCP-TIMEOUT:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_TIMEOUT</code></span></p></td>
+<td>(VSNCP) timeout.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-VSNCP-FAILURE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_FAILURE</code></span></p></td>
+<td>(VSNCP) failure.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-VSNCP-3GPP2-GENERAL-ERROR:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_GENERAL_ERROR</code></span></p></td>
+<td>(VSCNP) 3GPP2 general error.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-VSNCP-3GPP2-UNAUTHENTICATED-APN:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_UNAUTHENTICATED_APN</code></span></p></td>
+<td>(VSCNP) 3GPP2 unauthenticated APN.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-VSNCP-3GPP2-PDN-LIMIT-EXCEEDED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_PDN_LIMIT_EXCEEDED</code></span></p></td>
+<td>(VSCNP) 3GPP2 PDN limit exceeded.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-VSNCP-3GPP2-NO-PDN-GATEWAY:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_NO_PDN_GATEWAY</code></span></p></td>
+<td>(VSCNP) 3GPP2 no PDN gateway.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-VSNCP-3GPP2-PDN-GATEWAY-UNREACHABLE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_PDN_GATEWAY_UNREACHABLE</code></span></p></td>
+<td>(VSCNP) 3GPP2 PDN gateway unreachable.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-VSNCP-3GPP2-PDN-GATEWAY-REJECTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_PDN_GATEWAY_REJECTED</code></span></p></td>
+<td>(VSCNP) 3GPP2 PDN gateway rejected.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-VSNCP-3GPP2-INSUFFICIENT-PARAMETERS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_INSUFFICIENT_PARAMETERS</code></span></p></td>
+<td>(VSCNP) 3GPP2 insufficient parameters.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-VSNCP-3GPP2-RESOURCE-UNAVAILABLE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_RESOURCE_UNAVAILABLE</code></span></p></td>
+<td>(VSCNP) 3GPP2 resource unavailable.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-VSNCP-3GPP2-ADMINISTRATIVELY-PROHIBITED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_ADMINISTRATIVELY_PROHIBITED</code></span></p></td>
+<td>(VSCNP) 3GPP2 administratively prohibited.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-VSNCP-3GPP2-PDN-ID-IN-USE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_PDN_ID_IN_USE</code></span></p></td>
+<td>(VSCNP) 3GPP2 PDN ID in use.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-VSNCP-3GPP2-SUBSCRIPTION-LIMITATION:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_SUBSCRIPTION_LIMITATION</code></span></p></td>
+<td>(VSCNP) 3GPP2 subscription limitation.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-EHRPD-VSNCP-3GPP2-PDN-EXISTS-FOR-THIS-APN:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_EHRPD_VSNCP_3GPP2_PDN_EXISTS_FOR_THIS_APN</code></span></p></td>
+<td>(VSCNP) 3GPP2 PDN exists for this APN.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsVerboseCallEndReasonIpv6-enum"></a><h3>enum QmiWdsVerboseCallEndReasonIpv6</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_VERBOSE_CALL_END_REASON_IPV6_PREFIX_UNAVAILABLE = 1,
+    QMI_WDS_VERBOSE_CALL_END_REASON_IPV6_HRPD_IPV6_DISABLED = 2
+} QmiWdsVerboseCallEndReasonIpv6;
+</pre>
+<p>
+IPv6-specific call end reasons, given when the <em class="parameter"><code>QmiWdsVerboseCallEndReasonType</code></em> is <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QMI-WDS-VERBOSE-CALL-END-REASON-TYPE-IPV6:CAPS"><span class="type">QMI_WDS_VERBOSE_CALL_END_REASON_TYPE_IPV6</span></a>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-IPV6-PREFIX-UNAVAILABLE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_IPV6_PREFIX_UNAVAILABLE</code></span></p></td>
+<td>Prefix unavailable.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-VERBOSE-CALL-END-REASON-IPV6-HRPD-IPV6-DISABLED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_VERBOSE_CALL_END_REASON_IPV6_HRPD_IPV6_DISABLED</code></span></p></td>
+<td>HRDP IPv6 disabled.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsConnectionStatus-enum"></a><h3>enum QmiWdsConnectionStatus</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_CONNECTION_STATUS_UNKNOWN        = 0,
+    QMI_WDS_CONNECTION_STATUS_DISCONNECTED   = 1,
+    QMI_WDS_CONNECTION_STATUS_CONNECTED      = 2,
+    QMI_WDS_CONNECTION_STATUS_SUSPENDED      = 3,
+    QMI_WDS_CONNECTION_STATUS_AUTHENTICATING = 4
+} QmiWdsConnectionStatus;
+</pre>
+<p>
+Status of the network connection.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-CONNECTION-STATUS-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CONNECTION_STATUS_UNKNOWN</code></span></p></td>
+<td>Unknown status.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CONNECTION-STATUS-DISCONNECTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CONNECTION_STATUS_DISCONNECTED</code></span></p></td>
+<td>Network is disconnected
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CONNECTION-STATUS-CONNECTED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CONNECTION_STATUS_CONNECTED</code></span></p></td>
+<td>Network is connected.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CONNECTION-STATUS-SUSPENDED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CONNECTION_STATUS_SUSPENDED</code></span></p></td>
+<td>Network connection is suspended.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-CONNECTION-STATUS-AUTHENTICATING:CAPS"></a><span class="term"><code class="literal">QMI_WDS_CONNECTION_STATUS_AUTHENTICATING</code></span></p></td>
+<td>Network authentication is ongoing.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsDataBearerTechnology-enum"></a><h3>enum QmiWdsDataBearerTechnology</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_UNKNOWN           = -1,
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_CDMA20001X        = 0x01,
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_1xEVDO            = 0x02,
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_GSM               = 0x03,
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_UMTS              = 0x04,
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_1xEVDO_REVA       = 0x05,
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_EDGE              = 0x06,
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_HSDPA             = 0x07,
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_HSUPA             = 0x08,
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_HSDPA_HSUPDA      = 0x09,
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_LTE               = 0x0A,
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_EHRPD             = 0x0B,
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_HSDPAPLUS         = 0x0C,
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_HSDPAPLUS_HSUPA   = 0x0D,
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_DCHSDPAPLUS       = 0x0E,
+    QMI_WDS_DATA_BEARER_TECHNOLOGY_DCHSDPAPLUS_HSUPA = 0x0F
+} QmiWdsDataBearerTechnology;
+</pre>
+<p>
+Data bearer technology.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_UNKNOWN</code></span></p></td>
+<td>Unknown.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-CDMA20001X:CAPS"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_CDMA20001X</code></span></p></td>
+<td>CDMA2000 1x.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-1xEVDO"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_1xEVDO</code></span></p></td>
+<td>CDMA2000 HRPD 1xEV-DO.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-GSM:CAPS"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_GSM</code></span></p></td>
+<td>GSM.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-UMTS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_UMTS</code></span></p></td>
+<td>UMTS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-1xEVDO-REVA"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_1xEVDO_REVA</code></span></p></td>
+<td>CDMA2000 HRPD 1xEV-DO RevA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-EDGE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_EDGE</code></span></p></td>
+<td>EDGE.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-HSDPA:CAPS"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_HSDPA</code></span></p></td>
+<td>HSDPA and WCDMA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-HSUPA:CAPS"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_HSUPA</code></span></p></td>
+<td>WCDMA and HSUPA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-HSDPA-HSUPDA:CAPS"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_HSDPA_HSUPDA</code></span></p></td>
+<td>HSDPA and HSUPA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-LTE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_LTE</code></span></p></td>
+<td>LTE.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-EHRPD:CAPS"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_EHRPD</code></span></p></td>
+<td>CDMA2000 eHRPD.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-HSDPAPLUS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_HSDPAPLUS</code></span></p></td>
+<td>HSDPA+ and WCDMA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-HSDPAPLUS-HSUPA:CAPS"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_HSDPAPLUS_HSUPA</code></span></p></td>
+<td>HSDPA+ and HSUPA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-DCHSDPAPLUS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_DCHSDPAPLUS</code></span></p></td>
+<td>DC-HSDPA+ and WCDMA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-DATA-BEARER-TECHNOLOGY-DCHSDPAPLUS-HSUPA:CAPS"></a><span class="term"><code class="literal">QMI_WDS_DATA_BEARER_TECHNOLOGY_DCHSDPAPLUS_HSUPA</code></span></p></td>
+<td>DC-HSDPA+ and HSUPA.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsNetworkType-enum"></a><h3>enum QmiWdsNetworkType</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_NETWORK_TYPE_UNKNOWN = 0,
+    QMI_WDS_NETWORK_TYPE_3GPP2   = 1,
+    QMI_WDS_NETWORK_TYPE_3GPP    = 2
+} QmiWdsNetworkType;
+</pre>
+<p>
+Network type of the data bearer.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-NETWORK-TYPE-UNKNOWN:CAPS"></a><span class="term"><code class="literal">QMI_WDS_NETWORK_TYPE_UNKNOWN</code></span></p></td>
+<td>Unknown.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-NETWORK-TYPE-3GPP2:CAPS"></a><span class="term"><code class="literal">QMI_WDS_NETWORK_TYPE_3GPP2</code></span></p></td>
+<td>3GPP2 network type.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-NETWORK-TYPE-3GPP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_NETWORK_TYPE_3GPP</code></span></p></td>
+<td>3GPP network type.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsRat3gpp2-enum"></a><h3>enum QmiWdsRat3gpp2</h3>
+<pre class="programlisting">typedef enum {
+ /*&lt; underscore_name=qmi_wds_rat_3gpp2 &gt;*/
+    QMI_WDS_RAT_3GPP2_NONE        = 0,
+    QMI_WDS_RAT_3GPP2_CDMA1X      = 1 &lt;&lt; 0,
+    QMI_WDS_RAT_3GPP2_EVDO_REV0   = 1 &lt;&lt; 1,
+    QMI_WDS_RAT_3GPP2_EVDO_REVA   = 1 &lt;&lt; 2,
+    QMI_WDS_RAT_3GPP2_EVDO_REVB   = 1 &lt;&lt; 3,
+    QMI_WDS_RAT_3GPP2_NULL_BEARER = 1 &lt;&lt; 15
+} QmiWdsRat3gpp2;
+</pre>
+<p>
+Flags specifying the 3GPP2-specific Radio Access Technology, when the data
+bearer network type is <em class="parameter"><code>QMI_WDS_NETWORK_TYPE_3GPP2</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP2-NONE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP2_NONE</code></span></p></td>
+<td>Unknown, to be ignored.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP2-CDMA1X:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP2_CDMA1X</code></span></p></td>
+<td>CDMA 1x.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP2-EVDO-REV0:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP2_EVDO_REV0</code></span></p></td>
+<td>EVDO Rev0.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP2-EVDO-REVA:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP2_EVDO_REVA</code></span></p></td>
+<td>EVDO RevA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP2-EVDO-REVB:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP2_EVDO_REVB</code></span></p></td>
+<td>EVDO RevB.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP2-NULL-BEARER:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP2_NULL_BEARER</code></span></p></td>
+<td>No bearer.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsRat3gpp-enum"></a><h3>enum QmiWdsRat3gpp</h3>
+<pre class="programlisting">typedef enum {
+ /*&lt; underscore_name=qmi_wds_rat_3gpp &gt;*/
+    QMI_WDS_RAT_3GPP_NONE        = 0,
+    QMI_WDS_RAT_3GPP_WCDMA       = 1 &lt;&lt; 0,
+    QMI_WDS_RAT_3GPP_GPRS        = 1 &lt;&lt; 1,
+    QMI_WDS_RAT_3GPP_HSDPA       = 1 &lt;&lt; 2,
+    QMI_WDS_RAT_3GPP_HSUPA       = 1 &lt;&lt; 3,
+    QMI_WDS_RAT_3GPP_EDGE        = 1 &lt;&lt; 4,
+    QMI_WDS_RAT_3GPP_LTE         = 1 &lt;&lt; 5,
+    QMI_WDS_RAT_3GPP_HSDPAPLUS   = 1 &lt;&lt; 6,
+    QMI_WDS_RAT_3GPP_DCHSDPAPLUS = 1 &lt;&lt; 7,
+    QMI_WDS_RAT_3GPP_NULL_BEARER = 1 &lt;&lt; 15
+} QmiWdsRat3gpp;
+</pre>
+<p>
+Flags specifying the 3GPP-specific Radio Access Technology, when the data
+bearer network type is <em class="parameter"><code>QMI_WDS_NETWORK_TYPE_3GPP</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP-NONE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP_NONE</code></span></p></td>
+<td>Unknown, to be ignored.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP-WCDMA:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP_WCDMA</code></span></p></td>
+<td>WCDMA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP-GPRS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP_GPRS</code></span></p></td>
+<td>GPRS.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP-HSDPA:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP_HSDPA</code></span></p></td>
+<td>HSDPA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP-HSUPA:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP_HSUPA</code></span></p></td>
+<td>HSUPA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP-EDGE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP_EDGE</code></span></p></td>
+<td>EDGE.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP-LTE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP_LTE</code></span></p></td>
+<td>LTE.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP-HSDPAPLUS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP_HSDPAPLUS</code></span></p></td>
+<td>HSDPA+.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP-DCHSDPAPLUS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP_DCHSDPAPLUS</code></span></p></td>
+<td>DC-HSDPA+
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-RAT-3GPP-NULL-BEARER:CAPS"></a><span class="term"><code class="literal">QMI_WDS_RAT_3GPP_NULL_BEARER</code></span></p></td>
+<td>No bearer.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsSoCdma1x-enum"></a><h3>enum QmiWdsSoCdma1x</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_SO_CDMA1X_NONE         = 0,
+    QMI_WDS_SO_CDMA1X_IS95         = 1 &lt;&lt; 0,
+    QMI_WDS_SO_CDMA1X_IS2000       = 1 &lt;&lt; 1,
+    QMI_WDS_SO_CDMA1X_IS2000_REL_A = 1 &lt;&lt; 2
+} QmiWdsSoCdma1x;
+</pre>
+<p>
+Flags specifying the Service Option when the bearer network type is
+<em class="parameter"><code>QMI_WDS_NETWORK_TYPE_3GPP2</code></em> and when the Radio Access Technology mask
+contains <em class="parameter"><code>QMI_WDS_RAT_3GPP2_CDMA1X</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-SO-CDMA1X-NONE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_SO_CDMA1X_NONE</code></span></p></td>
+<td>Unknown, to be ignored.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-SO-CDMA1X-IS95:CAPS"></a><span class="term"><code class="literal">QMI_WDS_SO_CDMA1X_IS95</code></span></p></td>
+<td>IS95.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-SO-CDMA1X-IS2000:CAPS"></a><span class="term"><code class="literal">QMI_WDS_SO_CDMA1X_IS2000</code></span></p></td>
+<td>IS2000.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-SO-CDMA1X-IS2000-REL-A:CAPS"></a><span class="term"><code class="literal">QMI_WDS_SO_CDMA1X_IS2000_REL_A</code></span></p></td>
+<td>IS2000 RelA.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsSoEvdoRevA-enum"></a><h3>enum QmiWdsSoEvdoRevA</h3>
+<pre class="programlisting">typedef enum {
+ /*&lt; underscore_name=qmi_wds_so_evdo_reva &gt;*/
+    QMI_WDS_SO_EVDO_REVA_NONE       = 0,
+    QMI_WDS_SO_EVDO_REVA_DPA        = 1 &lt;&lt; 0,
+    QMI_WDS_SO_EVDO_REVA_MFPA       = 1 &lt;&lt; 1,
+    QMI_WDS_SO_EVDO_REVA_EMPA       = 1 &lt;&lt; 2,
+    QMI_WDS_SO_EVDO_REVA_EMPA_EHRPD = 1 &lt;&lt; 3
+} QmiWdsSoEvdoRevA;
+</pre>
+<p>
+Flags specifying the Service Option when the bearer network type is
+<em class="parameter"><code>QMI_WDS_NETWORK_TYPE_3GPP2</code></em> and when the Radio Access Technology mask
+contains <em class="parameter"><code>QMI_WDS_RAT_3GPP2_EVDO_REVA</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-SO-EVDO-REVA-NONE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_SO_EVDO_REVA_NONE</code></span></p></td>
+<td>Unknown, to be ignored.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-SO-EVDO-REVA-DPA:CAPS"></a><span class="term"><code class="literal">QMI_WDS_SO_EVDO_REVA_DPA</code></span></p></td>
+<td>DPA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-SO-EVDO-REVA-MFPA:CAPS"></a><span class="term"><code class="literal">QMI_WDS_SO_EVDO_REVA_MFPA</code></span></p></td>
+<td>MFPA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-SO-EVDO-REVA-EMPA:CAPS"></a><span class="term"><code class="literal">QMI_WDS_SO_EVDO_REVA_EMPA</code></span></p></td>
+<td>EMPA.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-SO-EVDO-REVA-EMPA-EHRPD:CAPS"></a><span class="term"><code class="literal">QMI_WDS_SO_EVDO_REVA_EMPA_EHRPD</code></span></p></td>
+<td>EMPA EHRPD.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsGetCurrentSettingsRequestedSettings-enum"></a><h3>enum QmiWdsGetCurrentSettingsRequestedSettings</h3>
+<pre class="programlisting">typedef enum {
+ /*&lt; underscore_name=qmi_wds_get_current_settings_requested_settings &gt;*/
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_NONE                      = 0,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_PROFILE_ID                = 1 &lt;&lt; 0,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_PROFILE_NAME              = 1 &lt;&lt; 1,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_PDP_TYPE                  = 1 &lt;&lt; 2,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_APN_NAME                  = 1 &lt;&lt; 3,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_DNS_ADDRESS               = 1 &lt;&lt; 4,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_GRANTED_QOS               = 1 &lt;&lt; 5,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_USERNAME                  = 1 &lt;&lt; 6,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_AUTH_PROTOCOL             = 1 &lt;&lt; 7,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_IP_ADDRESS                = 1 &lt;&lt; 8,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_GATEWAY_INFO              = 1 &lt;&lt; 9,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_PCSCF_ADDRESS             = 1 &lt;&lt; 10,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_PCSCF_SERVER_ADDRESS_LIST = 1 &lt;&lt; 11,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_PCSCF_DOMAIN_NAME_LIST    = 1 &lt;&lt; 12,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_MTU                       = 1 &lt;&lt; 13,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_DOMAIN_NAME_LIST          = 1 &lt;&lt; 14,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_IP_FAMILY                 = 1 &lt;&lt; 15,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_IMCN_FLAG                 = 1 &lt;&lt; 16,
+    QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_EXTENDED_TECHNOLOGY       = 1 &lt;&lt; 17,
+} QmiWdsGetCurrentSettingsRequestedSettings;
+</pre>
+<p>
+Flags specifying which specific settings to return when requesting the
+current WDS bearer settings.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-NONE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_NONE</code></span></p></td>
+<td>no settings requested
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-PROFILE-ID:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_PROFILE_ID</code></span></p></td>
+<td>request profile ID
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-PROFILE-NAME:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_PROFILE_NAME</code></span></p></td>
+<td>request profile name
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-PDP-TYPE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_PDP_TYPE</code></span></p></td>
+<td>request PDP context type
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-APN-NAME:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_APN_NAME</code></span></p></td>
+<td>request APN name
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-DNS-ADDRESS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_DNS_ADDRESS</code></span></p></td>
+<td>request DNS server addresses
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-GRANTED-QOS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_GRANTED_QOS</code></span></p></td>
+<td>request granted QoS
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-USERNAME:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_USERNAME</code></span></p></td>
+<td>request username
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-AUTH-PROTOCOL:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_AUTH_PROTOCOL</code></span></p></td>
+<td>request authentication protocol (ie PAP/CHAP/none)
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-IP-ADDRESS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_IP_ADDRESS</code></span></p></td>
+<td>request IP address
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-GATEWAY-INFO:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_GATEWAY_INFO</code></span></p></td>
+<td>request gateway address
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-PCSCF-ADDRESS:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_PCSCF_ADDRESS</code></span></p></td>
+<td>request PCSCF address
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-PCSCF-SERVER-ADDRESS-LIST:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_PCSCF_SERVER_ADDRESS_LIST</code></span></p></td>
+<td>request PCSCF server address list
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-PCSCF-DOMAIN-NAME-LIST:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_PCSCF_DOMAIN_NAME_LIST</code></span></p></td>
+<td>request PCSCF domain name list
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-MTU:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_MTU</code></span></p></td>
+<td>request MTU
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-DOMAIN-NAME-LIST:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_DOMAIN_NAME_LIST</code></span></p></td>
+<td>request domain name list
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-IP-FAMILY:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_IP_FAMILY</code></span></p></td>
+<td>request IP family (ie IPv4 or IPv6)
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-IMCN-FLAG:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_IMCN_FLAG</code></span></p></td>
+<td>request IMCN flag
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-GET-CURRENT-SETTINGS-REQUESTED-SETTINGS-EXTENDED-TECHNOLOGY:CAPS"></a><span class="term"><code class="literal">QMI_WDS_GET_CURRENT_SETTINGS_REQUESTED_SETTINGS_EXTENDED_TECHNOLOGY</code></span></p></td>
+<td>request extended technology info
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsPdpType-enum"></a><h3>enum QmiWdsPdpType</h3>
+<pre class="programlisting">typedef enum {
+ /*&lt; underscore_name=qmi_wds_pdp_type &gt;*/
+    QMI_WDS_PDP_TYPE_IPV4         = 0,
+    QMI_WDS_PDP_TYPE_PPP          = 1,
+    QMI_WDS_PDP_TYPE_IPV6         = 2,
+    QMI_WDS_PDP_TYPE_IPV4_OR_IPV6 = 3
+} QmiWdsPdpType;
+</pre>
+<p>
+PDP context type.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-PDP-TYPE-IPV4:CAPS"></a><span class="term"><code class="literal">QMI_WDS_PDP_TYPE_IPV4</code></span></p></td>
+<td>IPv4
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-PDP-TYPE-PPP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_PDP_TYPE_PPP</code></span></p></td>
+<td>PPP
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-PDP-TYPE-IPV6:CAPS"></a><span class="term"><code class="literal">QMI_WDS_PDP_TYPE_IPV6</code></span></p></td>
+<td>IPv6
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-PDP-TYPE-IPV4-OR-IPV6:CAPS"></a><span class="term"><code class="literal">QMI_WDS_PDP_TYPE_IPV4_OR_IPV6</code></span></p></td>
+<td>IPv4 and IPv6 combined context
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsTrafficClass-enum"></a><h3>enum QmiWdsTrafficClass</h3>
+<pre class="programlisting">typedef enum {
+ /*&lt; underscore_name=qmi_wds_traffic_class &gt;*/
+    QMI_WDS_TRAFFIC_CLASS_SUBSCRIBED     = 0,
+    QMI_WDS_TRAFFIC_CLASS_CONVERSATIONAL = 1,
+    QMI_WDS_TRAFFIC_CLASS_STREAMING      = 2,
+    QMI_WDS_TRAFFIC_CLASS_INTERACTIVE    = 3,
+    QMI_WDS_TRAFFIC_CLASS_BACKGROUND     = 4
+} QmiWdsTrafficClass;
+</pre>
+<p>
+QoS Traffic Classes.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-TRAFFIC-CLASS-SUBSCRIBED:CAPS"></a><span class="term"><code class="literal">QMI_WDS_TRAFFIC_CLASS_SUBSCRIBED</code></span></p></td>
+<td>default (?) class, best-effort
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-TRAFFIC-CLASS-CONVERSATIONAL:CAPS"></a><span class="term"><code class="literal">QMI_WDS_TRAFFIC_CLASS_CONVERSATIONAL</code></span></p></td>
+<td>two-way video/voice, most delay sensitive
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-TRAFFIC-CLASS-STREAMING:CAPS"></a><span class="term"><code class="literal">QMI_WDS_TRAFFIC_CLASS_STREAMING</code></span></p></td>
+<td>one-way video/audio, delay sensitive
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-TRAFFIC-CLASS-INTERACTIVE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_TRAFFIC_CLASS_INTERACTIVE</code></span></p></td>
+<td>delay-insensitive (browsing, SSH)
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-TRAFFIC-CLASS-BACKGROUND:CAPS"></a><span class="term"><code class="literal">QMI_WDS_TRAFFIC_CLASS_BACKGROUND</code></span></p></td>
+<td>delay-insensitive (downloads, email)
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsAuthentication-enum"></a><h3>enum QmiWdsAuthentication</h3>
+<pre class="programlisting">typedef enum {
+ /*&lt; underscore_name=qmi_wds_authentication &gt;*/
+    QMI_WDS_AUTHENTICATION_NONE = 0,
+    QMI_WDS_AUTHENTICATION_PAP  = 1 &lt;&lt; 0,
+    QMI_WDS_AUTHENTICATION_CHAP = 1 &lt;&lt; 1
+} QmiWdsAuthentication;
+</pre>
+<p>
+PDP context authentication protocols.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-AUTHENTICATION-NONE:CAPS"></a><span class="term"><code class="literal">QMI_WDS_AUTHENTICATION_NONE</code></span></p></td>
+<td>no authentication
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-AUTHENTICATION-PAP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_AUTHENTICATION_PAP</code></span></p></td>
+<td>PAP authentication
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-AUTHENTICATION-CHAP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_AUTHENTICATION_CHAP</code></span></p></td>
+<td>CHAP authentication
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="QmiWdsProfileType-enum"></a><h3>enum QmiWdsProfileType</h3>
+<pre class="programlisting">typedef enum {
+    QMI_WDS_PROFILE_TYPE_3GPP    = 0,
+    QMI_WDS_PROFILE_TYPE_3GPP2   = 1
+} QmiWdsProfileType;
+</pre>
+<p>
+Profile network type family.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="QMI-WDS-PROFILE-TYPE-3GPP:CAPS"></a><span class="term"><code class="literal">QMI_WDS_PROFILE_TYPE_3GPP</code></span></p></td>
+<td>3GPP profile type.
+</td>
+</tr>
+<tr>
+<td><p><a name="QMI-WDS-PROFILE-TYPE-3GPP2:CAPS"></a><span class="term"><code class="literal">QMI_WDS_PROFILE_TYPE_3GPP2</code></span></p></td>
+<td>3GPP2 profile type.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-ip-family-get-string"></a><h3>qmi_wds_ip_family_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_ip_family_get_string        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsIpFamily"><span class="type">QmiWdsIpFamily</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsIpFamily"><span class="type">QmiWdsIpFamily</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsIpFamily.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-technology-preference-build-string-from-mask"></a><h3>qmi_wds_technology_preference_build_string_from_mask ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             qmi_wds_technology_preference_build_string_from_mask
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsTechnologyPreference"><span class="type">QmiWdsTechnologyPreference</span></a> mask</code></em>);</pre>
+<p>
+Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsTechnologyPreference"><span class="type">QmiWdsTechnologyPreference</span></a> in <em class="parameter"><code>mask</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
+<td>bitmask of QmiWdsTechnologyPreference values.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the list of nicknames, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none given. The returned value should be freed with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-extended-technology-preference-get-string"></a><h3>qmi_wds_extended_technology_preference_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_extended_technology_preference_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsExtendedTechnologyPreference"><span class="type">QmiWdsExtendedTechnologyPreference</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsExtendedTechnologyPreference"><span class="type">QmiWdsExtendedTechnologyPreference</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsExtendedTechnologyPreference.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-call-type-get-string"></a><h3>qmi_wds_call_type_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_call_type_get_string        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsCallType"><span class="type">QmiWdsCallType</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsCallType"><span class="type">QmiWdsCallType</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsCallType.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-call-end-reason-get-string"></a><h3>qmi_wds_call_end_reason_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_call_end_reason_get_string  (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsCallEndReason"><span class="type">QmiWdsCallEndReason</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsCallEndReason"><span class="type">QmiWdsCallEndReason</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsCallEndReason.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-verbose-call-end-reason-get-string"></a><h3>qmi_wds_verbose_call_end_reason_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_verbose_call_end_reason_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonType"><span class="type">QmiWdsVerboseCallEndReasonType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint16"><span class="type">gint16</span></a> reason</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-verbose-call-end-reason-type-get-string"></a><h3>qmi_wds_verbose_call_end_reason_type_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_verbose_call_end_reason_type_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonType"><span class="type">QmiWdsVerboseCallEndReasonType</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonType"><span class="type">QmiWdsVerboseCallEndReasonType</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsVerboseCallEndReasonType.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-verbose-call-end-reason-mip-get-string"></a><h3>qmi_wds_verbose_call_end_reason_mip_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_verbose_call_end_reason_mip_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonMip"><span class="type">QmiWdsVerboseCallEndReasonMip</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonMip"><span class="type">QmiWdsVerboseCallEndReasonMip</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsVerboseCallEndReasonMip.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-verbose-call-end-reason-internal-get-string"></a><h3>qmi_wds_verbose_call_end_reason_internal_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_verbose_call_end_reason_internal_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonInternal"><span class="type">QmiWdsVerboseCallEndReasonInternal</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonInternal"><span class="type">QmiWdsVerboseCallEndReasonInternal</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsVerboseCallEndReasonInternal.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-verbose-call-end-reason-cm-get-string"></a><h3>qmi_wds_verbose_call_end_reason_cm_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_verbose_call_end_reason_cm_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonCm"><span class="type">QmiWdsVerboseCallEndReasonCm</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonCm"><span class="type">QmiWdsVerboseCallEndReasonCm</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsVerboseCallEndReasonCm.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-verbose-call-end-reason-3gpp-get-string"></a><h3>qmi_wds_verbose_call_end_reason_3gpp_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_verbose_call_end_reason_3gpp_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReason3gpp"><span class="type">QmiWdsVerboseCallEndReason3gpp</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReason3gpp"><span class="type">QmiWdsVerboseCallEndReason3gpp</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsVerboseCallEndReason3gpp.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-verbose-call-end-reason-ppp-get-string"></a><h3>qmi_wds_verbose_call_end_reason_ppp_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_verbose_call_end_reason_ppp_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonPpp"><span class="type">QmiWdsVerboseCallEndReasonPpp</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonPpp"><span class="type">QmiWdsVerboseCallEndReasonPpp</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsVerboseCallEndReasonPpp.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-verbose-call-end-reason-ehrpd-get-string"></a><h3>qmi_wds_verbose_call_end_reason_ehrpd_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_verbose_call_end_reason_ehrpd_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonEhrpd"><span class="type">QmiWdsVerboseCallEndReasonEhrpd</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonEhrpd"><span class="type">QmiWdsVerboseCallEndReasonEhrpd</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsVerboseCallEndReasonEhrpd.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-verbose-call-end-reason-ipv6-get-string"></a><h3>qmi_wds_verbose_call_end_reason_ipv6_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_verbose_call_end_reason_ipv6_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonIpv6"><span class="type">QmiWdsVerboseCallEndReasonIpv6</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsVerboseCallEndReasonIpv6"><span class="type">QmiWdsVerboseCallEndReasonIpv6</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsVerboseCallEndReasonIpv6.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-connection-status-get-string"></a><h3>qmi_wds_connection_status_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_connection_status_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsConnectionStatus"><span class="type">QmiWdsConnectionStatus</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsConnectionStatus"><span class="type">QmiWdsConnectionStatus</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsConnectionStatus.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-data-bearer-technology-get-string"></a><h3>qmi_wds_data_bearer_technology_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_data_bearer_technology_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsDataBearerTechnology"><span class="type">QmiWdsDataBearerTechnology</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsDataBearerTechnology"><span class="type">QmiWdsDataBearerTechnology</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsDataBearerTechnology.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-network-type-get-string"></a><h3>qmi_wds_network_type_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_network_type_get_string     (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsNetworkType"><span class="type">QmiWdsNetworkType</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsNetworkType"><span class="type">QmiWdsNetworkType</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsNetworkType.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-rat-3gpp2-build-string-from-mask"></a><h3>qmi_wds_rat_3gpp2_build_string_from_mask ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             qmi_wds_rat_3gpp2_build_string_from_mask
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsRat3gpp2"><span class="type">QmiWdsRat3gpp2</span></a> mask</code></em>);</pre>
+<p>
+Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsRat3gpp2"><span class="type">QmiWdsRat3gpp2</span></a> in <em class="parameter"><code>mask</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
+<td>bitmask of QmiWdsRat3gpp2 values.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the list of nicknames, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none given. The returned value should be freed with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-rat-3gpp-build-string-from-mask"></a><h3>qmi_wds_rat_3gpp_build_string_from_mask ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             qmi_wds_rat_3gpp_build_string_from_mask
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsRat3gpp"><span class="type">QmiWdsRat3gpp</span></a> mask</code></em>);</pre>
+<p>
+Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsRat3gpp"><span class="type">QmiWdsRat3gpp</span></a> in <em class="parameter"><code>mask</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
+<td>bitmask of QmiWdsRat3gpp values.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the list of nicknames, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none given. The returned value should be freed with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-so-cdma1x-build-string-from-mask"></a><h3>qmi_wds_so_cdma1x_build_string_from_mask ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             qmi_wds_so_cdma1x_build_string_from_mask
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsSoCdma1x"><span class="type">QmiWdsSoCdma1x</span></a> mask</code></em>);</pre>
+<p>
+Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsSoCdma1x"><span class="type">QmiWdsSoCdma1x</span></a> in <em class="parameter"><code>mask</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
+<td>bitmask of QmiWdsSoCdma1x values.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the list of nicknames, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none given. The returned value should be freed with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-so-evdo-reva-build-string-from-mask"></a><h3>qmi_wds_so_evdo_reva_build_string_from_mask ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             qmi_wds_so_evdo_reva_build_string_from_mask
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsSoEvdoRevA"><span class="type">QmiWdsSoEvdoRevA</span></a> mask</code></em>);</pre>
+<p>
+Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsSoEvdoRevA"><span class="type">QmiWdsSoEvdoRevA</span></a> in <em class="parameter"><code>mask</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
+<td>bitmask of QmiWdsSoEvdoRevA values.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the list of nicknames, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none given. The returned value should be freed with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-get-current-settings-requested-settings-get-string"></a><h3>qmi_wds_get_current_settings_requested_settings_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_get_current_settings_requested_settings_get_string
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsGetCurrentSettingsRequestedSettings"><span class="type">QmiWdsGetCurrentSettingsRequestedSettings</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsGetCurrentSettingsRequestedSettings"><span class="type">QmiWdsGetCurrentSettingsRequestedSettings</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsGetCurrentSettingsRequestedSettings.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-pdp-type-get-string"></a><h3>qmi_wds_pdp_type_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_pdp_type_get_string         (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsPdpType"><span class="type">QmiWdsPdpType</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsPdpType"><span class="type">QmiWdsPdpType</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsPdpType.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-traffic-class-get-string"></a><h3>qmi_wds_traffic_class_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_traffic_class_get_string    (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsTrafficClass"><span class="type">QmiWdsTrafficClass</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsTrafficClass"><span class="type">QmiWdsTrafficClass</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsTrafficClass.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-authentication-build-string-from-mask"></a><h3>qmi_wds_authentication_build_string_from_mask ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             qmi_wds_authentication_build_string_from_mask
+                                                        (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsAuthentication"><span class="type">QmiWdsAuthentication</span></a> mask</code></em>);</pre>
+<p>
+Builds a string containing a comma-separated list of nicknames for
+each <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsAuthentication"><span class="type">QmiWdsAuthentication</span></a> in <em class="parameter"><code>mask</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mask</code></em> :</span></p></td>
+<td>bitmask of QmiWdsAuthentication values.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the list of nicknames, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none given. The returned value should be freed with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="qmi-wds-profile-type-get-string"></a><h3>qmi_wds_profile_type_get_string ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       qmi_wds_profile_type_get_string     (<em class="parameter"><code><a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsProfileType"><span class="type">QmiWdsProfileType</span></a> val</code></em>);</pre>
+<p>
+Gets the nickname string for the <a class="link" href="libqmi-glib-WDS-enumerations-and-flags.html#QmiWdsProfileType"><span class="type">QmiWdsProfileType</span></a> specified at <em class="parameter"><code>val</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
+<td>a QmiWdsProfileType.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a string with the nickname, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. Do not free the returned value. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>
